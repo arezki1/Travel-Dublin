@@ -18,8 +18,12 @@
      
     // We can display the user's username to them by reading it from the session array.  Remember that because 
     // a username is user submitted content we must use htmlentities on it before displaying it to the user. 
-?> 
+?> <!--styling-->
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/css" />
 Hello <?php echo htmlentities($_SESSION['user']['username'], ENT_QUOTES, 'UTF-8'); ?>, secret content!<br /> 
-<a href="memberlist.php">Memberlist</a><br /> 
+<a href="memberlist.php" id = "linkOne">Memberlist</a><br /> 
 <a href="edit_account.php">Edit Account</a><br /> 
 <a href="logout.php">Logout</a>

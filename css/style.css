@@ -1,0 +1,16 @@
+body{
+    padding:50px;
+}
+
+#logoStyle{
+    padding-left:10px;
+}
+
+#tempLogo{
+    max-width:200px;
+    max-height:200px;
+}
+
+#linkOne{
+    font-weight: bold;
+}
