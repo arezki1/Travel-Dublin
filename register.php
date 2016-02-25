@@ -200,3 +200,4 @@
     <br /><br /> 
     <input type="submit" value="Register" /> 
 </form>
+<a href="login.php">Login</a>
