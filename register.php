@@ -187,22 +187,7 @@
     } 
      
 ?> 
-<<<<<<< HEAD
-<h1>Register</h1> 
-<form action="register.php" method="post"> 
-    Username:<br /> 
-    <input type="text" name="username" value="" /> 
-    <br /><br /> 
-    E-Mail:<br /> 
-    <input type="text" name="email" value="" /> 
-    <br /><br /> 
-    Password:<br /> 
-    <input type="password" name="password" value="" /> 
-    <br /><br /> 
-    <input type="submit" value="Register" /> 
-</form>
-<a href="login.php">Login</a>
-=======
+
     <!--styling-->
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
@@ -235,6 +220,7 @@
                 <br />
                 <input type="submit" value="Register" />
             </form>
+            <a href="login.php">Login</a>
         </div>
         
         <div class = "col-md-4">
@@ -243,4 +229,4 @@
         </div>
         <footer class = "footer text-center">&copy; Group C NCI 2016</footer>
         </div>
->>>>>>> 3d69d78b8b017a3ab4604bd51bf4d81d8a49ca0f
+
