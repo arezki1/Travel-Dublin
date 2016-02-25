@@ -187,6 +187,7 @@
     } 
      
 ?> 
+<<<<<<< HEAD
 <h1>Register</h1> 
 <form action="register.php" method="post"> 
     Username:<br /> 
@@ -201,3 +202,45 @@
     <input type="submit" value="Register" /> 
 </form>
 <a href="login.php">Login</a>
+=======
+    <!--styling-->
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/css" />
+    <!--styling-->
+   
+    
+    <div class  = "container">
+        <div class="row">
+            <h1 class = "text-center">Social Hotel</h1>
+        <div class = "col-md-4" id = "logoStyle">
+            <img src="img/hotelFront.png" id = "tempLogo" class = "img-responsive"></img>
+        </div>
+        <div class = "col-md-4">
+            <h1>Register</h1>
+            <form action="register.php" method="post">
+                Username:
+                <br />
+                <input type="text" name="username" value="" />
+                <br />
+                <br /> E-Mail:
+                <br />
+                <input type="text" name="email" value="" />
+                <br />
+                <br /> Password:
+                <br />
+                <input type="password" name="password" value="" />
+                <br />
+                <br />
+                <input type="submit" value="Register" />
+            </form>
+        </div>
+        
+        <div class = "col-md-4">
+            <img src="img/cityScape.jpg" class = "img-responsive img-circle"></img>
+        </div>
+        </div>
+        <footer class = "footer text-center">&copy; Group C NCI 2016</footer>
+        </div>
+>>>>>>> 3d69d78b8b017a3ab4604bd51bf4d81d8a49ca0f
