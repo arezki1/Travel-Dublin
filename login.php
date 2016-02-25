@@ -137,4 +137,5 @@
             <img src="img/cityScape.jpg" class = "img-responsive img-circle"></img>
         </div>
         </div>
+        <footer class = "footer text-center">&copy; Group C NCI 2016</footer>
         </div>
