@@ -22,8 +22,43 @@
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
     <script type="text/javascript" src="js/bootstrap.js"></script>
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/css" />
-Hello <?php echo htmlentities($_SESSION['user']['username'], ENT_QUOTES, 'UTF-8'); ?>, secret content!<br /> 
-<a href="memberlist.php" id = "linkOne">Memberlist</a><br /> 
-<a href="edit_account.php">Edit Account</a><br /> 
-<a href="logout.php">Logout</a>
+    <script type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<div class="navbar-static-top navbar-inverse">
+		<div class = "container" id = "nav">
+			<div class = "navbar-brand headerSocH">
+			    <!--add name of user in session to navbar brand-->
+				<a href="#">Welcome <?php echo htmlentities($_SESSION['user']['username'], ENT_QUOTES, 'UTF-8'); ?>, 
+				</a>
+			</div>
+			<button class = "navbar-toggle" data-toggle = "collapse" data-target=".navHeaderCollapse" style ="color:white; border-color:white; margin-right:0px">
+				Menu
+			</button>
+			<div class = "collapse navbar-collapse navHeaderCollapse">
+				<ul class = "nav navbar-nav navbar-right headerBndt">
+					<li class = "listItem"><a href="private.php">Home</a></li>
+					<li class = "listItem"><a href="#">Chat</a></li>
+					<li class = "listItem"><a href="#">Forum</a></li>
+					<li class = "listItem"><a href="memberlist.php">Memberlist</a></li>
+					<li class = "listItem"><a href="edit_account.php">Edit Account</a></li>
+					<li class = "listItem"><a href="logout.php">Logout</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class = "container">
+	    <div class = "row">
+	        <div class = "col-md-6">
+	            <iframe
+                  width="600"
+                  height="450"
+                  frameborder="0" style="border:0"
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDAdSXhJSLNXzhUP9x9hqRu2P8Srw9lntw
+                    &q=Space+Needle,Seattle+WA" allowfullscreen>
+                </iframe>
+	        </div>
+	        <div class = "col-md-6">
+	            
+	        </div>
+	        
+	    </div>
+	</div>

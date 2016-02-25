@@ -1,16 +1,20 @@
-body{
-    padding:50px;
+body {
+    padding: 50px;
 }
 
-#logoStyle{
-    padding-left:10px;
+#logoStyle {
+    padding-left: 10px;
 }
 
-#tempLogo{
-    max-width:200px;
-    max-height:200px;
+#tempLogo {
+    max-width: 200px;
+    max-height: 200px;
 }
 
-#linkOne{
+.linkOne {
     font-weight: bold;
+}
+
+navbar, .li{
+    color:white;
 }
