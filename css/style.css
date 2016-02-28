@@ -18,3 +18,7 @@ body {
 navbar, .li{
     color:white;
 }
+#placeHolder{
+    
+    border:1px black solid;
+}
