@@ -77,7 +77,8 @@
         
             </div>
             <div class="col-md-4">
-                <h1>Memberlist</h1>
+                <h1>Chat</h1>
+                <h2>Users Logged in: </h2>
                 <table>
                     <tr>
                         <th>ID</th>

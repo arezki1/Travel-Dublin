@@ -39,7 +39,7 @@
 					<li class = "listItem"><a href="#">Chat</a></li>
 					<li class = "listItem"><a href="#">Forum</a></li>
 					<li class = "listItem"><a href="memberlist.php">Memberlist</a></li>
-					<li class = "listItem"><a href="edit_account.php">Edit Account</a></li>
+					<li class="listItem"><a href="discover.php">Discover</a></li>
 					<li class = "listItem"><a href="logout.php">Logout</a></li>
 				</ul>
 			</div>
