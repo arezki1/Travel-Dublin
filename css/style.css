@@ -4,11 +4,9 @@
         max-width: 1140px;
         margin-left: auto;
         margin-right:auto;
+        background-image:url('img/bgrnd.jpg');
     }
-    /*some small padidng on the logo image*/
-    #logoStyle {
-        padding-left: 10px;
-    }
+    /*some small padding on the logo image*/
     
     #tempLogo {
         max-width: 200px;
@@ -19,17 +17,12 @@
         font-weight: bold;
     }
     */
-    navbar, .li{
-        color:white;
-    }
     
     #placeHolder{
         
         border:1px black solid;
     }
     
-    .listItem{
-    
-        padding-right: 10px;
-    
+    .nav{
+        padding-right: 80px;
     }

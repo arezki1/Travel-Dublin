@@ -15,13 +15,19 @@
  <!DOCTYPE html>
  <html>
      <!--styling-->
-        <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
-        <link rel="stylesheet" href="css/style.css" type="text/css" />
-        <script type="text/javascript" src="js/bootstrap.js"></script>
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-        <!--styling-->
-        <!--nav start-->
-    	<div class="navbar-static-top navbar-inverse">
+        <head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <!--nav start-->
+    <!--weather script start-->
+    <script src="//www.powr.io/powr.js" external-type="html"></script>
+    <!--weather script end-->
+	</head>
+    <body>
+	<div class="navbar-static-top navbar-inverse">
+		<div class = "container">
 			<div class = "navbar-brand headerSocH">
 			    <!--add name of user in session to navbar brand-->
 				<a href="#">Welcome <?php echo htmlentities($_SESSION['user']['username'], ENT_QUOTES, 'UTF-8'); ?>, 
@@ -31,7 +37,7 @@
 				Menu
 			</button>
 			<div class = "collapse navbar-collapse navHeaderCollapse">
-				<ul class = "nav navbar-nav navbar-right headerBndt">
+				<ul class = "nav navbar-nav navbar-right">
 					<li class = "listItem"><a href="logged.php">Home</a></li>
 					<li class = "listItem"><a href="chat.php">Chat</a></li>
 					<li class = "listItem"><a href="#">Forum</a></li>
@@ -40,9 +46,12 @@
 					<li class = "listItem"><a href="logout.php">Logout</a></li>
 				</ul>
 			</div>
-    	</div>
+		</div>
+	</div>
     	<!--nav end-->
     	<body>
-    	    <h1>HELLOOOOOOO</h1>
+    	    <div></div>
+    	    <div></div>
+    	    <div></div>
     	</body>
  </html>
