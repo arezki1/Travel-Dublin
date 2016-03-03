@@ -23,13 +23,11 @@
     <link rel="stylesheet" href="css/style.css" type="text/css" />
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-<<<<<<< HEAD
     <!--nav start-->
-=======
+    <!--weather script start-->
     <script src="//www.powr.io/powr.js" external-type="html"></script>
->>>>>>> 3b7f110cef9f1a9fe79c64d9500051a3b3054d8d
+    <!--weather script end-->
 	<div class="navbar-static-top navbar-inverse">
-		<div class = "container" id = "nav">
 			<div class = "navbar-brand headerSocH">
 			    <!--add name of user in session to navbar brand-->
 				<a href="#">Welcome <?php echo htmlentities($_SESSION['user']['username'], ENT_QUOTES, 'UTF-8'); ?>, 
@@ -48,15 +46,15 @@
 					<li class = "listItem"><a href="logout.php">Logout</a></li>
 				</ul>
 			</div>
-		</div>
 	</div>
 	<!--nav end-->
 	<br/>
-	    <div class = "row">
-	    	 <div class = "col-md-8">
+	<body>
+		<div class = "row">
+	    	 <div class = "col-md-4">
 	         <img src="img/niceHotel.jpg" class="img-responsive" id="placeHolder"></img>
 	        </div>
-	        <div class = "col-md-3 offset 1">
+	        <div class = "col-md-4">
 	            <h1>Welcome to the Social Hotel Experience</h1>
 	            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu malesuada sem.
 	            Integer ultrices enim eget ex commodo, eget dictum nibh imperdiet. 
@@ -70,6 +68,10 @@
 	            Ut aliquet, mi non posuere vestibulum, justo enim aliquet diam, ac bibendum quam magna vitae urna. 
 	            Morbi molestie metus facilisis purus eleifend tincidunt</p>
 	        </div>
-           <div class="powr-weather" id="41ef4f59_1455969059976" style ="float:right;"></div>
+           <div class="powr-weather col-md-4" id="41ef4f59_1455969059976"</div>
 	    </div>
+	    
+
+		
+	</body>
 	    
