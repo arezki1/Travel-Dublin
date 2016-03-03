@@ -22,3 +22,6 @@ navbar, .li{
     
     border:1px black solid;
 }
+.col-md-8{
+    width:610px;
+}

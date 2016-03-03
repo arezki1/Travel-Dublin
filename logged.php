@@ -23,7 +23,11 @@
     <link rel="stylesheet" href="css/style.css" type="text/css" />
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<<<<<<< HEAD
     <!--nav start-->
+=======
+    <script src="//www.powr.io/powr.js" external-type="html"></script>
+>>>>>>> 3b7f110cef9f1a9fe79c64d9500051a3b3054d8d
 	<div class="navbar-static-top navbar-inverse">
 		<div class = "container" id = "nav">
 			<div class = "navbar-brand headerSocH">
@@ -66,4 +70,6 @@
 	            Ut aliquet, mi non posuere vestibulum, justo enim aliquet diam, ac bibendum quam magna vitae urna. 
 	            Morbi molestie metus facilisis purus eleifend tincidunt</p>
 	        </div>
+           <div class="powr-weather" id="41ef4f59_1455969059976" style ="float:right;"></div>
 	    </div>
+	    
