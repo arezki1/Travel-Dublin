@@ -63,7 +63,7 @@
                 <div class="collapse navbar-collapse navHeaderCollapse">
                     <ul class="nav navbar-nav navbar-right headerBndt">
                         <li class="listItem"><a href="logged.php">Home</a></li>
-                        <li class="listItem"><a href="#">Chat</a></li>
+                        <li class="listItem"><a href="Chat/index.php">Chat</a></li>
                         <li class="listItem"><a href="#">Forum</a></li>
                         <li class="listItem"><a href="memberlist.php">Memberlist</a></li>
                         <li class="listItem"><a href="discover.php">Discover</a></li>

@@ -5,7 +5,7 @@ class DBConn {
 private $db_username = 'root';
 private $db_password = '';
 private $db_host = '127.0.0.1';
-private $db_name = 'hotel.sq';
+private $db_name = 'hotel';
 
 private $conn = null;
 

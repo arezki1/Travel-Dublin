@@ -36,7 +36,7 @@
 			<div class = "collapse navbar-collapse navHeaderCollapse">
 				<ul class = "nav navbar-nav navbar-right headerBndt">
 					<li class = "listItem"><a href="private.php">Home</a></li>
-					<li class = "listItem"><a href="#">Chat</a></li>
+					<li class = "listItem"><a href="index.php">Chat</a></li>
 					<li class = "listItem"><a href="#">Forum</a></li>
 					<li class = "listItem"><a href="memberlist.php">Memberlist</a></li>
 					<li class = "listItem"><a href="edit_account.php">Edit Account</a></li>
