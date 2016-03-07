@@ -1,14 +1,18 @@
 <?php 
 
+require("../common.php"); 
+
 $uname = $_REQUEST['uname'];
 $msg = $_REQUEST['msg'];
 
-$con = mysql_connect('localhost', 'root', '');
-mysql_select_db('chatbox', $con);
+//$con = mysql_connect('localhost', 'root', '');
+//$con = mysql_connect('sql2.freemysqlhosting.net', 'dZ2*wT7%');
 
-mysql_query("INSERT INTO logs(username, msg) VALUES('$uname', '$msg')");
+mysql_select_db('sql2107364', $con);
 
-$result1 = mysql_query("SELECT * FROM logs ORDER by id DESC");
+mysql_query("INSERT INTO users(username, msg) VALUES('$uname', '$msg')");
+
+$result1 = mysql_query("SELECT * FROM users ORDER by id DESC");
 
 while($extract = mysql_fetch_array($result1)){
 
@@ -17,7 +21,6 @@ while($extract = mysql_fetch_array($result1)){
  
  :<span class='msg'>" . $extract['msg']. "</span><br>";
 
- 
  
 }
 
