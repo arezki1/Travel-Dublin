@@ -76,10 +76,15 @@
 	            Morbi molestie metus facilisis purus eleifend tincidunt</p>
 	        </div>
 	        <div class = "col-md-4">
-	        	<div class="powr-weather" id="41ef4f59_1455969059976">
+	        	
            		</div>
 	        </div>
         
+	    </div>
+	    <div class = "row">
+	    	<div class  = "col-md-4">
+	    		<img src="img/niceHotel.jpg" class="img-responsive" id="placeHolder"></img>
+	    	</div>
 	    </div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 		
