@@ -1,4 +1,10 @@
+<?php
 
+session_start();
+
+
+
+?>
         <!--styling-->
         <link rel="stylesheet" href="../css/bootstrap.css" type="text/css" />
         <link rel="stylesheet" href="../css/style.css" type="text/css" />
@@ -28,11 +34,7 @@
             </div>
         </div>
 
-<!DOCTYPE html>
 
-<html>
-<head>
-	<title> hello </title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 	<script>
 	
@@ -102,7 +104,3 @@ $(document).ready(function(e){
 <h1>Loading .... </h1><img src="loading.gif"/>
 </div>
 
-</body>
-
-
-</html>
