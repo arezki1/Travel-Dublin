@@ -5,6 +5,7 @@
     $password = "dZ2*wT7%"; 
     $host = "sql2.freemysqlhosting.net"; 
     $dbname = "sql2107364"; 
+    
 
 
     

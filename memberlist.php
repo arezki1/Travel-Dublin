@@ -45,7 +45,6 @@
             $rows = $stmt->fetchAll(); 
         ?> 
         <!--styling-->
-<<<<<<< HEAD
         <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
         <link rel="stylesheet" href="css/style.css" type="text/css" />
         <script type="text/javascript" src="js/bootstrap.js"></script>
@@ -74,44 +73,6 @@
             </div>
         </div>
         <div class="row">
-=======
-        <head>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.js"></script>
-	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
-    <link rel="stylesheet" href="css/style.css" type="text/css" />
-    <!--nav start-->
-    <!--weather script start-->
-    <script src="//www.powr.io/powr.js" external-type="html"></script>
-    <!--weather script end-->
-	</head>
-    <body>
-	<div class="navbar-static-top navbar-inverse">
-		<div class = "container">
-			<div class = "navbar-brand headerSocH">
-			    <!--add name of user in session to navbar brand-->
-				<a href="#">Welcome <?php echo htmlentities($_SESSION['user']['username'], ENT_QUOTES, 'UTF-8'); ?>, 
-				</a>
-			</div>
-			<button class = "navbar-toggle" data-toggle = "collapse" data-target=".navHeaderCollapse" style ="color:white; border-color:white; margin-right:0px">
-				Menu
-			</button>
-			<div class = "collapse navbar-collapse navHeaderCollapse">
-				<ul class = "nav navbar-nav navbar-right">
-					<li class = "listItem"><a href="logged.php">Home</a></li>
-					<li class = "listItem"><a href="chat.php">Chat</a></li>
-					<li class = "listItem"><a href="#">Forum</a></li>
-					<li class = "listItem"><a href="memberlist.php">Memberlist</a></li>
-					<li class = "listItem"><a href="discover.php">Discover</a></li>
-					<li class = "listItem"><a href="logout.php">Logout</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-    	<!--nav end-->
-    	<body>
-    	     <div class="row">
->>>>>>> 080ca6c645f14350f720071f785efb6c223c95c5
             <div class="col-md-4">
                 <img class = "img-responsive" src="img/members.jpg" max-width ="200">
             </div>

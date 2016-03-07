@@ -57,7 +57,7 @@
            }
  
  }
- xmlhttp.open('GET','insert.php?'+'&uname='+uname+ '<b> Says </b> ' +'&msg='+msg, true);
+ xmlhttp.open('GET','insert.php?'+'&uname='+uname+ '<b> Says </b> '+'&msg='+msg, true);
  xmlhttp.send();
  
  
