@@ -55,7 +55,9 @@
 			<!--top row for our maps and plugin-->
 			<div class="row">
 					<div class="col-md-5">
+						
 						<div class="powr-weather" id="41ef4f59_1455969059976">
+						
 					</div>
 					</div>
 					<div class ="col-md-2"></div>
