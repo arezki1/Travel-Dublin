@@ -34,7 +34,11 @@ session_start();
             </div>
         </div>
 
+<!DOCTYPE html>
 
+<html>
+<head>
+	<title> hello </title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 	<script>
 	
@@ -74,11 +78,12 @@ $(document).ready(function(e){
 </head>
 
 <body>
- 
+    
+   
 <form name = "form1">
 
 
-                    <p>Enter Your Chatname:</p>
+                    <p>Choose a Chatname:</p>
                     
                     
                     <input type="text" name="uname" style="width:200px;" /><br/>
@@ -104,3 +109,7 @@ $(document).ready(function(e){
 <h1>Loading .... </h1><img src="loading.gif"/>
 </div>
 
+</body>
+
+
+</html>
