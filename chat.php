@@ -25,7 +25,7 @@
                     id, 
                     username, 
                     email 
-                FROM users 
+                FROM user 
             "; 
              
             try 
@@ -86,7 +86,7 @@
             </div>
             <div class="col-md-4">
                 <h1>Chat</h1>
-                <h2>Users Logged in: </h2>
+                <h2>user Logged in: </h2>
                 <table>
                     <tr>
                         <th>ID</th>

@@ -56,7 +56,7 @@ $this->conn = null;
 
 $dbConn = new DBConn();
 
-$result = $dbConn->select('SELECT * FROM users WHERE id = :id AND name = :name;',
+$result = $dbConn->select('SELECT * FROM user WHERE id = :id AND name = :name;',
 [
 [
 'placeholder' => ':id',

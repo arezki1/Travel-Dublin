@@ -25,7 +25,7 @@
                     id, 
                     username, 
                     email 
-                FROM users 
+                FROM user 
             "; 
              
             try 

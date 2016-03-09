@@ -39,7 +39,7 @@
         $query = " 
             SELECT 
                 1 
-            FROM users 
+            FROM user 
             WHERE 
                 username = :username 
         "; 
@@ -84,7 +84,7 @@
         $query = " 
             SELECT 
                 1 
-            FROM users 
+            FROM user 
             WHERE 
                 email = :email 
         "; 
@@ -114,7 +114,7 @@
         // Again, we are using special tokens (technically called parameters) to 
         // protect against SQL injection attacks. 
         $query = " 
-            INSERT INTO users ( 
+            INSERT INTO user ( 
                 username, 
                 password, 
                 salt, 
