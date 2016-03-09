@@ -70,7 +70,7 @@
 				<ul class = "nav navbar-nav navbar-right">
 					<li class = "listItem"><a href="logged.php">Home</a></li>
 					<li class = "listItem"><a href="chat.php">Chat</a></li>
-					<li class = "listItem"><a href="#">Forum</a></li>
+					<li class = "listItem"><a href="forum.php">Forum</a></li>
 					<li class = "listItem"><a href="memberlist.php">Memberlist</a></li>
 					<li class = "listItem"><a href="discover.php">Discover</a></li>
 					<li class = "listItem"><a href="logout.php">Logout</a></li>
