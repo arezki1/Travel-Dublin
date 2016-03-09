@@ -18,6 +18,9 @@
 	
 	       
 	        <head>
+	        	
+	        	<!---->
+	        	
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 		<script type="text/javascript" src="js/bootstrap.js"></script>
 		<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
@@ -60,11 +63,23 @@
 						
 					</div>
 					</div>
-					<div class ="col-md-2"></div>
-					<div class="col-md-5">
-						</br>
-						<img src="img/maps_hotel.PNG" alt="map of NCI" id = "placeholderMap" class = "img-responsive"></img>
+					<div class ="col-md-7">
+						 <div id="map"></div>
+						 <!--https://developers.google.com/maps/tutorials/fundamentals/adding-a-google-map#the_finished_code-->
+						 <!--this script should connect to google maps and pull data to the div id maps-->
+						    <script>
+						      function initMap() {
+						        var mapDiv = document.getElementById('map');
+						        var map = new /*global google*/google.maps.Map(mapDiv, {
+						          center: {lat: 44.540, lng: -78.546},
+						          zoom: 2
+						        });
+						      }
+						    </script>
+						    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+						        async defer></script>
 					</div>
+					
 					
 				</div>
 			<div class="row">
