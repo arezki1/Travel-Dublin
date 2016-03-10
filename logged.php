@@ -65,9 +65,12 @@
 	        </div>
 	        
 	        
+
+	        
+	        
 	        <div class = "col-md-4">
 	            <h1 style=" text-shadow: 2px 2px #FF0000;font-weight: bold;">Welcome to the Social Hotel Experience</h1>
-	            <p style="font-style: oblique,bold;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu malesuada sem.
+	            <p style="font:italic small-caps bold 18px/24px Garamond, Georgia, Times, Serif;text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu malesuada sem.
 	            Integer ultrices enim eget ex commodo, eget dictum nibh imperdiet. 
 	            Pellentesque lacus lorem, consectetur at laoreet cursus, semper eu enim. 
 	            Cras posuere tempus libero, vel euismod tellus convallis nec. Aenean sem dui, interdum at lacinia non, sodales et orci. 

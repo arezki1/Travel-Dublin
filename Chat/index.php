@@ -77,7 +77,7 @@ $(document).ready(function(e){
 <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 
-<body style="background-color:#ffcccc">
+<body style="background-color:#ebebe0">
     
     
     <div id="form-chat">
