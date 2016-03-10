@@ -6,12 +6,14 @@ color:red;
 font-weight:bold;
 font-size:15px;
 font-family:Verdana, Geneva, sanas-serif;
+
 }
 
 .msg{
  color:#390;
  font-size:15px;
  font-family:Georgia, "Times New Roman", Times,serif;
+ 
 }
 .button{
  text-align:center;
@@ -23,4 +25,16 @@ font-family:Verdana, Geneva, sanas-serif;
  padding-left:10px;
  padding-right:10px;
  text-decoration:none;
+}
+
+#form-chat{
+ 
+ 
+margin: auto;
+    width: 40%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+    margin-top: 20px;
+ 
+ 
 }

@@ -77,37 +77,42 @@ $(document).ready(function(e){
 <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 
-<body>
+<body style="background-color:#ffcccc">
     
-   
-<form name = "form1">
-
-
-                    <p>Choose a Chatname:</p>
+    
+    <div id="form-chat">
+                       
+                    <form name = "form1">
                     
                     
-                    <input type="text" name="uname" style="width:200px;" /><br/>
+                                        <p><b>Choose a Chatname:</b></p>
+                                        
+                                        
+                                        <input type="text" name="uname" style="width:200px;" /><br/><br/>
+                                        
+                                        
+                                        <p> <b>Your Message:</b></p> 
+                                        
+                                        
+                                        <textarea name= "msg" styles = "width:200px; height: 70px"></textarea><br/>
+                    
+                    </form>
+                               
+                              
+                    <br/>
                     
                     
-                    <p>Your Message:</p> 
+                    <button onclick= "submitChat()"class= "button">Send</button><br/><br/>
                     
+                    <div id="imageload" style="display:none;"> 
+                    <img src="loading.gif"/>
+                    </div>
                     
-                    <textarea name= "msg" styles = "width:200px; height: 70px"></textarea><br/>
+                    <div id="chatlogs"> 
+                    <h1>Loading .... </h1><img src="loading.gif"/>
+                    </div>
 
-</form>
-
-<br/>
-
-
-<button onclick= "submitChat()"class= "button">Send</button><br/><br/>
-
-<div id="imageload" style="display:none;"> 
-<img src="loading.gif"/>
-</div>
-
-<div id="chatlogs"> 
-<h1>Loading .... </h1><img src="loading.gif"/>
-</div>
+   </div>
 
 </body>
 

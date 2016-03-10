@@ -34,7 +34,7 @@
 		<div class = "container">
 			<div class = "navbar-brand headerSocH">
 			    <!--add name of user in session to navbar brand-->
-				<a href="#">Welcome <?php echo htmlentities($_SESSION['user']['username'], ENT_QUOTES, 'UTF-8'); ?>, 
+				<a href="#"><b>Welcome <?php echo htmlentities($_SESSION['user']['username'], ENT_QUOTES, 'UTF-8'); ?> : </b>
 				</a>
 			</div>
 			<button class = "navbar-toggle" data-toggle = "collapse" data-target=".navHeaderCollapse" style ="color:white; border-color:white; margin-right:0px">
@@ -58,12 +58,16 @@
 	<br/>
 	<!--manin page area for home-->
 		<div class = "row">
+			
+			
 	    	 <div class = "col-md-4">
 	         <img src="img/niceHotel.jpg" class="img-responsive" id="placeHolder"></img>
 	        </div>
+	        
+	        
 	        <div class = "col-md-4">
-	            <h1>Welcome to the Social Hotel Experience</h1>
-	            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu malesuada sem.
+	            <h1 style=" text-shadow: 2px 2px #FF0000;font-weight: bold;">Welcome to the Social Hotel Experience</h1>
+	            <p style="font-style: oblique,bold;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu malesuada sem.
 	            Integer ultrices enim eget ex commodo, eget dictum nibh imperdiet. 
 	            Pellentesque lacus lorem, consectetur at laoreet cursus, semper eu enim. 
 	            Cras posuere tempus libero, vel euismod tellus convallis nec. Aenean sem dui, interdum at lacinia non, sodales et orci. 
@@ -75,16 +79,18 @@
 	            Ut aliquet, mi non posuere vestibulum, justo enim aliquet diam, ac bibendum quam magna vitae urna. 
 	            Morbi molestie metus facilisis purus eleifend tincidunt</p>
 	        </div>
-	        <div class = "col-md-4">
-	        	
-           		</div>
-	        </div>
+	       
+	        
         
-	    </div>
-	    <div class = "row">
+	    
+	    
+	    
+
 	    	<div class  = "col-md-4">
-	    		<img src="img/niceHotel.jpg" class="img-responsive" id="placeHolder"></img>
+	    		<img src="img/hotel-room.jpg" class="img-responsive" id="placeHolder"></img>
 	    	</div>
+	    
+	    
 	    </div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 		
