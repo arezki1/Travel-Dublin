@@ -21,7 +21,7 @@
                 password, 
                 salt, 
                 email 
-            FROM users 
+            FROM user
             WHERE 
                 username = :username 
         "; 
