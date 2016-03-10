@@ -18,9 +18,6 @@
 	
 	       
 	        <head>
-	        	
-	        	<!---->
-	        	
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 		<script type="text/javascript" src="js/bootstrap.js"></script>
 		<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
@@ -57,27 +54,128 @@
 		<div class="container">
 			<!--top row for our maps and plugin-->
 			<div class="row">
+			
+						
+						<!--<div class="powr-weather" id="41ef4f59_1455969059976">
+						-->
+						<?php
+                         if(isset($_POST['zipcode']) && is_numeric($_POST['zipcode'])){
+                               $zipcode = $_POST['zipcode'];
+                            }else{
+                             $zipcode = 'EIXX0014';
+                            }
+                          $result = file_get_contents('http://weather.yahooapis.com/forecastrss?p=' . $zipcode . '&u=c');
+                          $xml = simplexml_load_string($result);
+                          //echo htmlspecialchars($result, ENT_QUOTES, 'UTF-8');
+                          $xml->registerXPathNamespace('yweather', 'http://xml.weather.yahoo.com/ns/rss/1.0');
+                          $location = $xml->channel->xpath('yweather:location');
+                            if(!empty($location)){
+                              foreach($xml->channel->item as $item){
+                             $current = $item->xpath('yweather:condition');
+                             $forecast = $item->xpath('yweather:forecast');
+                             $current = $current[0];
+                             $output = <<<END
 					<div class="col-md-5">
-						<div class="powr-weather" id="41ef4f59_1455969059976">
-					</div>
-					</div>
-					<div class ="col-md-7">
-						 <div id="map"></div>
-						 <!--https://developers.google.com/maps/tutorials/fundamentals/adding-a-google-map#the_finished_code-->
-						 <!--this script should connect to google maps and pull data to the div id maps-->
-						    <script>
-						      function initMap() {
-						        var mapDiv = document.getElementById('map');
-						        var map = new /*global google*/google.maps.Map(mapDiv, {
-						          center: {lat: 44.540, lng: -78.546},
-						          zoom: 2
-						        });
-						      }
-						    </script>
-						    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
-						        async defer></script>
-					</div>
+            
+            <h1 style="margin-bottom: 0">Weather for {$location[0]['city']}, {$location[0]['region']}</h1>
+            <small>{$current['date']}</small>
+            <h2>Current Conditions</h2>
+            <span style="font-size:72px; font-weight:bold;">{$current['temp']}&deg;C</span>
+            <br/>
+            <img src="http://l.yimg.com/a/i/us/we/52/{$current['code']}.gif" style="vertical-align: middle;"/>&nbsp;
+            {$current['text']}
+            </p>
+            <h2>Forecast</h2>
+            
+            <form action='' method='post'>
+            {$forecast[0]['day']} - {$forecast[0]['text']}. High: {$forecast[0]['high']} Low: {$forecast[0]['low']}
+            <input type='submit' name='check_weather1' value='Check Suggestions...' /> 
+            </form>
+            
+            <br/>
+            
+            <form action='' method='post'>
+            {$forecast[1]['day']} - {$forecast[1]['text']}. High: {$forecast[1]['high']} Low: {$forecast[1]['low']}
+            <input type='submit' name='check_weather2' value='Check Suggestions...' /> 
+            </form>
+            
+            <br/>
+            
+            <form action='' method='post'>
+            {$forecast[2]['day']} - {$forecast[2]['text']}. High: {$forecast[2]['high']} Low: {$forecast[2]['low']}
+            <input type='submit' name='check_weather3' value='Check Suggestions...' /> 
+            </form>
+            
+            <br/>
+            
+            <form action='' method='post'> 
+            {$forecast[3]['day']} - {$forecast[3]['text']}. High: {$forecast[3]['high']} Low: {$forecast[3]['low']}
+            <input type='submit' name='check_weather4' value='Check Suggestions...' /> 
+            </form>
+            
+            <br/>
+            
+            <form action='' method='post'>
+            {$forecast[4]['day']} - {$forecast[4]['text']}. High: {$forecast[4]['high']} Low: {$forecast[4]['low']}
+            <input type='submit' name='check_weather5' value='Check Suggestions...' /> 
+            </form>
+            
+            </div>
+            
+END;
+        }
+         }else{
+            $output = '<h1>No results found, please try a different zip code.</h1>';
+          }
+
+         ?>
+
+
+<!--<form method="POST" action="">
+<label>Zip Code:</label> <input type="text" name="zipcode" size="8" value="" /><br /><input type="submit" name="submit" value="Lookup Weather" />
+</form>-->
+<?php echo $output; ?>
+
+<?phpif(isset($_POST['check_weather'])) 
+{ 
+    echo "hey"; 
+} 
+?>
+						
 					
+					<div class="col-md-5">
+						</br>
+						<img src="img/maps_hotel.PNG" alt="map of NCI" id = "placeholderMap" class = "img-responsive"></img>
+					</div>
+					<div class ="col-md-2"></div>
+					<h2>
+						<?php
+         if(isset($_POST['check_weather1'])) 
+          { 
+             echo "Some recomendations based on the weather"; 
+           } 
+           else if(isset($_POST['check_weather2']))
+           {
+           	echo "This is a great day for cycling!";
+           }
+           else if(isset($_POST['check_weather3']))
+           {
+           	echo "Have you seen the Dublin Zoo yet? This would be the perfect day for it!";
+           }
+           else if(isset($_POST['check_weather3']))
+           {
+           	echo "Typical Irish weather... why not try the museum?";
+           }
+           else if(isset($_POST['check_weather4']))
+           {
+           	echo "Another rainy day. The perfect excuse to check out some of our pubs.";
+           }
+           else if(isset($_POST['check_weather5']))
+           {
+           	echo "Almost sunny day, great for going out in the park!";
+           }
+?>
+					</h2>
 					
 				</div>
 			<div class="row">
@@ -85,11 +183,15 @@
 					<div class="col-md-4 table-bordered">
 						</br>
 					<table>
-						<tr></tr>
+						<tr>
+							
+							
+							
+						</tr>
 						<tr>
 							<td>
 								<th>
-									In here, we will put our list of activities being generated by our cool scripts
+                            In here, we will put our list of activities being generated by our cool scripts
 								</th>	
 							</td>
 							<td><ul>
@@ -106,6 +208,7 @@
 					</div>
 				</div>
 				<div class="col-md-4">
+				
 				
 				</div>
 				<div class="col-md-4">
