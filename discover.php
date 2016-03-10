@@ -144,7 +144,7 @@ END;
 						
 					
 				
-					<h2>
+					<h2 style="text-align: justify">
 						<?php
          if(isset($_POST['check_weather1'])) 
           { 
