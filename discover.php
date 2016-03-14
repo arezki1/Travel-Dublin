@@ -148,12 +148,41 @@ END;
 						<?php
          if(isset($_POST['check_weather1'])) 
           { 
-             echo "Some recomendations based on the weather"; 
-           } 
+                     $zipcode = $_POST['zipcode'];
+                          $zipcode = 'EIXX0014';
+                          $result = file_get_contents('http://weather.yahooapis.com/forecastrss?p=' . $zipcode . '&u=c');
+                          $xml = simplexml_load_string($result);
+                          $xml->registerXPathNamespace('yweather', 'http://xml.weather.yahoo.com/ns/rss/1.0');
+                          $location = $xml->channel->xpath('yweather:location');
+                        if(!empty($location)){
+                        foreach($xml->channel->item as $item){
+                             $current = $item->xpath('yweather:condition');
+                             $forecast = $item->xpath('yweather:forecast');
+                              $current = $current[0];
+                              $day1 = $forecast[0][text];
+                              if ($day1=='Partly Sunny'){
+                               print 'Yes';
+                              }
+                              else if($day1 =='Mostly Cloudy'||'Partly Cloudy'){
+                               print 'No';
+                              }
+  
+/*                 if ((string) ($forecast[0][text]) == ('Partly Cloud') || ('Mostly Cloudy') || ('Cloudy') || ('Scattered Showers')) {
+                     print 'Some improved recomendations based on the weather';
+  }
+                 else if ((string) ($forecast[0][text]) == 'Sunny'){
+                     print $forecast;
+  }*/
+                        }
+
+                        }
+                              
+                        }
+                        
            else if(isset($_POST['check_weather2']))
            {
-           	echo "This is a great day for cycling!";
-           }
+
+            print 'This is a great day for cycling!';}
            else if(isset($_POST['check_weather3']))
            {
            	echo "Have you seen the Dublin Zoo yet? This would be the perfect day for it!";
