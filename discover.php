@@ -86,6 +86,7 @@
             {$current['text']}
             </p>
             <h2>Forecast</h2>
+            <br/>
             
             <form action='' method='post'>
             {$forecast[0]['day']} - {$forecast[0]['text']}. High: {$forecast[0]['high']} Low: {$forecast[0]['low']}
@@ -146,8 +147,6 @@ END;
 				
 					<h2 style="text-align: justify">
 						<?php
-         if(isset($_POST['check_weather1'])) 
-          { 
                      $zipcode = $_POST['zipcode'];
                           $zipcode = 'EIXX0014';
                           $result = file_get_contents('http://weather.yahooapis.com/forecastrss?p=' . $zipcode . '&u=c');
@@ -159,13 +158,32 @@ END;
                              $current = $item->xpath('yweather:condition');
                              $forecast = $item->xpath('yweather:forecast');
                               $current = $current[0];
-                              $day1 = $forecast[0][text];
-                              if ($day1=='Partly Sunny'){
-                               print 'Yes';
+                              $day1 = $forecast[0][code];
+                              $day2 = $forecast[1][code];
+                              $day3 = $forecast[2][code];
+                              $day4 = $forecast[3][code];
+                              $day5 = $forecast[4][code];
+         if(isset($_POST['check_weather1'])) 
+          { 
+            switch ($day1){
+             case ($day1 >= 26 && $day1 <=30):
+            print 'Some improved recomendations based on the rainy weather...';
+            break;
+             case ($day1 >=31 && $day1 <=34):
+              print 'Hopefully some sunshine...';
+              break;
+            default:
+             print 'No suggestions found!';
+             break;
+            }
+          }
+            
+/*                              if (($day1 >25)&&($day1 <31)){
+                               print 'Some improved recomendations based on the weather...';
                               }
-                              else if($day1 =='Mostly Cloudy'||'Partly Cloudy'){
-                               print 'No';
-                              }
+                              else if(($day1 >=31)&&($day1 <=34)){
+                               print 'Weather is looking good...';
+                              }*/
   
 /*                 if ((string) ($forecast[0][text]) == ('Partly Cloud') || ('Mostly Cloudy') || ('Cloudy') || ('Scattered Showers')) {
                      print 'Some improved recomendations based on the weather';
@@ -173,32 +191,68 @@ END;
                  else if ((string) ($forecast[0][text]) == 'Sunny'){
                      print $forecast;
   }*/
-                        }
-
-                        }
-                              
-                        }
                         
            else if(isset($_POST['check_weather2']))
            {
-
-            print 'This is a great day for cycling!';}
+            switch ($day2){
+             case ($day2 >= 26 && $day2 <=30):
+            print 'This is a great rainy day for cycling!';
+            break;
+             case ($day2 >=31 && $day2 <=34):
+              print 'Hopefully some sunshine...';
+              break;
+            default:
+             print 'No suggestions found!';
+             break;
+            }
+           }
+           
            else if(isset($_POST['check_weather3']))
            {
-           	echo "Have you seen the Dublin Zoo yet? This would be the perfect day for it!";
+             switch ($day3){
+             case ($day3 >= 26 && $day3 <=30):
+            print 'Have you seen the Dublin Zoo yet? This rainy day would be the perfect day for it!';
+            break;
+             case ($day3 >=31 && $day3 <=34):
+              print 'Rain, rain, go away... Ooh, some sunshine!';
+              break;
+            default:
+             print 'No suggestions found!';
+             break;
+             }
            }
-           else if(isset($_POST['check_weather3']))
-           {
-           	echo "Typical Irish weather... why not try the museum?";
-           }
+           
            else if(isset($_POST['check_weather4']))
            {
-           	echo "Another rainy day. The perfect excuse to check out some of our pubs.";
+             switch ($day4){
+             case ($day4 >= 26 && $day4 <=30):
+            print 'Typical Irish weather... why not try the museum?';
+            break;
+             case ($day4 >=31 && $day4 <=34):
+              print 'I got sunshine...';
+              break;
+            default:
+             print 'No suggestions found!';
+             break;
+             }
            }
+           
            else if(isset($_POST['check_weather5']))
            {
-           	echo "Almost sunny day, great for going out in the park!";
+           switch ($day5){
+             case ($day5 >= 26 && $day5 <=30):
+            print 'Another rainy day. The perfect excuse to check out some of our pubs.';
+            break;
+             case ($day5 >=31 && $day5 <=34):
+              print 'Almost sunny day, great for going out in the park!';
+              break;
+            default:
+             print 'No suggestions found!';
+             break;
+             }
            }
+                        }
+                        }
 ?>
 					</h2>
 					
