@@ -2,7 +2,7 @@
 include("db.php");
 
 
-$sql="Select * from comment order by com_id desc LIMIT 10";
+$sql="Select * from comments order by com_id desc LIMIT 10";
 $command=mysql_query($sql);
 while($data=mysql_fetch_row($command))
 {
@@ -25,28 +25,28 @@ echo "<div><span><b>$name</b></span> ";
 echo "<span style='float:right;'><small>";
 if($rating=="l")
 {
-echo "&nbsp; <img src='icons/heart-icon.png'> Loved it";
+echo "&nbsp; <img src='comment/icons/heart-icon.png'> Loved it";
 }
 else if($rating=="i")
 {
-echo "&nbsp; <img src='icons/thumb-up-icon.png'> Interesting";
+echo "&nbsp; <img src='comment/icons/thumb-up-icon.png'> Interesting";
 }
 else if($rating=="t")
 {
-echo "&nbsp; <img src='icons/fire-icon.png'> Hot";
+echo "&nbsp; <img src='comment/icons/fire-icon.png'> Hot";
 }
 else if($rating=="u")
 {
-echo "&nbsp; <img src='icons/flag-icon.png'> Useful";
+echo "&nbsp; <img src='comment/icons/flag-icon.png'> Useful";
 }
 
 else if($rating=="b")
 {
-echo "&nbsp; <img src='icons/thumb-down-icon.png'> Boring";
+echo "&nbsp; <img src='comment/icons/thumb-down-icon.png'> Boring";
 }
 else if($rating=="h")
 {
-echo "&nbsp; <img src='icons/hate-icon.png'> Hate it";
+echo "&nbsp; <img src='comment/icons/hate-icon.png'> Hate it";
 }
 echo "</small></span></div>";
 

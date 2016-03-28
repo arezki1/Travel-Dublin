@@ -65,43 +65,52 @@ if(empty($_SESSION['user']))
 	    </style>
 	    
 	    
+	       
+	       <link rel="stylesheet" href="comment/wtfdiary.css">
+
+<script type="text/javascript" src="comment/jquery.min.js"></script>
+
+
+<script type="text/javascript" >
+$(function() {
+$("#comment_submit").click(function() 
+{
+var name = $("#name").val();
+var email = $("#email").val();
+var rating = $("#rating").val();
+var comment = $("#comment").val();
+
+var dataString = 'name='+ name + '&email='+ email + '&comment='+ comment + '&rating=' +rating;
+if(name=='' || email=='' || comment=='' || rating=='')
+{
+alert('Please fill all textboxes');
+}
+else
+{
+
+$.ajax({
+type: "POST",
+url: "comment/save_form.php",
+data: dataString,
+cache: false,
+success: function(html){
+$("#name").val('');
+$("#email").val('');
+$("#rating").val('');
+$("#comment").val('');
+$("#success_msg").prepend(html);
+}
+});
+}return false;
+}); 
+});
+</script>
+
+	       
+	       
 	                                  
 	    
-                                              <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-                                              	<script>
-                                              	
-                                                               function submitChat(){
-                                                                if(form1.uname.value == '' || form1.msg.value == '' ){
-                                                                 alert('ALL FIELDS ARE MANDATORY!!!!');
-                                                                 return;
-                                                                }
-                                                                
-                                                                form1.uname.readOnly = true;
-                                                                form1.uname.style.border = 'none';
-                                                                $("imageload").show();
-                                                                var uname = form1.uname.value;
-                                                                var msg = form1.msg.value;
-                                                                var xmlhttp = new XMLHttpRequest();
-                                               
-                                               xmlhttp.onreadystatechange = function(){
-                                               if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
-                                                document.getElementById("chatlogs").innerHTML = xmlhttp.responseText;
-                                               
-                                                 $("imageload").hide();
-                                                         }
-                                               
-                                               }
-                                               xmlhttp.open('GET','Chat/insert.php?'+'&uname='+uname+'&msg='+msg, true);
-                                               xmlhttp.send();
-                                               
-                                               
-                                              }
-                                              $(document).ready(function(e){
-                                               $.ajaxSetup({cache:false});
-                                               setInterval(function(){$('#chatlogs').load('Chat/logs.php');}, 1000);
-                                              });
-                                              </script>
-
+                                            
   </head>
   
   
@@ -144,44 +153,65 @@ if(empty($_SESSION['user']))
 		<p>Opening Time : All day</p>
 		<p>Phone : xxxxxxxxx </p>
 		<p>Website : www.templebar.ie
-		<h3>Please leave your comment here! Merci</h3>
 		
 		
 		
-		 <div id="form-chat">
-                       
-                    <form name = "form1">
-                    
-                    
-                                        <p><b>Choose a Chatname:</b></p>
-                                        
-                                        
-                                        <input type="text" name="uname" style="width:200px;" /><br/><br/>
-                                        
-                                        
-                                        <p> <b>Your Message:</b></p> 
-                                        
-                                        
-                                        <textarea name= "msg" styles = "width:200px; height: 70px"></textarea><br/>
-                    
-                    </form>
-                               
-                              
-                    <br/>
-                    
-                    
-                    <button onclick= "submitChat()"class= "button">Send</button><br/><br/>
-                    
-                    <div id="imageload" style="display:none;"> 
-                    <img src="loading.gif"/>
-                    </div>
-                    
-                    <div id="chatlogs" style="border:solid grey"> 
-                  
-                    <h1>Loading .... </h1><img src="loading.gif"/>
-                    </div>
+		
+	
+		
+		
+		
+		
+                                                                		<div id="container">
+                                                                <h1 style='color:#6C267A ;font-weight:bold;	'>Please leave your comment below ! </h1>
+                                                                <form action="#" method="POST">
+                                                                <table>
+                                                                <tr><td colspan="2">
+                                                                <h2>Name :</h2>
+                                                                <div><input type="text" name="name" placeholder="Enter your Name..." class="textbox" id="name"/></div>
+                                                                </td></tr>
+                                                                <tr><td style="width:220px;">
+                                                                <h2>Email :</h2>
+                                                                <div><input type="text" name="email" placeholder="Enter your Email Address..." class="textbox" id="email"/></div>
+                                                                </td>
+                                                                <td>
+                                                                <h2>Rate our Post :</h2>
+                                                                <div><select id="rating">
+                                                                <option value="l">Love it</option>
+                                                                <option value="i">Interesting</option>
+                                                                <option value="t">Hot</option>
+                                                                <option value="u">Useful</option>
+                                                                <option value="a">Average</option>
+                                                                <option value="b">Boring</option>
+                                                                <option value="h">Hate it</option>
+                                                                </select>
+                                                                </div>
+                                                                </td></tr>
+                                                                <tr><td colspan="2">
+                                                                <h2>Comment :</h2>
+                                                                <div><textarea name="name" placeholder="Write your comment..." id="comment"></textarea></div>
+                                                                </td></tr>
+                                                                </table>
+                                                                <div><input type="submit" class="btn" value="Comment" id="comment_submit"></div>
+                                                                
+                                                                </form>
+                                                                <div id="success_msg">
+                                                                <?php include('comment/load_comments.php');?>
+                                                                </div>
+                                                                </div>
+                                                                		
+                                                                		
+                                                                		
+                                                                		
+                                                                		
+                                                                		
+                                                                		
+                                                                		
+                                                                		
+                                                                		
+		
+		
 
-   </div>
 
                     
 		 
