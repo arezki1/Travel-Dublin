@@ -135,131 +135,208 @@ if(empty($_SESSION['user']))
 
     <div class="starter-template">
       <h1>TOP 10 PLACES IN DUBLIN</h1>
-    <h2>1.Temple Bar</h2>
+      
+      
        <div class="container"> 
-  		 <img src="img/templebar.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
-    <div class="container">
-		<h3>Street in Dublin, Republic of Ireland</h3>
-    <p>Temple Bar is an area on the south bank of the River Liffey in central Dublin, Ireland.</p>
-	<p>The area is bounded by the Liffey to the north, Dame Street to the south,</p>
-	<p>Westmoreland Street to the east and Fishamble Street to the west.</p>
+                           
+     <div class = "row">
+         
+     <div class = "col-md-6" >
+      
+    <h2>1.Temple Bar</h2>
+                          
+                      		 <img src="img/templebar.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
+                        
+                    		<h3>Street in Dublin, Republic of Ireland</h3>
+                        <p>Temple Bar is an area on the south bank of the River</br>
+                        Liffey in central Dublin, Ireland.</br>
+                    	The area is bounded by the Liffey to the north,</br>
+                    	Dame Street	to the south, Westmoreland Street to 
+                    	</br>the east and Fishamble Street to the west.</p>
+                    
 
-			<p><a href="11.php">Click for more infomation</a></p>
-	  </div>
-	 </div>
+                    			<a href="11.php">
+                    			<button type="button" class="btn btn-warning">More Info</button></a>
+                    	  </div>
+                    	  <div class = "col-md-6" >
+                    	 
+                    	 
+                         <h2>2.Dublin Castle</h2>
+                            
+                       		 <img src="img/DublinCastle.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
+                         
+                    		 <h3>Building complex in Dublin, Republic of Ireland</h3>
+                         <p>Dublin Castle off Dame Street, Dublin, Ireland,</br>
+                    	 was until 1922 the seat of the United Kingdom
+                    	 </br>government's administration in Ireland,</br>
+                    	 and is now a major Irish government complex.</p>
+                    
+                    			<a href="2.php">
+                    			<button type="button" class="btn btn-warning">More Info</button></a>
+                     	  </div>
+                     	  </div>
+                     	  </div>
+ 	 
 	 
-     <h2>2.Dublin Castle</h2>
-        <div class="container"> 
-   		 <img src="img/DublinCastle.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
-     <div class="container">
-		 <h3>Building complex in Dublin, Republic of Ireland</h3>
-     <p>Dublin Castle off Dame Street, Dublin, Ireland,</p>
-	 <p>was until 1922 the seat of the United Kingdom government's administration in Ireland,</p>
-	 <p>and is now a major Irish government complex.</p>
-
-			<a href="2.php">
-			<button type="button" class="btn btn-warning">More Info</button></a>
- 	  </div>
- 	 </div>
+	   <div class="container"> 
+                           
+     <div class = "row">
+         
+     <div class = "col-md-6" >
 	 
      <h2>3.Phoenix Park</h2>
         <div class="container"> 
    		 <img src="img/PhoenPark.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
-     <div class="container">
+     
 		 <h3>Park</h3>
      <p>Phoenix Park is an urban park in Dublin, Ireland,</p>
 	 <p>lying 2–4 km west of the city centre, north of the River Liffey.
-	 <p>Its 11 km perimeter wall encloses 707 hectares, one of the largest walled city parks in Europe.</p>   
+	 </br>Its 11 km perimeter wall encloses 707 hectares, </br>
+	 one of the largest walled city parks in Europe.</p>   
 	
 			<a href="2.php">
 			<button type="button" class="btn btn-warning">More Info</button></a>
- 	  </div>
+ 	  
  	 </div>
+ 	 </div>
+ 	 
+ 	 <div class = "col-md-6" >
 	 
      <h2>4.Christ Church Cathedral</h2>
         <div class="container"> 
    		 <img src="img/christ-church.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
-     <div class="container">
+     
 		 <h3>Cathedral in the Republic of Ireland</h3>
-     <p>Christ Church Cathedral is the cathedral of the United Dioceses of Dublin</p>
-	 <p>and Glendalough and the cathedral of the Ecclesiastical province of the United Provinces of Dublin</p>
-	 <p>and Cashel in the Church of Ireland.</p>   
+     <p>Christ Church Cathedral is the cathedral of the</br>
+     United Dioceses of Dublin and Glendalough and the </br>
+     cathedral of the Ecclesiastical province of the United</br>
+     Provinces of Dublin and Cashel in the Church of Ireland.</p>   
 
 			<a href="2.php">
 			<button type="button" class="btn btn-warning">More Info</button></a>
  	  </div>
- 	 </div>
-	 
-     <h2>5.Guinness Storehouse</h2>
-        <div class="container"> 
-   		 <img src="img/guinness-storehouse.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
-     <div class="container">
-		 <h3>Brewery</h3>
-     <p>Brewery experience telling the tale of Ireland's famous beer,</p>
-	 <p>with tastings and a rooftop bar</p>   
-	<a href="2.php">
-	<button type="button" class="btn btn-warning">More Info</button></a>
  	  </div>
  	 </div>
-
-     <h2>6.National Museum of Ireland</h2>
-        <div class="container"> 
-   		 <img src="img/NationalMuseumofIreland.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
-     <div class="container">
-		 <h3>Museum in the Republic of Ireland</h3>
-     <p>The National Museum of Ireland is the national museum in Ireland.</p>
-	 <p>It has three branches in Dublin and one in County Mayo,</p>
-	 <p>with a strong emphasis on Irish art, culture and natural history.</p>
-	<a href="2.php">
-	<button type="button" class="btn btn-warning">More Info</button></a>
- 	  </div>
  	 </div>
 	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+                	   <div class="container"> 
+                           
+                       <div class = "row">
+         
+                     <div class = "col-md-6" >
+                     <h2>5.Guinness Storehouse</h2>
+                        <div class="container"> 
+                   		 <img src="img/guinness-storehouse.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
+                     
+                		 <h3>Brewery</h3>
+                     <p>Brewery experience telling the tale of Ireland's famous beer,</p>
+                	 <p>with tastings and a rooftop bar</p>   
+                	<a href="2.php">
+                	<button type="button" class="btn btn-warning">More Info</button></a>
+                 	  </div>
+                 	  </div>
+                 	 
+                 <div class = "col-md-6" >
+                     <h2>6.National Museum of Ireland</h2>
+                        <div class="container"> 
+                   		 <img src="img/NationalMuseumofIreland.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
+                     
+                		 <h3>Museum in the Republic of Ireland</h3>
+                     <p>The National Museum of Ireland is the national museum in Ireland.</p>
+                	 <p>It has three branches in Dublin and one in County Mayo,</p>
+                	 <p>with a strong emphasis on Irish art, culture and natural history.</p>
+                	<a href="2.php">
+                	<button type="button" class="btn btn-warning">More Info</button></a>
+                 	  </div>
+                 	 </div>
+ 	                 </div>
+ 	                 </div>
+ 	                 
+ 	                 
+ 	                 
+ 	                 
+	
+        
+                	   <div class="container"> 
+                           
+                       <div class = "row">
+         
+                     <div class = "col-md-6" >
       <h2>7.Old Jameson Distillery</h2>
          <div class="container"> 
     		 <img src="img/Old-Jameson.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
-      <div class="container">
+      
  		 <h3>Historical Landmark</h3>
-      <p>Expert guides tell the story of Jameson in a recreated distillery scene with tastings and dining.</p> 
+      <p>Expert guides tell the story of Jameson </br>
+      in a recreated distillery scene with tastings and dining.</p> 
  	<a href="2.php">
  	<button type="button" class="btn btn-warning">More Info</button></a>
   	  </div>
   	 </div>
 	 
+	 <div class="col-md-6">
        <h2>8.Howth</h2>
           <div class="container"> 
      		 <img src="img/howth.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
-       <div class="container">
+       
   		 <h3>Village in the Republic of Ireland</h3>
-       <p>Howth is a village and outer suburb of Dublin, Ireland.</p>
- 	  <p>The district occupies the greater part of the peninsula of Howth Head, forming the northern boundary of Dublin Bay.</p>   
+       <p>Howth is a village and outer suburb of Dublin, Ireland.<br/>
+ 	  <p>The district occupies the greater part of the peninsula <br/>
+ 	  <p>of Howth Head, forming the northern boundary of Dublin Bay.<br/>   
   	<a href="2.php">
   	<button type="button" class="btn btn-warning">More Info</button></a>
    	  </div>
    	 </div>
-	 
-       <h2>9.Malahide Castle</h2>
-          <div class="container"> 
-     		 <img src="img/malahide-castle.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
-       <div class="container">
-  		 <h3>Building in the Republic of Ireland</h3>
-       <p>Malahide Castle, parts of which date to the 12th century, lies, with over 260 acres of remaining estate parkland</p>
-	   <p>close to the village of Malahide, nine miles north of Dublin in Ireland.</p>   
-  	<a href="2.php">
-  	<button type="button" class="btn btn-warning">More Info</button></a>
-   	  </div>
+   	 </div>
    	 </div>
 	 
-      <h2>10.Powerscourt Waterfall</h2>
-         <div class="container"> 
-    		 <img src="img/waterfallll.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
-      <div class="container">
- 		 <h3>Waterfall</h3>
-      <p>Beautiful waterfall in Country Wicklow</p>  
- 	<a href="2.php">
- 	<button type="button" class="btn btn-warning">More Info</button></a>
-  	  </div>
-  	 </div>
+	 
+	 
+	 
+	 
+	 
+                                	   <div class="container"> 
+                                           
+                                       <div class = "row">
+                         
+                                     <div class = "col-md-6" >
+                	 
+                                   <h2>9.Malahide Castle</h2>
+                                      <div class="container"> 
+                                 		 <img src="img/malahide-castle.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
+                                   
+                              		 <h3>Building in the Republic of Ireland</h3>
+                                   <p>Malahide Castle, parts of which date to the</br>
+                                   12th century, lies, with over 260 acres of remaining</br>
+                                   estate parkland close to the village of Malahide,</br>
+                                   nine miles north of Dublin in Ireland.</p>   
+                              	<a href="2.php">
+                              	<button type="button" class="btn btn-warning">More Info</button></a>
+                               	  </div>
+                               	 </div>
+                            	 
+                            	 
+                            	 <div class="col-md-6">
+                                  <h2>10.Powerscourt Waterfall</h2>
+                                     <div class="container"> 
+                                		 <img src="img/waterfallll.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
+                                  
+                             		 <h3>Waterfall</h3>
+                                  <p>Beautiful waterfall in Country Wicklow</p>  
+                             	<a href="2.php">
+                             	<button type="button" class="btn btn-warning">More Info</button></a>
+                              	  </div>
+                              	  </div>
+                              	  </div>
+                              	  </div>
+  	 
 	 
 	 
 	          
