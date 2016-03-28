@@ -1,0 +1,1 @@
+http://tuts.wtfdiary.com/2012/12/modern-comment-system-in-php-using-ajax.html
