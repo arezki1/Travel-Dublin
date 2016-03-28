@@ -144,7 +144,7 @@ if(empty($_SESSION['user']))
 	<p>The area is bounded by the Liffey to the north, Dame Street to the south,</p>
 	<p>Westmoreland Street to the east and Fishamble Street to the west.</p>
 
-			<p><a href="1.php">Click for more infomation</a></p>
+			<p><a href="11.php">Click for more infomation</a></p>
 	  </div>
 	 </div>
 	 
