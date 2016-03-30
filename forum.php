@@ -166,7 +166,7 @@
 	 </br>Its 11 km perimeter wall encloses 707 hectares, </br>
 	 one of the largest walled city parks in Europe.</p>   
 	
-			<a href="2.php">
+			<a href="3.php">
 			<button type="button" class="btn btn-warning">More Info</button></a>
  	  
  	 </div>
@@ -184,7 +184,7 @@
      cathedral of the Ecclesiastical province of the United</br>
      Provinces of Dublin and Cashel in the Church of Ireland.</p>   
 
-			<a href="2.php">
+			<a href="4.php">
 			<button type="button" class="btn btn-warning">More Info</button></a>
  	  </div>
  	  </div>
@@ -210,7 +210,7 @@
                 		 <h3>Brewery</h3>
                      <p>Brewery experience telling the tale of Ireland's famous beer,</p>
                 	 <p>with tastings and a rooftop bar</p>   
-                	<a href="2.php">
+                	<a href="5.php">
                 	<button type="button" class="btn btn-warning">More Info</button></a>
                  	  </div>
                  	  </div>
@@ -224,7 +224,7 @@
                      <p>The National Museum of Ireland is the national museum in Ireland.</p>
                 	 <p>It has three branches in Dublin and one in County Mayo,</p>
                 	 <p>with a strong emphasis on Irish art, culture and natural history.</p>
-                	<a href="2.php">
+                	<a href="6.php">
                 	<button type="button" class="btn btn-warning">More Info</button></a>
                  	  </div>
                  	 </div>
