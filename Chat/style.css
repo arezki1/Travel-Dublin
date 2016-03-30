@@ -1,6 +1,11 @@
 @charset "utf-8";
 /* CSS Document */
 
+body{
+ 
+  background-image:url('bg1.jpg');
+}
+
 .uname{ 
 color:red;
 font-weight:bold;

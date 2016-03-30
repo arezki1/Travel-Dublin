@@ -38,7 +38,7 @@ session_start();
 
 <html>
 <head>
-	<title> hello </title>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 	<script>
 	
@@ -77,10 +77,47 @@ $(document).ready(function(e){
 <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 
-<body style="background-color:#ebebe0">
+<body>
+</br></br>
+    
+     <div class="container"> 
+                           
+     <div class = "row">
+         
+         <p style="text-align: center;font-weight:bold;color:#000044;font-size:20px">
+         Lorem Ipsum is simply dummy text of the printing and typesetting industry.</br>
+         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</br>
+         , when an unknown printer took a galley of type and scrambled it to make a type </br>
+         specimen book. It has survived not only five centuries, but also the leap into electronic</br>
+         </p>
+         
+    </div>
+    
+    </div>
     
     
-    <div id="form-chat">
+    
+    </br></br>
+    
+    
+    
+    
+     <div class="container"> 
+                           
+     <div class = "row">
+         
+                             <div class = "col-sm-4" >
+                        	 
+                           
+                                
+                           		 <img src="chat1.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
+                             
+                         	 
+                         	 </div>
+                         	 
+ 	 <div class = "col-sm-8" >
+ 	     
+ 	      <div id="form-chat">
                        
                     <form name = "form1">
                     
@@ -113,6 +150,11 @@ $(document).ready(function(e){
                     </div>
 
    </div>
+	 </div>
+	 </div>
+      </div>
+    
+   
    
 
 </body>
