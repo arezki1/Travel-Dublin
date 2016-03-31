@@ -151,7 +151,7 @@ $("#success_msg").prepend(html);
 		<p>Address : Temple Bar, Co. Dublin</p>
 		<p>Opening Time : All day</p>
 		<p>Phone : xxxxxxxxx </p>
-		<p>Website : www.templebar.ie
+		<p>Website : www.templebar.ie</p>
 		
 		
 		
@@ -208,29 +208,49 @@ $("#success_msg").prepend(html);
                                                                 		
                                                                 		
                                                                 		
-		
+		</br></br>
 		
 
 
-                    
+             <div style="text-align:center">       
 		 
 		<a href="forum.php">
-		<button type="button" class="btn btn-warning">Back to Forum Page</button></a>
+		<button type="button" class="btn btn-warning" >Back to Forum Page</button></a>
+		
+		         </div>
+		
    	 </div>
 	  
 
-    </div><!-- /.container -->
+   </br></br>
+
+   <footer class="bottom" style="position:relative;
+bottom:0;
+width:100%;background-color:#0F0606;color:white;font-weight: bold;">
+
+<div class="container hidden-xs">
+
+
+  <p class="navbar-text pull-left">NCI Team <a href="Http:/ncirl.ie">
+      
+      
+  </br>  </br></a> Interdisciplinary Project</p></br>
+  
+<p class="navbar-text pull-center"> Group C  2016  All Right Reserved.</p>
+
+
+  <a href="http://www.ncirl.ie" class="navbar-btn btn-danger btn "> NCI Students</a>
+
+  </div>
+
+
+</footer>
+
+</br>
+  
 	
-	<div class="container"> <!--footer-->
-		<hr>
-	<footer>
-		<div class="row">
-			<div class="col-lg-12">
-				<p>Copyright 2015 &copy; Turbo ltd </p>
-			</div>
-		</div>
-	</footer>
-	</div><!--Footer-->
+	
+	
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->

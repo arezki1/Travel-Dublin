@@ -56,6 +56,53 @@ if(empty($_SESSION['user']))
               padding: 40px 15px;
               text-align: center;}
 	    </style>
+	    
+	    
+	                             <link rel="stylesheet" href="comment/wtfdiary.css">
+
+<script type="text/javascript" src="comment/jquery.min.js"></script>
+
+
+<script type="text/javascript" >
+$(function() {
+$("#comment_submit").click(function() 
+{
+var name = $("#name").val();
+var email = $("#email").val();
+var rating = $("#rating").val();
+var comment = $("#comment").val();
+
+var dataString = 'name='+ name + '&email='+ email + '&comment='+ comment + '&rating=' +rating;
+if(name=='' || email=='' || comment=='' || rating=='')
+{
+alert('Please fill all textboxes');
+}
+else
+{
+
+$.ajax({
+type: "POST",
+url: "comment/save_form.php",
+data: dataString,
+cache: false,
+success: function(html){
+$("#name").val('');
+$("#email").val('');
+$("#rating").val('');
+$("#comment").val('');
+$("#success_msg").prepend(html);
+}
+});
+}return false;
+}); 
+});
+</script>
+
+	       
+	       
+	                                  
+	    
+	    
   </head>
   
 
@@ -63,22 +110,21 @@ if(empty($_SESSION['user']))
  <div class="navbar-static-top navbar-inverse">
  	<div class = "container">
  		<div class = "navbar-brand headerSocH">
- 		    <!--add name of user in session to navbar brand-->
- 			<a href="#">Welcome <?php echo htmlentities($_SESSION['user']['username'], ENT_QUOTES, 'UTF-8'); ?>, 
- 			</a>
- 		</div>
- 		<button class = "navbar-toggle" data-toggle = "collapse" data-target=".navHeaderCollapse" style ="color:white; border-color:white; margin-right:0px">
- 			Menu
- 		</button>
- 		<div class = "collapse navbar-collapse navHeaderCollapse">
- 			<ul class = "nav navbar-nav navbar-right">
- 				<li class = "listItem"><a href="logged.php">Home</a></li>
- 				<li class = "listItem"><a href="Chat/index.php">Chat</a></li>
- 				<li class = "listItem"><a href="forum.php">Forum</a></li>
- 				<li class = "listItem"><a href="memberlist.php">Memberlist</a></li>
- 				<li class ="listItem"><a href="discover.php">Discover</a></li>
+ 			<a href="#" style="color:white;font-weight:bold">Welcome <?php echo htmlentities($_SESSION['user']['username'], ENT_QUOTES, 'UTF-8'); ?>:
+			</a>
+		</div>
+		<button class = "navbar-toggle" data-toggle = "collapse" data-target=".navHeaderCollapse" style ="color:white; border-color:white; margin-right:0px">
+			Menu
+		</button>
+		<div class = "collapse navbar-collapse navHeaderCollapse" >
+			<ul class = "nav navbar-nav navbar-right">
+				<li class = "listItem"><a href="logged.php" style="color:white;font-weight:bold">Home</a></li>
+				<li class = "listItem"><a href="Chat/index.php"style="color:white;font-weight:bold">Chat</a></li>
+				<li class = "listItem"><a href="forum.php"style="color:white;font-weight:bold">Forum</a></li>
+				<li class = "listItem"><a href="memberlist.php"style="color:white;font-weight:bold">Memberlist</a></li>
+				<li class ="listItem"><a href="discover.php"style="color:white;font-weight:bold">Discover</a></li>
 
- 			<li class = "listItem"><a href="logout.php">Logout</a></li>
+			<li class = "listItem"><a href="logout.php"style="color:white;font-weight:bold">Logout</a></li>
  			</ul>
  		</div>
  	</div>
@@ -98,24 +144,107 @@ if(empty($_SESSION['user']))
 				<p>Opening Time : Monday - Saturday 9:45 - 16:45, Sunday 12:00 - 16:45</p>
 				<p>Phone : +353 (1) 677 7129 </p>
 				<p>Website : www.dublincastle.ie</p>
+				
+				
+				
+				
+				                                         
+				                                    
+		
+	
+		
+		
+		
+		
+                                                                		<div id="container">
+                                                                <h1 style='color:#6C267A ;font-weight:bold;	'>Please leave your comment below ! </h1>
+                                                                <form action="#" method="POST">
+                                                                <table>
+                                                                <tr><td colspan="2">
+                                                                <h2>Name :</h2>
+                                                                <div><input type="text" name="name" placeholder="Enter your Name..." class="textbox" id="name"/></div>
+                                                                </td></tr>
+                                                                <tr><td style="width:220px;">
+                                                                <h2>Email :</h2>
+                                                                <div><input type="text" name="email" placeholder="Enter your Email Address..." class="textbox" id="email"/></div>
+                                                                </td>
+                                                                <td>
+                                                                <h2>Rate This Place :</h2>
+                                                                <div><select id="rating">
+                                                                <option value="l">Love it</option>
+                                                                <option value="i">Interesting</option>
+                                                                <option value="t">Hot</option>
+                                                                <option value="u">Useful</option>
+                                                                <option value="a">Average</option>
+                                                                <option value="b">Boring</option>
+                                                                <option value="h">Hate it</option>
+                                                                </select>
+                                                                </div>
+                                                                </td></tr>
+                                                                <tr><td colspan="2">
+                                                                <h2>Comment :</h2>
+                                                                <div><textarea name="name" placeholder="Write your comment..." id="comment"></textarea></div>
+                                                                </td></tr>
+                                                                </table>
+                                                                <div><input type="submit" class="btn" value="Comment" id="comment_submit"></div>
+                                                                
+                                                                </form>
+                                                                <div id="success_msg">
+                                                                <?php include('comment/load_comments.php');?>
+                                                                </div>
+                                                                </div>
+                                                                		
+                                                                		
+                                                                		
+                                                                		
+                                                                		
+                                                                		
+                                                                		
+                                                                		
+                                                                		
+                                                                		
+		</br></br>
+		
+
+
+             <div style="text-align:center">       
 		 
 		<a href="forum.php">
-		<button type="button" class="btn btn-warning">Back to Forum Page</button></a>
+		<button type="button" class="btn btn-warning" >Back to Forum Page</button></a>
+		
+		         </div>
+		
    	 </div>
 	  
 
-    </div><!-- /.container -->
+   </br></br>
+
+   <footer class="bottom" style="position:relative;
+bottom:0;
+width:100%;background-color:#0F0606;color:white;font-weight: bold;">
+
+<div class="container hidden-xs">
+
+
+  <p class="navbar-text pull-left">NCI Team <a href="Http:/ncirl.ie">
+      
+      
+  </br>  </br></a> Interdisciplinary Project</p></br>
+  
+<p class="navbar-text pull-center"> Group C  2016  All Right Reserved.</p>
+
+
+  <a href="http://www.ncirl.ie" class="navbar-btn btn-danger btn "> NCI Students</a>
+
+  </div>
+
+
+</footer>
+
+</br>
+  
 	
-	<div class="container"> <!--footer-->
-		<hr>
-	<footer>
-		<div class="row">
-			<div class="col-lg-12">
-				<p>Copyright 2015 &copy; Turbo ltd </p>
-			</div>
-		</div>
-	</footer>
-	</div><!--Footer-->
+  
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
