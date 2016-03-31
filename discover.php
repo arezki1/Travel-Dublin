@@ -56,21 +56,17 @@
 			<div class="row">
 			
 						
-						<!--<div class="powr-weather" id="41ef4f59_1455969059976">
-						-->
+						<div class="powr-weather" id="41ef4f59_1455969059976">
+						
 						<?php
-                         if(isset($_POST['zipcode']) && is_numeric($_POST['zipcode'])){
-                               $zipcode = $_POST['zipcode'];
-                            }else{
-                             $zipcode = 'EIXX0014';
-                            }
-                          $result = file_get_contents('http://weather.yahooapis.com/forecastrss?p=' . $zipcode . '&u=c');
+                     $zipcode = $_POST['zipcode'];
+                          $zipcode = 'EIXX0014';
+                          $result = file_get_contents('http://xml.weather.yahoo.com/forecastrss?p=' . $zipcode . '&u=c');
                           $xml = simplexml_load_string($result);
-                          //echo htmlspecialchars($result, ENT_QUOTES, 'UTF-8');
                           $xml->registerXPathNamespace('yweather', 'http://xml.weather.yahoo.com/ns/rss/1.0');
                           $location = $xml->channel->xpath('yweather:location');
-                            if(!empty($location)){
-                              foreach($xml->channel->item as $item){
+                        if(!empty($location)){
+                        foreach($xml->channel->item as $item){
                              $current = $item->xpath('yweather:condition');
                              $forecast = $item->xpath('yweather:forecast');
                              $current = $current[0];
@@ -149,7 +145,7 @@ END;
 						<?php
                      $zipcode = $_POST['zipcode'];
                           $zipcode = 'EIXX0014';
-                          $result = file_get_contents('http://weather.yahooapis.com/forecastrss?p=' . $zipcode . '&u=c');
+                          $result = file_get_contents('http://xml.weather.yahoo.com/forecastrss?p=' . $zipcode . '&u=c');
                           $xml = simplexml_load_string($result);
                           $xml->registerXPathNamespace('yweather', 'http://xml.weather.yahoo.com/ns/rss/1.0');
                           $location = $xml->channel->xpath('yweather:location');
@@ -166,7 +162,7 @@ END;
          if(isset($_POST['check_weather1'])) 
           { 
             switch ($day1){
-             case ($day1 >= 26 && $day1 <=30):
+             case ($day1 >= 10 && $day1 <=12):
             print 'Some improved recomendations based on the rainy weather...';
             break;
              case ($day1 >=31 && $day1 <=34):
