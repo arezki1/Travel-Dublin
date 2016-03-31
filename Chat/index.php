@@ -26,7 +26,7 @@ session_start();
                         <li class="listItem"><a href="../logged.php" style="color:white;font-weight:bold">Home</a></li>
                         <li class="listItem"><a href="index.php" style="color:white;font-weight:bold">Chat</a></li>
                         <li class="listItem"><a href="../forum.php" style="color:white;font-weight:bold">Forum</a></li>
-                        <li class="listItem"><a href="../memberlist.php" style="color:white;font-weight:bold">Memberlist</a></li>
+                        <li class="listItem"><a href="../maps.php" style="color:white;font-weight:bold">Maps</a></li>
                         <li class="listItem"><a href="../discover.php" style="color:white;font-weight:bold">Discover</a></li>
                         <li class="listItem"><a href="../logout.php" style="color:white;font-weight:bold">Logout</a></li>
                     </ul>
