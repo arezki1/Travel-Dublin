@@ -15,7 +15,7 @@ session_start();
             <div class="container" id="nav">
                 <div class="navbar-brand headerSocH">
                     <!--add name of user in session to navbar brand-->
-                    <a href="#">Welcome <?php echo htmlentities($_SESSION['user']['username'], ENT_QUOTES, 'UTF-8'); ?>, 
+                    <a href="#" style="color:white;font-weight:bold">Welcome <?php echo htmlentities($_SESSION['user']['username'], ENT_QUOTES, 'UTF-8'); ?>:
                 				</a>
                 </div>
                 <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse" style="color:white; border-color:white; margin-right:0px">
@@ -23,12 +23,12 @@ session_start();
                 </button>
                 <div class="collapse navbar-collapse navHeaderCollapse">
                     <ul class="nav navbar-nav navbar-right headerBndt">
-                        <li class="listItem"><a href="../logged.php">Home</a></li>
-                        <li class="listItem"><a href="index.php">Chat</a></li>
-                        <li class="listItem"><a href="../forum.php">Forum</a></li>
-                        <li class="listItem"><a href="../memberlist.php">Memberlist</a></li>
-                        <li class="listItem"><a href="../discover.php">Discover</a></li>
-                        <li class="listItem"><a href="../logout.php">Logout</a></li>
+                        <li class="listItem"><a href="../logged.php" style="color:white;font-weight:bold">Home</a></li>
+                        <li class="listItem"><a href="index.php" style="color:white;font-weight:bold">Chat</a></li>
+                        <li class="listItem"><a href="../forum.php" style="color:white;font-weight:bold">Forum</a></li>
+                        <li class="listItem"><a href="../memberlist.php" style="color:white;font-weight:bold">Memberlist</a></li>
+                        <li class="listItem"><a href="../discover.php" style="color:white;font-weight:bold">Discover</a></li>
+                        <li class="listItem"><a href="../logout.php" style="color:white;font-weight:bold">Logout</a></li>
                     </ul>
                 </div>
             </div>
@@ -38,7 +38,7 @@ session_start();
 
 <html>
 <head>
-	<title> hello </title>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 	<script>
 	
@@ -77,10 +77,47 @@ $(document).ready(function(e){
 <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 
-<body style="background-color:#ebebe0">
+<body>
+</br></br>
+    
+     <div class="container"> 
+                           
+     <div class = "row">
+         
+         <p style="text-align: center;font-weight:bold;color:#000044;font-size:20px">
+         Lorem Ipsum is simply dummy text of the printing and typesetting industry.</br>
+         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</br>
+         , when an unknown printer took a galley of type and scrambled it to make a type </br>
+         specimen book. It has survived not only five centuries, but also the leap into electronic</br>
+         </p>
+         
+    </div>
+    
+    </div>
     
     
-    <div id="form-chat">
+    
+    </br></br>
+    
+    
+    
+    
+     <div class="container"> 
+                           
+     <div class = "row">
+         
+                             <div class = "col-sm-4" >
+                        	 
+                           
+                                
+                           		 <img src="chat1.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
+                             
+                         	 
+                         	 </div>
+                         	 
+ 	 <div class = "col-sm-8" >
+ 	     
+ 	      <div id="form-chat">
                        
                     <form name = "form1">
                     
@@ -113,6 +150,36 @@ $(document).ready(function(e){
                     </div>
 
    </div>
+	 </div>
+	 </div>
+      </div>
+    
+    </br></br></br></br>
+
+   <footer class="bottom" style="position:relative;
+bottom:0;
+width:100%;background-color:#0F0606;color:white;font-weight: bold;">
+
+<div class="container hidden-xs">
+
+
+  <p class="navbar-text pull-left">NCI Team <a href="Http:/ncirl.ie">
+      
+      
+  </br>  </br></a> Interdisciplinary Project</p></br>
+  
+<p class="navbar-text pull-center"> Group C  2016  All Right Reserved.</p>
+
+
+  <a href="http://www.ncirl.ie" class="navbar-btn btn-danger btn "> NCI Students</a>
+
+  </div>
+
+
+</footer>
+
+</br>
+   
 
 </body>
 

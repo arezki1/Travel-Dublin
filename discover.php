@@ -31,20 +31,21 @@
 			<div class = "container">
 				<div class = "navbar-brand headerSocH">
 				    <!--add name of user in session to navbar brand-->
-					<a href="#">Welcome <?php echo htmlentities($_SESSION['user']['username'], ENT_QUOTES, 'UTF-8'); ?>, 
-					</a>
-				</div>
-				<button class = "navbar-toggle" data-toggle = "collapse" data-target=".navHeaderCollapse" style ="color:white; border-color:white; margin-right:0px">
-					Menu
-				</button>
-				<div class = "collapse navbar-collapse navHeaderCollapse">
-					<ul class = "nav navbar-nav navbar-right">
-						<li class = "listItem"><a href="logged.php">Home</a></li>
-						<li class = "listItem"><a href="Chat/index.php">Chat</a></li>
-						<li class = "listItem"><a href="forum.php">Forum</a></li>
-						<li class = "listItem"><a href="memberlist.php">Memberlist</a></li>
-						<li class = "listItem"><a href="discover.php">Discover</a></li>
-						<li class = "listItem"><a href="logout.php">Logout</a></li>
+					<a href="#" style="color:white;font-weight:bold">Welcome <?php echo htmlentities($_SESSION['user']['username'], ENT_QUOTES, 'UTF-8'); ?>:
+			</a>
+		</div>
+		<button class = "navbar-toggle" data-toggle = "collapse" data-target=".navHeaderCollapse" style ="color:white; border-color:white; margin-right:0px">
+			Menu
+		</button>
+		<div class = "collapse navbar-collapse navHeaderCollapse" >
+			<ul class = "nav navbar-nav navbar-right">
+				<li class = "listItem"><a href="logged.php" style="color:white;font-weight:bold">Home</a></li>
+				<li class = "listItem"><a href="Chat/index.php"style="color:white;font-weight:bold">Chat</a></li>
+				<li class = "listItem"><a href="forum.php"style="color:white;font-weight:bold">Forum</a></li>
+				<li class = "listItem"><a href="memberlist.php"style="color:white;font-weight:bold">Memberlist</a></li>
+				<li class ="listItem"><a href="discover.php"style="color:white;font-weight:bold">Discover</a></li>
+
+			<li class = "listItem"><a href="logout.php"style="color:white;font-weight:bold">Logout</a></li>
 					</ul>
 				</div>
 			</div>
