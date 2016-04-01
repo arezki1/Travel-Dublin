@@ -61,13 +61,13 @@ $("#success_msg").prepend(html);
 <td>
 <h2>Rate our Post :</h2>
 <div><select id="rating">
-<option value="l">Love it</option>
-<option value="i">Interesting</option>
-<option value="t">Hot</option>
-<option value="u">Useful</option>
-<option value="a">Average</option>
-<option value="b">Boring</option>
-<option value="h">Hate it</option>
+<option value="6">Love it</option>
+<option value="5">Interesting</option>
+<option value="4">Hot</option>
+<option value="3">Useful</option>
+<option value="2">Average</option>
+<option value="1">Boring</option>
+<option value="0">Hate it</option>
 </select>
 </div>
 </td></tr>
