@@ -1,4 +1,5 @@
-       <!--this is a nice feature, but how can we develop it further?-->
+        <!--Not being used, some useful code below-->
+  
         <?php 
         
             // First we execute our common code to connection to the database and start the session 
