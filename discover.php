@@ -51,17 +51,16 @@
 	 </div>
 	 <!--nav end-->
 	<body>
-		<div class="container">
+<div class="container">
 			<!--top row for our maps and plugin-->
-			<div class="row">
+			<div class="col-sm-3">
 			
 						
-						<div class="powr-weather" id="41ef4f59_1455969059976">
-						
+						<!--<div class="powr-weather" id="41ef4f59_1455969059976">
+						-->
 						<?php
-                     $zipcode = $_POST['zipcode'];
-                          $zipcode = 'EIXX0014';
-                          $result = file_get_contents('http://xml.weather.yahoo.com/forecastrss?p=' . $zipcode . '&u=c');
+
+                          $result = file_get_contents('http://xml.weather.yahoo.com/forecastrss?p=EIXX0014&u=c');
                           $xml = simplexml_load_string($result);
                           $xml->registerXPathNamespace('yweather', 'http://xml.weather.yahoo.com/ns/rss/1.0');
                           $location = $xml->channel->xpath('yweather:location');
@@ -71,19 +70,37 @@
                              $forecast = $item->xpath('yweather:forecast');
                              $current = $current[0];
                              $output = <<<END
-					<div class="col-md-5">
-            
+					
+            <div class="current">
             <h1 style="margin-bottom: 0">Weather for {$location[0]['city']}, {$location[0]['region']}</h1>
-            <small>{$current['date']}</small>
+            <br/>
+            <p>{$current['date']}</p>
             <h2>Current Conditions</h2>
+            <br/>
             <span style="font-size:72px; font-weight:bold;">{$current['temp']}&deg;C</span>
             <br/>
             <img src="http://l.yimg.com/a/i/us/we/52/{$current['code']}.gif" style="vertical-align: middle;"/>&nbsp;
             {$current['text']}
             </p>
-            <h2>Forecast</h2>
-            <br/>
+            </div>
+            </div>
             
+            									<div class="col-md-3">
+            									<img src="img/templebar.jpg" width="100%">
+            									<div class="row-sm-1"> </div>
+            									<div class="row-sm-2"> </div>
+            									<div class="row-sm-3"> </div>
+            									<div class="row-sm-4"> </div>
+            									<div class="row-sm-5"> </div>
+            									</div>
+            <div class="col-sm-4">
+            <div class="forecast">
+            <h2>Forecast</h2>
+            
+            <table>
+            <tbody>
+            <tr>
+            <td>
             <form action='' method='post'>
             {$forecast[0]['day']} - {$forecast[0]['text']}. High: {$forecast[0]['high']} Low: {$forecast[0]['low']}
             <input type='submit' name='check_weather1' value='Check Suggestions...' /> 
@@ -116,7 +133,9 @@
             {$forecast[4]['day']} - {$forecast[4]['text']}. High: {$forecast[4]['high']} Low: {$forecast[4]['low']}
             <input type='submit' name='check_weather5' value='Check Suggestions...' /> 
             </form>
-            
+            </tbody>
+            </table>
+            </div>
             </div>
             
 END;
@@ -126,11 +145,6 @@ END;
           }
 
          ?>
-
-
-<!--<form method="POST" action="">
-<label>Zip Code:</label> <input type="text" name="zipcode" size="8" value="" /><br /><input type="submit" name="submit" value="Lookup Weather" />
-</form>-->
 <?php echo $output; ?>
 
 <?phpif(isset($_POST['check_weather'])) 
@@ -139,13 +153,20 @@ END;
 } 
 ?>
 						
-					
-				
-					<h2 style="text-align: justify">
+					<?php
+$url = 'forum.php';
+$content = file_get_contents($url);
+$first_step = explode( '<div class="col-md-3">' , $content );
+$second_step = explode("</div>" , $first_step[1] );
+echo $second_step[0];
+?>
+
+
+					<div class="col-md-12">
+					 <h2>
 						<?php
-                     $zipcode = $_POST['zipcode'];
-                          $zipcode = 'EIXX0014';
-                          $result = file_get_contents('http://xml.weather.yahoo.com/forecastrss?p=' . $zipcode . '&u=c');
+
+                          $result = file_get_contents('http://xml.weather.yahoo.com/forecastrss?p=EIXX0014&u=c');
                           $xml = simplexml_load_string($result);
                           $xml->registerXPathNamespace('yweather', 'http://xml.weather.yahoo.com/ns/rss/1.0');
                           $location = $xml->channel->xpath('yweather:location');
@@ -188,7 +209,7 @@ END;
                      print $forecast;
   }*/
                         
-           else if(isset($_POST['check_weather2']))
+           if(isset($_POST['check_weather2']))
            {
             switch ($day2){
              case ($day2 >= 26 && $day2 <=30):
@@ -203,7 +224,7 @@ END;
             }
            }
            
-           else if(isset($_POST['check_weather3']))
+          if(isset($_POST['check_weather3']))
            {
              switch ($day3){
              case ($day3 >= 26 && $day3 <=30):
@@ -218,7 +239,7 @@ END;
              }
            }
            
-           else if(isset($_POST['check_weather4']))
+          if(isset($_POST['check_weather4']))
            {
              switch ($day4){
              case ($day4 >= 26 && $day4 <=30):
@@ -233,7 +254,7 @@ END;
              }
            }
            
-           else if(isset($_POST['check_weather5']))
+           if(isset($_POST['check_weather5']))
            {
            switch ($day5){
              case ($day5 >= 26 && $day5 <=30):
@@ -250,13 +271,18 @@ END;
                         }
                         }
 ?>
-					</h2>
-					
+</h2>
+					</div>
+</div>
+					</div>
+
 				</div>
 		
 			</div>
 				<!--second row for our map and weather-->
-				
+
+				 
+				</div>
 			</div>
 	</body>
 	
