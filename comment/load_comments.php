@@ -2,7 +2,7 @@
 include("db.php");
 
 
-$sql="Select * from comments order by com_id desc LIMIT 10";
+$sql="Select * from comments order by rating desc LIMIT 10";
 $command=mysql_query($sql);
 while($data=mysql_fetch_row($command))
 {
@@ -23,6 +23,8 @@ echo "<div class='image_box'><img src='http://www.gravatar.com/avatar/$image?s=5
 echo "<div class='body'>";
 
 echo "<div><span><b>$name</b></span> ";
+
+
 echo "<span style='float:right;'><small>";
 if($rating=="6")
 {
@@ -56,3 +58,4 @@ echo "</div>";
 echo "</div>";
 }
 ?>
+

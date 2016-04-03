@@ -6,19 +6,56 @@
     // At the top of the page we check to see whether the user is logged in or not 
     if(empty($_SESSION['user'])) 
     { 
-        // If they are not, we redirect them to the login page. 
+        // If the user is not logged, we redirect them to the login page. 
         header("Location: login.php"); 
-         
-        // Remember that this die statement is absolutely critical.  Without it, 
-        // people can view your members-only content without logging in. 
+       
         die("Redirecting to login.php"); 
     } 
      
-    // Everything below this point in the file is secured by the login system 
-     
-    // We can display the user's username to them by reading it from the session array.  Remember that because 
-    // a username is user submitted content we must use htmlentities on it before displaying it to the user. 
+   
+    
 ?> <!--styling-->
+
+
+<script type="text/javascript" >
+$(function() {
+$("#comment_submit").click(function() 
+{
+var name = $("#name").val();
+var email = $("#email").val();
+var rating = $("#rating").val();
+var comment = $("#comment").val();
+var attraction=$("#attraction").text();
+
+var dataString = 'name='+ name + '&email='+ email + '&comment='+ comment + '&rating=' +rating+'&attraction='+attraction;
+if(name=='' || email=='' || comment=='' || rating=='') 
+{
+alert('Please fill all textboxes');
+}
+else
+{
+
+$.ajax({
+type: "POST",
+url: "comment/save_form.php",
+data: dataString,
+cache: false,
+success: function(html){
+$("#name").val('');
+$("#email").val('');
+$("#rating").val('');
+$("#comment").val('');
+$("#attraction").text('');
+$("#success_msg").prepend(html);
+}
+});
+}return false;
+}); 
+});
+</script>  <!-- End the script -->
+
+
+
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
     <script type="text/javascript" src="js/bootstrap.js"></script>
@@ -45,68 +82,67 @@
     		</div>
 		</div>
 	</div>
-  <style>
-    .carousel-inner > .item > img,
-    .carousel-inner > .item > a > img {
-        width: 50%;
-        margin: auto;
-    }
-    </style>
+ 
   
   
   </br>
   <div class="container">
-  	  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-  	    <!-- Indicators -->
-  	    <ol class="carousel-indicators">
-  	      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-  	      <li data-target="#myCarousel" data-slide-to="1"></li>
-  	      <li data-target="#myCarousel" data-slide-to="2"></li>
-  	      <li data-target="#myCarousel" data-slide-to="3"></li>
-  	    </ol>
-  	    <!-- Wrapper for slides -->
-  	    <div class="carousel-inner" role="listbox">
-  	      <div class="item active">
-  	        <img src="img/Hapenny-Bridge.jpg" alt="Flower" width="460" height="345">
-  	        <div class="carousel-caption">
-  	        </div>
-  	      </div>
-
-  	      <div class="item">
-  	        <img src="img/custom-house.jpg" alt="Flower" width="460" height="345">
-  	        <div class="carousel-caption">
-  	        </div>
-  	      </div>
-
-  	      <div class="item">
-  	        <img src="img/howthh.jpg" alt="Flower" width="460" height="345">
-  	        <div class="carousel-caption">
-  	        </div>
-  	      </div>
-
-  	      <div class="item">
-  	        <img src="img/guinness-storehouse.jpg" alt="Flower" width="460" height="345">
-  	        <div class="carousel-caption">
-  	        </div>
-  	      </div>
-  	    </div>
-
-  	    <!-- Left and right controls -->
-  	    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-  	      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-  	      <span class="sr-only">Previous</span>
-  	    </a>
-  	    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-  	      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-  	      <span class="sr-only">Next</span>
-  	    </a>
-  	  </div>
+      
+      
+               <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              	    <!-- Indicators -->
+              	    <ol class="carousel-indicators">
+              	      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              	      <li data-target="#myCarousel" data-slide-to="1"></li>
+              	      <li data-target="#myCarousel" data-slide-to="2"></li>
+              	      <li data-target="#myCarousel" data-slide-to="3"></li>
+              	    </ol>
+              	    <!-- Wrapper for slides -->
+              	    <div class="carousel-inner" role="listbox">
+              	      <div class="item active">
+              	        <img src="img/Hapenny-Bridge.jpg" alt="Flower" width="460" height="345">
+              	        <div class="carousel-caption">
+              	        </div>
+              	      </div>
+            
+              	      <div class="item">
+              	        <img src="img/custom-house.jpg" alt="Flower" width="460" height="345">
+              	        <div class="carousel-caption">
+              	        </div>
+              	      </div>
+            
+              	      <div class="item">
+              	        <img src="img/howthh.jpg" alt="Flower" width="460" height="345">
+              	        <div class="carousel-caption">
+              	        </div>
+              	      </div>
+            
+              	      <div class="item">
+              	        <img src="img/guinness-storehouse.jpg" alt="Flower" width="460" height="345">
+              	        <div class="carousel-caption">
+              	        </div>
+              	      </div>
+              	    </div>
+            
+              	    <!-- Left and right controls -->
+              	    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+              	      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              	      <span class="sr-only">Previous</span>
+              	    </a>
+              	    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+              	      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              	      <span class="sr-only">Next</span>
+              	    </a>
+         	</div>
 
     <div class="starter-template">
+        
+        
+        
       <h1>TOP 10 PLACES IN DUBLIN</h1>
       
       
-    <div class="container"> 
+    <div class="container"> <!--first container-->
                            
         <div class = "row">
          
@@ -123,13 +159,13 @@
             	Dame Street	to the south, Westmoreland Street to 
             	</br>the east and Fishamble Street to the west.</p>
                 
-                <a href="11.php">
+                
                     
-<<<<<<< HEAD
 
-                    			<a href="11.php">
-                    			<button type="button" class="btn btn-warning" id="templebar">More Info</button></a>
-                    	  </div>
+                    			<a href="7.php">
+                    			<button type="button" class="btn btn-warning" id="templebar">More Info</button>
+                    			</a>
+            </div>
                     	  <div class = "col-md-6" >
                     	 
                     	 
@@ -144,45 +180,23 @@
                     	 and is now a major Irish government complex.</p>
                     
                     			<a href="2.php">
+                    			   
                     			<button type="button" class="btn btn-warning" id="dublincastle">More Info</button></a>
                      	  </div>
                      	  </div>
-                     	  </div>
-=======
-                <button type="button" class="btn btn-warning">More Info</button></a>
-            </div>
-            <div class = "col-md-6" >
-                
-                <h2>2.Dublin Castle</h2>
-                
-                <img src="img/DublinCastle.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
-                
-                <h3>Building complex in Dublin, Republic of Ireland</h3>
-                <p>Dublin Castle off Dame Street, Dublin, Ireland,</br>
-                was until 1922 the seat of the United Kingdom
-                </br>government's administration in Ireland,</br>
-                and is now a major Irish government complex.</p>
-                
-        		<a href="2.php">
-        		    
-        		<button type="button" class="btn btn-warning">More Info</button></a>
-            </div>
-        </div>
-    </div>
->>>>>>> cfc37a4d4d79ab2ac30511646923582b1eec8337
+      </div><!-- End first container-->
  	 
 	 
-	<div class="container"> 
+	<div class="container"> <!--second container-->
                            
         <div class = "row">
          
             <div class = "col-md-6" >
 	 
             <h2>3.Phoenix Park</h2>
-            <div class="container"> 
+        
                 <img src="img/PhoenPark.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
      
-<<<<<<< HEAD
 		 <h3>Park</h3>
      <p>Phoenix Park is an urban park in Dublin, Ireland,</p>
 	 <p>lying 2–4 km west of the city centre, north of the River Liffey.
@@ -191,26 +205,14 @@
 	
 			<a href="3.php">
 			<button type="button" class="btn btn-warning" id="phoenixpark">More Info</button></a>
-=======
-                <h3>Park</h3>
-                
-                <p>Phoenix Park is an urban park in Dublin, Ireland,</p>
-                <p>lying 2–4 km west of the city centre, north of the River Liffey.
-                </br>Its 11 km perimeter wall encloses 707 hectares, </br>
-                one of the largest walled city parks in Europe.</p>   
-        	
-        		<a href="3.php">
-        		<button type="button" class="btn btn-warning">More Info</button></a>
->>>>>>> cfc37a4d4d79ab2ac30511646923582b1eec8337
  	  
             </div>
-            </div>
+            
  	 
-<<<<<<< HEAD
  	 <div class = "col-md-6" >
 	 
      <h2>4.Christ Church Cathedral</h2>
-        <div class="container"> 
+        
    		 <img src="img/christ-church.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
      
 		 <h3>Cathedral in the Republic of Ireland</h3>
@@ -222,104 +224,47 @@
 			<a href="4.php">
 			<button type="button" class="btn btn-warning" id="christchurch">More Info</button></a>
  	  </div>
-=======
-            <div class = "col-md-6" >
-    	 
-             <h2>4.Christ Church Cathedral</h2>
-             
-            <div class="container"> 
-               	<img src="img/christ-church.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
-             
-                <h3>Cathedral in the Republic of Ireland</h3>
-                
-                <p>Christ Church Cathedral is the cathedral of the</br>
-                United Dioceses of Dublin and Glendalough and the </br>
-                cathedral of the Ecclesiastical province of the United</br>
-                Provinces of Dublin and Cashel in the Church of Ireland.</p>   
-    
-    			<a href="4.php">
-    			<button type="button" class="btn btn-warning">More Info</button></a>
-            </div>
- 	      </div>
->>>>>>> cfc37a4d4d79ab2ac30511646923582b1eec8337
  	  </div>
-    </div>
+    </div><!--End second container-->
 
-    <div class="container"> 
+    <div class="container"> <!--Theird container-->
     
-        <div class = "row">
+    <div class= "row">
          
-<<<<<<< HEAD
-                     <div class = "col-md-6" >
-                     <h2>5.Guinness Storehouse</h2>
-                        <div class="container"> 
-                   		 <img src="img/guinness-storehouse.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
-                     
-                		 <h3>Brewery</h3>
-                     <p>Brewery experience telling the tale of Ireland's famous beer,</p>
-                	 <p>with tastings and a rooftop bar</p>   
-                	<a href="5.php">
-                	<button type="button" class="btn btn-warning" id="guinessstore">More Info</button></a>
-                 	  </div>
-                 	  </div>
-                 	 
-                 <div class = "col-md-6" >
-                     <h2>6.National Museum of Ireland</h2>
-                        <div class="container"> 
-                   		 <img src="img/NationalMuseumofIreland.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
-                     
-                		 <h3>Museum in the Republic of Ireland</h3>
-                     <p>The National Museum of Ireland is the national museum in Ireland.</p>
-                	 <p>It has three branches in Dublin and one in County Mayo,</p>
-                	 <p>with a strong emphasis on Irish art, culture and natural history.</p>
-                	<a href="6.php">
-                	<button type="button" class="btn btn-warning" id="nationalmeseum">More Info</button></a>
-                 	  </div>
-                 	 </div>
- 	                 </div>
- 	                 </div>
+            <div class= "col-md-6" >
+                                     <h2>5.Guinness Storehouse</h2>
+                                        
+                    <img src="img/guinness-storehouse.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
+                                     
+                                		 <h3>Brewery</h3>
+                                     <p>Brewery experience telling the tale of Ireland's famous beer,</br>
+                                	 with tastings and a rooftop bar</p>   
+                    <a href="5.php">
+                    <button type="button" class="btn btn-warning" id="guinessstore">More Info</button></a>
+            </div>
+                         	  
+                         	 
+            <div class= "col-md-6" >
+                                     <h2>6.National Museum of Ireland</h2>
+                                        
+                    <img src="img/NationalMuseumofIreland.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
+                                     
+                                		 <h3>Museum in the Republic of Ireland</h3>
+                                     The National Museum of Ireland is the national museum in Ireland.</br>
+                                	 It has three branches in Dublin and one in County Mayo,</br>
+                                	 with a strong emphasis on Irish art, culture and natural history.</p>
+                    <a href="6.php">
+                    <button type="button" class="btn btn-warning" id="nationalmeseum">More Info</button></a>
+                         	  
+             </div>
+ 	 </div>
+ 	                 </div><!--End theird container-->
  	                 
  	                 
  	                 
  	                 
 	
-=======
-            <div class = "col-md-6" >
-                
-                <h2>5.Guinness Storehouse</h2>
-                
-            <div class="container"> 
-            
-                <img src="img/guinness-storehouse.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
-            
-                <h3>Brewery</h3>
-                
-                <p>Brewery experience telling the tale of Ireland's famous beer,</p>
-                <p>with tastings and a rooftop bar</p>   
-                <a href="5.php">
-                <button type="button" class="btn btn-warning">More Info</button></a>
-            </div>
-        </div>
-                 	 
-        <div class = "col-md-6" >
-            
-            <h2>6.National Museum of Ireland</h2>
-            
-            <div class="container"> 
->>>>>>> cfc37a4d4d79ab2ac30511646923582b1eec8337
         
-                <img src="img/NationalMuseumofIreland.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
-        
-                <h3>Museum in the Republic of Ireland</h3>
-                <p>The National Museum of Ireland is the national museum in Ireland.</p>
-                <p>It has three branches in Dublin and one in County Mayo,</p>
-                <p>with a strong emphasis on Irish art, culture and natural history.</p>
-                <a href="6.php">
-                <button type="button" class="btn btn-warning">More Info</button></a>
-            </div>
-        </div>
-        </div>
-    </div>
     </div>
   
     </br></br>

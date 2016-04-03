@@ -122,7 +122,8 @@ padding-top:15px;
 .txt
 {
 margin-top:5px;
-color:#333333;
+
+text-transform: capitalize;
 }
 
 

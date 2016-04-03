@@ -64,3 +64,11 @@ This code is made freely available. Anyone and everyone is welcome to [contribut
 ## License
 
 The code is available under the [MIT license](LICENSE).
+
+
+  Arezki Part here:
+  
+  Password login: Groupcnci2016
+  Database user: sql2107364
+  Database password: dZ2*wT7%
+  Host: sql2.freemysqlhosting.net

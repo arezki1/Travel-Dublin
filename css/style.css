@@ -100,3 +100,12 @@
       }
       
 /******End Map Styling******/
+
+ /* carousel styling */
+    .carousel-inner > .item > img,
+    .carousel-inner > .item > a > img {
+        width: 50%;
+        margin: auto;
+    }
+/* End carousel styling */
+    

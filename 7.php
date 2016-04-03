@@ -2,7 +2,20 @@
 
 <?php
 
-session_start();
+ session_start();
+ include("comment/db.php");
+
+
+$sql="Select * from attractions where title='Dublin Castle'";
+$command=mysql_query($sql);
+while($data=mysql_fetch_row($command)){
+$address=$data[2];
+$title=$data[0];
+$description=$data[1];
+
+}
+
+
 
 require("common.php"); 
  
@@ -14,10 +27,9 @@ if(empty($_SESSION['user']))
     die("Redirecting to login.php"); 
 } 
  
-
+	
 ?>
-<!DOCTYPE html>
-<html lang="en">
+
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -110,17 +122,26 @@ $("#success_msg").prepend(html);
 
     <div class="container">
         
-        <h1 id="attraction" style=" padding: 40px 15px; text-align: center;">Temple Bar</h1>
-      
+        <?php
+        echo
+        
+        "<h1 style=' padding: 40px 15px; text-align: center;'>$title</h1>";
+       
+        
+      ?>
   	    <img class="img-responsive" src="img/templebar.jpg" width="980" height="600"><br><br>
   	   
       
-		<p>Some of Dublin's best night spots, restaurants and unusual shops line these narrow, cobbled streets running between the Bank of Ireland and Christ Church Cathedral. In the 18th century the area was home to many insalubrious characters-Fownes Street was noted for its brothels. It was also the birthplace of parliamentarian Henry Grattan. Skilled craftsmen and artisans, such as clockmakers and printers, lived and worked around Temple Bar until post-Emergency (post-war) industrialisation led to a decline in the area's fortunes. In the 1970s, the CIE (national transport authority) bought up parcels of land in this area to build a major bus depot. While waiting to acquire the land in this area to buildings needed, the CIE rented out, on cheap leases, some of the old retail and warehouse premises to young artists and to record, clothing and book shops. The area developed an "alternative" identity and a successful lobby by local residents persuaded CIE to drop their plans. As more cynical Dubliners put it, the area became the city's "officially designated arts zone". But while the new investment and planning may have added a slight air of contrivance, it's still an exciting, atmospheric and essentially very young place. Organisations based here include the Irish Film Centre (IFC), the experimental Projects Arts Centre and around a dozen galleries. There are also centres for music, multi-media and photography as well as a Children's Cultural Centre-an arts centre offering theatre, workshops and other entertainment for children.</p>
-		<h3>Information</h3>
-		<p>Address : Temple Bar, Co. Dublin<br>
-		Opening Time : All day<br>
-		Phone : xxxxxxxxx <br>
-		Website : www.templebar.ie</p>
+	
+		 <?php
+        
+        
+     echo   "<p>$description</p></br><br>";
+     echo  "<h3> Information</h3>";
+	echo	"<p>$address</p>";
+		
+        
+      ?>
 		
 	
   		<div id="container">
@@ -157,7 +178,6 @@ $("#success_msg").prepend(html);
   <div><input type="submit" class="btn" value="Comment" id="comment_submit"></div>
     
   </form>
-  
   
   
   <div id="success_msg">
@@ -220,4 +240,4 @@ width:100%;background-color:#0F0606;color:white;font-weight: bold;">
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
-</html>
+  
