@@ -81,7 +81,7 @@ var rating = $("#rating").val();
 var comment = $("#comment").val();
 var attraction=$("#attraction").text();
 
-var dataString = 'name='+ name + '&email='+ email + '&comment='+ comment + '&rating=' +rating+'&attraction'+attraction;
+var dataString = 'name='+ name + '&email='+ email + '&comment='+ comment + '&rating=' +rating+'&attraction='+attraction;
 if(name=='' || email=='' || comment=='' || rating=='') 
 {
 alert('Please fill all textboxes');
@@ -99,7 +99,7 @@ $("#name").val('');
 $("#email").val('');
 $("#rating").val('');
 $("#comment").val('');
-$("#attraction").text();
+$("#attraction").text('');
 $("#success_msg").prepend(html);
 }
 });
@@ -174,6 +174,7 @@ $("#success_msg").prepend(html);
   <tr><td colspan="2">
   <h2>Name :</h2>
   <div><input type="text" name="name" placeholder="Enter your Name..." class="textbox" id="name"/></div>
+
   </td></tr>
   <tr><td style="width:220px;">
   <h2>Email :</h2>
@@ -198,7 +199,7 @@ $("#success_msg").prepend(html);
   </td></tr>
   </table>
   <div><input type="submit" class="btn" value="Comment" id="comment_submit"></div>
-  
+    
   </form>
   <div id="success_msg">
   <?php include('comment/load_comments.php');?>
