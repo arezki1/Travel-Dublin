@@ -51,9 +51,9 @@
 	 </div>
 	 <!--nav end-->
 	<body>
-		<div class="container">
+<div class="container">
 			<!--top row for our maps and plugin-->
-			<div class="row">
+			<div class="col-sm-3">
 			
 						
 						<!--<div class="powr-weather" id="41ef4f59_1455969059976">
@@ -70,7 +70,7 @@
                              $forecast = $item->xpath('yweather:forecast');
                              $current = $current[0];
                              $output = <<<END
-					<div class="col-sm-3">
+					
             <div class="current">
             <h1 style="margin-bottom: 0">Weather for {$location[0]['city']}, {$location[0]['region']}</h1>
             <br/>
@@ -84,6 +84,15 @@
             </p>
             </div>
             </div>
+            
+            									<div class="col-md-3">
+            									<img src="img/templebar.jpg" width="100%">
+            									<div class="row-sm-1"> </div>
+            									<div class="row-sm-2"> </div>
+            									<div class="row-sm-3"> </div>
+            									<div class="row-sm-4"> </div>
+            									<div class="row-sm-5"> </div>
+            									</div>
             <div class="col-sm-4">
             <div class="forecast">
             <h2>Forecast</h2>
@@ -97,28 +106,28 @@
             <input type='submit' name='check_weather1' value='Check Suggestions...' /> 
             </form>
             
-            <br/><br/>
+            <br/>
             
             <form action='' method='post'>
             {$forecast[1]['day']} - {$forecast[1]['text']}. High: {$forecast[1]['high']} Low: {$forecast[1]['low']}
             <input type='submit' name='check_weather2' value='Check Suggestions...' /> 
             </form>
             
-            <br/><br/>
+            <br/>
             
             <form action='' method='post'>
             {$forecast[2]['day']} - {$forecast[2]['text']}. High: {$forecast[2]['high']} Low: {$forecast[2]['low']}
             <input type='submit' name='check_weather3' value='Check Suggestions...' /> 
             </form>
             
-            <br/><br/>
+            <br/>
             
             <form action='' method='post'> 
             {$forecast[3]['day']} - {$forecast[3]['text']}. High: {$forecast[3]['high']} Low: {$forecast[3]['low']}
             <input type='submit' name='check_weather4' value='Check Suggestions...' /> 
             </form>
             
-            <br/><br/>
+            <br/>
             
             <form action='' method='post'>
             {$forecast[4]['day']} - {$forecast[4]['text']}. High: {$forecast[4]['high']} Low: {$forecast[4]['low']}
@@ -136,11 +145,6 @@ END;
           }
 
          ?>
-
-
-<!--<form method="POST" action="">
-<label>Zip Code:</label> <input type="text" name="zipcode" size="8" value="" /><br /><input type="submit" name="submit" value="Lookup Weather" />
-</form>-->
 <?php echo $output; ?>
 
 <?phpif(isset($_POST['check_weather'])) 
@@ -149,9 +153,17 @@ END;
 } 
 ?>
 						
-					
-				
-					<h2 style="text-align: justify">
+					<?php
+$url = 'forum.php';
+$content = file_get_contents($url);
+$first_step = explode( '<div class="col-md-3">' , $content );
+$second_step = explode("</div>" , $first_step[1] );
+echo $second_step[0];
+?>
+
+
+					<div class="col-md-12">
+					 <h2>
 						<?php
 
                           $result = file_get_contents('http://xml.weather.yahoo.com/forecastrss?p=EIXX0014&u=c');
@@ -197,7 +209,7 @@ END;
                      print $forecast;
   }*/
                         
-           else if(isset($_POST['check_weather2']))
+           if(isset($_POST['check_weather2']))
            {
             switch ($day2){
              case ($day2 >= 26 && $day2 <=30):
@@ -212,7 +224,7 @@ END;
             }
            }
            
-           else if(isset($_POST['check_weather3']))
+          if(isset($_POST['check_weather3']))
            {
              switch ($day3){
              case ($day3 >= 26 && $day3 <=30):
@@ -227,7 +239,7 @@ END;
              }
            }
            
-           else if(isset($_POST['check_weather4']))
+          if(isset($_POST['check_weather4']))
            {
              switch ($day4){
              case ($day4 >= 26 && $day4 <=30):
@@ -242,7 +254,7 @@ END;
              }
            }
            
-           else if(isset($_POST['check_weather5']))
+           if(isset($_POST['check_weather5']))
            {
            switch ($day5){
              case ($day5 >= 26 && $day5 <=30):
@@ -259,8 +271,10 @@ END;
                         }
                         }
 ?>
-					</h2>
-					
+</h2>
+					</div>
+</div>
+					</div>
 
 				</div>
 		
