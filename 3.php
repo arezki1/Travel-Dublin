@@ -137,7 +137,12 @@ $("#success_msg").prepend(html);
 		  	    <img class="img-responsive" src="img/PhoenPark.jpg" width="980" height="600">
 		  	   </div>
 		      </div>
-				<p>This is Dublin's playground - the largest urban enclosed park in Europe, with a Circumference of 11km (7m) and a total area of 712 hectares (1,760 acres). Situated 3km (2m) west of the city centre. Ornamental gardens, nature trails, and broad expanses of grassland, separated by avenues of trees, including oak, beech, pine, chestnut, and lime. Livestock graze peacefully on pasturelands, deer roam the forested areas, and horses romp on polo fields.</p>
+				<p>This is Dublin's playground 
+				- the largest urban enclosed park in Europe, with a Circumference of 11km (7m)
+				and a total area of 712 hectares (1,760 acres). Situated 3km (2m) west of the city centre. 
+				Ornamental gardens, nature trails, and broad expanses of grassland, separated by avenues of trees,
+				including oak, beech, pine, chestnut, and lime. Livestock graze peacefully on pasturelands, 
+				deer roam the forested areas, and horses romp on polo fields.</p>
 				<h3>Information</h3>
 				<p>Address : The Whitefields, Phoenix Park, Dublin 8, Ireland</p>
 				<p>Opening Time : Monday - Sunday 24 hrs</p>

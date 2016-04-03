@@ -79,9 +79,10 @@ var name = $("#name").val();
 var email = $("#email").val();
 var rating = $("#rating").val();
 var comment = $("#comment").val();
+var attraction=$("#attraction").text();
 
-var dataString = 'name='+ name + '&email='+ email + '&comment='+ comment + '&rating=' +rating;
-if(name=='' || email=='' || comment=='' || rating=='')
+var dataString = 'name='+ name + '&email='+ email + '&comment='+ comment + '&rating=' +rating+'&attraction='+attraction;
+if(name=='' || email=='' || comment=='' || rating=='') 
 {
 alert('Please fill all textboxes');
 }
@@ -98,6 +99,7 @@ $("#name").val('');
 $("#email").val('');
 $("#rating").val('');
 $("#comment").val('');
+$("#attraction").text('');
 $("#success_msg").prepend(html);
 }
 });
@@ -141,7 +143,11 @@ $("#success_msg").prepend(html);
     <div class="container">
 
       <div class="starter-template">
-        <h1>Temple Bar</h1>
+        
+        <h1 id="attraction">Temple Bar</h1>
+        
+        
+        
        <div class="container">
   	    <img class="img-responsive" src="img/templebar.jpg" width="980" height="600">
   	   </div>
@@ -160,45 +166,46 @@ $("#success_msg").prepend(html);
 		
 		
 		
-		
-                                                                		<div id="container">
-                                                                <h1 style='color:#6C267A ;font-weight:bold;	'>Please leave your comment below ! </h1>
-                                                                <form action="#" method="POST">
-                                                                <table>
-                                                                <tr><td colspan="2">
-                                                                <h2>Name :</h2>
-                                                                <div><input type="text" name="name" placeholder="Enter your Name..." class="textbox" id="name"/></div>
-                                                                </td></tr>
-                                                                <tr><td style="width:220px;">
-                                                                <h2>Email :</h2>
-                                                                <div><input type="text" name="email" placeholder="Enter your Email Address..." class="textbox" id="email"/></div>
-                                                                </td>
-                                                                <td>
-                                                                <h2>Rate This Place :</h2>
-                                                                <div><select id="rating">
-                                                                <option value="l">Love it</option>
-                                                                <option value="i">Interesting</option>
-                                                                <option value="t">Hot</option>
-                                                                <option value="u">Useful</option>
-                                                                <option value="a">Average</option>
-                                                                <option value="b">Boring</option>
-                                                                <option value="h">Hate it</option>
-                                                                </select>
-                                                                </div>
-                                                                </td></tr>
-                                                                <tr><td colspan="2">
-                                                                <h2>Comment :</h2>
-                                                                <div><textarea name="name" placeholder="Write your comment..." id="comment"></textarea></div>
-                                                                </td></tr>
-                                                                </table>
-                                                                <div><input type="submit" class="btn" value="Comment" id="comment_submit"></div>
-                                                                
-                                                                </form>
-                                                                <div id="success_msg">
-                                                                <?php include('comment/load_comments.php');?>
-                                                                </div>
-                                                                </div>
-                                                                		
+
+  		<div id="container">
+  <h1 style='color:#6C267A ;font-weight:bold;	'>Please leave your comment below ! </h1>
+  <form action="#" method="POST">
+  <table>
+  <tr><td colspan="2">
+  <h2>Name :</h2>
+  <div><input type="text" name="name" placeholder="Enter your Name..." class="textbox" id="name"/></div>
+
+  </td></tr>
+  <tr><td style="width:220px;">
+  <h2>Email :</h2>
+  <div><input type="text" name="email" placeholder="Enter your Email Address..." class="textbox" id="email"/></div>
+  </td>
+  <td>
+  <h2>Rate This Place :</h2>
+  <div><select id="rating">
+  <option value="6">Love it</option>
+  <option value="5">Interesting</option>
+  <option value="4">Hot</option>
+  <option value="3">Useful</option>
+  <option value="2">Average</option>
+  <option value="1">Boring</option>
+  <option value="0">Hate it</option>
+  </select>
+  </div>
+  </td></tr>
+  <tr><td colspan="2">
+  <h2>Comment :</h2>
+  <div><textarea name="name" placeholder="Write your comment..." id="comment"></textarea></div>
+  </td></tr>
+  </table>
+  <div><input type="submit" class="btn" value="Comment" id="comment_submit"></div>
+    
+  </form>
+  <div id="success_msg">
+  <?php include('comment/load_comments.php');?>
+  </div>
+  </div>
+  		
                                                                 		
                                                                 		
                                                                 		
