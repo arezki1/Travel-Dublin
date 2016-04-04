@@ -144,10 +144,10 @@ $("#success_msg").prepend(html);
 				including oak, beech, pine, chestnut, and lime. Livestock graze peacefully on pasturelands, 
 				deer roam the forested areas, and horses romp on polo fields.</p>
 				<h3>Information</h3>
-				<p>Address : The Whitefields, Phoenix Park, Dublin 8, Ireland</p>
-				<p>Opening Time : Monday - Sunday 24 hrs</p>
-				<p>Phone : +353 (0)1 677-0095 </p>
-				<p>Website : www.phoenixpark.ie</p>
+				<p>Address : The Whitefields, Phoenix Park, Dublin 8, Ireland</br>
+				Opening Time : Monday - Sunday 24 hrs</br>
+				Phone : +353 (0)1 677-0095 </br>
+				Website : www.phoenixpark.ie</p>
 		 
 	
 		

@@ -31,29 +31,7 @@
 	</head>
     <body>
     <!--begin navbar-->
-	<div class="navbar-static-top navbar-inverse">
-		<div class = "container">
-			<div class = "navbar-brand headerSocH">
-			    <!--add name of user in session to navbar brand-->
-				<a href="#" style="color:white;font-weight:bold">Welcome <?php echo htmlentities($_SESSION['user']['username'], ENT_QUOTES, 'UTF-8'); ?>:
-			</a>
-		</div>
-		<!--button for mini-menu-->
-		<button class = "navbar-toggle" data-toggle = "collapse" data-target=".navHeaderCollapse" style ="color:white; border-color:white; margin-right:0px">
-			Menu
-		</button>
-		<div class = "collapse navbar-collapse navHeaderCollapse" >
-			<ul class = "nav navbar-nav navbar-right">
-				<li class = "listItem"><a href="logged.php" style="color:white;font-weight:bold">Home</a></li>
-				<li class = "listItem"><a href="Chat/index.php"style="color:white;font-weight:bold">Chat</a></li>
-				<li class = "listItem"><a href="forum.php"style="color:white;font-weight:bold">Forum</a></li>
-				<li class = "listItem"><a href="maps.php"style="color:white;font-weight:bold">Maps</a></li>
-				<li class ="listItem"><a href="discover.php"style="color:white;font-weight:bold">Discover</a></li>
-				<li class = "listItem"><a href="logout.php"style="color:white;font-weight:bold">Logout</a></li>
-			</ul>
-		</div>
-		</div>
-	</div>
+
 	<!--nav end-->
 	<br/>
 	<!--main page area for home-->
@@ -80,18 +58,6 @@
     	</div>
     </div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-	</br></br>
-	<!--begin footer-->
-	<footer class="bottom" style="position:relative;bottom:0;width:100%;background-color:#0F0606;color:white;font-weight: bold;">
-		<div class="container hidden-xs">
-			<p class="navbar-text pull-left">NCI Team <a href="Http:/ncirl.ie">
-   				</br></br>
-    			</a> Interdisciplinary Project</p></br>
-				<p class="navbar-text pull-center"> Group C  2016  All Right Reserved.</p>
-				<a href="http://www.ncirl.ie" class="navbar-btn btn-danger btn "> NCI Students</a>
-		</div>
 
-	</footer>
-	</br>
 	</body>
 	    
