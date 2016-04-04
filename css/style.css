@@ -23,9 +23,16 @@
       border: 1px black solid;
       margin-top: 45%;
     }
+.items  {
+
+      font-weight:bold;
+      color:white;
+  
+  
+}
     
     .nav {
-      padding-right: 80px;
+      padding-right: 95px;
     }
     
     #placeholderMap {
@@ -148,7 +155,6 @@
     }
     
 
-<<<<<<< HEAD
       #type-selector label {
         font-family: Roboto;
         font-size: 13px;
@@ -168,6 +174,3 @@
     }
 /* End carousel styling */
     
-=======
-    /******End Map Styling******/
->>>>>>> d22d36e5296fa6483cb7472eaa1ee5be6ff46fba

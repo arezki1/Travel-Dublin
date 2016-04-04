@@ -67,12 +67,12 @@
     		<div class = "collapse navbar-collapse navHeaderCollapse" >
     		    <nav id="nav1">
     			<ul class = "nav navbar-nav navbar-right">
-    				<li class = "listItem"><a data-target="logged.php" href="#" style="color:white;font-weight:bold">Home</a></li>
-    				<li class = "listItem"><a data-target="forum.php" href="#"style="color:white;font-weight:bold">Forum</a></li>
-    				<li class = "listItem"><a data-target="Chat/chat.php" href="#" style="color:white;font-weight:bold">Chat</a></li>
-    				<li class = "listItem"><a data-target="memberlist.php" href="#"style="color:white;font-weight:bold">MemberList</a></li>
-    				<li class = "listItem"><a data-target="discover.php" href="#" style="color:white;font-weight:bold">Discover</a></li>
-    				<li class = "listItem"><a data-target="logout.php" href="#"style="color:white;font-weight:bold">Logout</a></li>
+    				<li class = "items"><a data-target="logged.php" href="#">Home</a></li>
+    				<li class = "items"><a data-target="forum.php" href="#">Forum</a></li>
+    				<li class = "items"><a data-target="Chat/chat.php" href="#">Chat</a></li>
+    				<li class = "items"><a data-target="memberlist.php" href="#">MemberList</a></li>
+    				<li class = "items"><a data-target="discover.php" href="#">Discover</a></li>
+    				<li class = "items"><a data-target="logout.php" href="#">Logout</a></li>
     			
     			</ul>
     			</nav>
