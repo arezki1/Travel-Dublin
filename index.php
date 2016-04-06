@@ -70,7 +70,6 @@
     				<li class = "items"><a data-target="logged.php" href="#">Home</a></li>
     				<li class = "items"><a data-target="forum.php" href="#">Forum</a></li>
     				<li class = "items"><a data-target="Chat/chat.php" href="#">Chat</a></li>
-    				<li class = "items"><a data-target="memberlist.php" href="#">MemberList</a></li>
     				<li class = "items"><a data-target="discover.php" href="#">Discover</a></li>
     				<li class = "items"><a data-target="logout.php" href="#">Logout</a></li>
     			
