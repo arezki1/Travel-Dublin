@@ -28,10 +28,12 @@ echo "<div><span><b>$name</b></span> ";
 echo "<span style='float:right;'><small>";
 if($rating=="6")
 {
+      
 echo "&nbsp; <img src='comment/icons/heart-icon.png'> Loved it";
 }
 else if($rating=="5")
 {
+  
 echo "&nbsp; <img src='comment/icons/thumb-up-icon.png'> Interesting";
 }
 else if($rating=="4")

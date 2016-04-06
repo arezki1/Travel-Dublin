@@ -136,7 +136,7 @@ $("#success_msg").prepend(html);
                 
                     
 
-                    			<a href="7.php">
+                    			<a href="7.php?id=3">
                     			<button type="button" class="btn btn-warning" id="templebar">More Info</button>
                     			</a>
             </div>
@@ -153,7 +153,7 @@ $("#success_msg").prepend(html);
                     	 </br>government's administration in Ireland,</br>
                     	 and is now a major Irish government complex.</p>
                     
-                    			<a href="7.php">
+                    			<a href="7.php?id=1">
                     			   
                     			<button type="button" class="btn btn-warning" id="dublincastle">More Info</button></a>
                      	  </div>
@@ -177,7 +177,7 @@ $("#success_msg").prepend(html);
 	 </br>Its 11 km perimeter wall encloses 707 hectares, </br>
 	 one of the largest walled city parks in Europe.</p>   
 	
-			<a href="7.php">
+			<a href="7.php?id=2">
 			<button type="button" class="btn btn-warning" id="phoenixpark">More Info</button></a>
  	  
             </div>
@@ -195,7 +195,7 @@ $("#success_msg").prepend(html);
      cathedral of the Ecclesiastical province of the United</br>
      Provinces of Dublin and Cashel in the Church of Ireland.</p>   
 
-			<a href="7.php">
+			<a href="7.php?id=4">
 			<button type="button" class="btn btn-warning" id="christchurch">More Info</button></a>
  	  </div>
  	  </div>

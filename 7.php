@@ -2,16 +2,27 @@
 
 <?php
 
+if (empty($_GET["id"])==false){
+    
+    $id=$_GET["id"];
+}
+
+else{
+    header('Location:index.php');
+    
+    exit;
+}
  session_start();
  include("comment/db.php");
 
 
-$sql="Select * from attractions order by title desc";
+$sql="Select * from attractions where id=$id";
 $command=mysql_query($sql);
 while($data=mysql_fetch_row($command)){
 $address=$data[2];
 $title=$data[0];
 $description=$data[1];
+$image=$data[4];
 
 }
 
@@ -122,14 +133,14 @@ $("#success_msg").prepend(html);
 
     <div class="container">
         
-        <?php
+     <?php
         echo
         
         "<h1 style=' padding: 40px 15px; text-align: center;'>$title</h1>";
        
         
       ?>
-  	    <img class="img-responsive" src="img/templebar.jpg" width="980" height="600"><br><br>
+  	    <img class="img-responsive" src="img/<?= $image; ?>" width="980" height="600"><br><br>
   	   
       
 	
