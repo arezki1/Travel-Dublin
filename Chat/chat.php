@@ -85,13 +85,13 @@
                                
     <div class= "row">
              
-        <div class= "col-sm-5" >
+        <div class= "col-md-4" >
               
         <img src="Chat/chat1.jpg" class="img-rounded" alt="Cinque Terre"width="304" height="236">
                                      
        </div>
                              	 
-    <div class= "col-sm-7" >
+    <div class= "col-md-8" >
      	     
     <div id="form-chat">
                            

@@ -16,7 +16,6 @@
     
 ?> <!--styling-->
 
-
 <script type="text/javascript" >
 $(function() {
 $("#comment_submit").click(function() 
@@ -138,11 +137,10 @@ $("#success_msg").prepend(html);
                     
 
                     			<a href="7.php">
-                    			   
                     			<button type="button" class="btn btn-warning" id="templebar">More Info</button>
                     			</a>
             </div>
-                    	  <div class = "col-md-6" >
+                    	  <div class = "col-md-6">
                     	 
                     	 
         <h2>2.Dublin Castle</h2>
@@ -155,7 +153,7 @@ $("#success_msg").prepend(html);
                     	 </br>government's administration in Ireland,</br>
                     	 and is now a major Irish government complex.</p>
                     
-                    			<a href="2.php">
+                    			<a href="7.php">
                     			   
                     			<button type="button" class="btn btn-warning" id="dublincastle">More Info</button></a>
                      	  </div>
@@ -179,7 +177,7 @@ $("#success_msg").prepend(html);
 	 </br>Its 11 km perimeter wall encloses 707 hectares, </br>
 	 one of the largest walled city parks in Europe.</p>   
 	
-			<a href="3.php">
+			<a href="7.php">
 			<button type="button" class="btn btn-warning" id="phoenixpark">More Info</button></a>
  	  
             </div>
@@ -197,7 +195,7 @@ $("#success_msg").prepend(html);
      cathedral of the Ecclesiastical province of the United</br>
      Provinces of Dublin and Cashel in the Church of Ireland.</p>   
 
-			<a href="4.php">
+			<a href="7.php">
 			<button type="button" class="btn btn-warning" id="christchurch">More Info</button></a>
  	  </div>
  	  </div>
@@ -215,7 +213,7 @@ $("#success_msg").prepend(html);
                                 		 <h3>Brewery</h3>
                                      <p>Brewery experience telling the tale of Ireland's famous beer,</br>
                                 	 with tastings and a rooftop bar</p>   
-                    <a href="5.php">
+                    <a href="7.php">
                     <button type="button" class="btn btn-warning" id="guinessstore">More Info</button></a>
             </div>
                          	  
@@ -229,7 +227,7 @@ $("#success_msg").prepend(html);
                                      The National Museum of Ireland is the national museum in Ireland.</br>
                                 	 It has three branches in Dublin and one in County Mayo,</br>
                                 	 with a strong emphasis on Irish art, culture and natural history.</p>
-                    <a href="6.php">
+                    <a href="7.php">
                     <button type="button" class="btn btn-warning" id="nationalmeseum">More Info</button></a>
                          	  
              </div>

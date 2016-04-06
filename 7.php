@@ -6,7 +6,7 @@
  include("comment/db.php");
 
 
-$sql="Select * from attractions where title='Dublin Castle'";
+$sql="Select * from attractions order by title desc";
 $command=mysql_query($sql);
 while($data=mysql_fetch_row($command)){
 $address=$data[2];

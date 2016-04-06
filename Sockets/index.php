@@ -3,7 +3,7 @@
 <head>
 <meta charset='UTF-8' />
 <style type="text/css">
-<!--
+
 .chat_wrapper {
 	width: 500px;
 	margin-right: auto;
@@ -26,7 +26,7 @@
 .system_msg{color: #BDBDBD;font-style: italic;}
 .user_name{font-weight:bold;}
 .user_message{color: #88B6E0;}
--->
+
 </style>
 </head>
 <body>	
@@ -40,7 +40,7 @@ $user_colour = array_rand($colours);
 <script language="javascript" type="text/javascript">  
 $(document).ready(function(){
 	//create a new WebSocket object.
-	var wsUri = "wss://168.100.1.3/server.php"; 	
+	var wsUri = "wss://127.0.0.1:9000/server.php"; 	
 	
 	websocket = new WebSocket(wsUri); 
 	
