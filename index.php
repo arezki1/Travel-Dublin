@@ -68,7 +68,7 @@
     		    <nav id="nav1">
     			<ul class = "nav navbar-nav navbar-right">
     				<li class = "items"><a data-target="logged.php" href="#">Home</a></li>
-    				<li class = "items"><a data-target="forum.php" href="#">Forum</a></li>
+    				<li class = "items"><a data-target="attraction.php" href="#">Attractions</a></li>
     				<li class = "items"><a data-target="Chat/chat.php" href="#">Chat</a></li>
     				<li class = "items"><a data-target="discover.php" href="#">Discover</a></li>
     				<li class = "items"><a data-target="logout.php" href="#">Logout</a></li>
