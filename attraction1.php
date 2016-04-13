@@ -10,8 +10,8 @@
 header("Location: login.php"); 
        
         die("Redirecting to login.php"); 
-    } 
-   if (empty($_GET["id"])==false){
+    }
+ if (empty($_GET["id"])==false){
     
     $id=$_GET["id"];
 }
@@ -105,34 +105,44 @@ $info=$data[5];
 <div class= "row">
          
 <div class= "col-md-6" >
-    <h2>1.Temple Bar</h2>
-
-  		 <img src="img/templebar.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
-
-		<h3>Street in Dublin, Republic of Ireland</h3>
-    <p>Temple Bar is an area on the south bank of the <br>
-    River Liffey in central Dublin, Ireland. The area is <br>
-    bounded by the Liffey to the north, Dame Street to the south,<br>
-	Westmoreland Street to the east and Fishamble Street to the west.</p>
-
+      
+      <?php
+       echo "<h2>1-$title</h2>";
+       ?>
+        
+<img src="img/<?= $image; ?>" class="img-rounded" alt="Cinque Terre" width="304" height="236">
+                        
+                           	 
+         <?php
+       echo "$info";
+       ?>
+                
+                
+                    
 
 <a href="forum.php?id=3">
     
-<button type="button" class="btn btn-warning" id="templebar">More Info</button>
+<button type="button" class="btn btn-warning">More Info</button>
                     			</a>
             </div>
 <div class= "col-md-6">
-                    	 <h2>2.Dublin Castle</h2>
-         <img src="img/DublinCastle.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
-    
-		 <h3>Building complex in Dublin, Republic of Ireland</h3>
-     <p>Dublin Castle off Dame Street, Dublin, Ireland,<br>
-	 was until 1922 the seat of the United Kingdom government's <br>
-	 administration in Ireland, and is now a major Irish government complex.</p>
+                    	 
+                    	 
+         <?php
+       echo "<h2>2$title</h2>";
+       ?>
+        
+                            
+<img src="img/<?= $image; ?>" class="img-rounded" alt="Cinque Terre" width="304" height="236">
+                         
+                    	                     	 
+         <?php
+       echo "$info";
+       ?>
                     
 <a href="forum.php?id=1">
                     			   
-<button type="button" class="btn btn-warning" id="dublincastle">More Info</button></a>
+<button type="button" class="btn btn-warning">More Info</button></a>
                      	  </div>
                                          	  </div>
                           </div><!-- End first container-->
@@ -145,35 +155,40 @@ $info=$data[5];
 <div class= "col-md-6" >
 	 
            
-     <h2>3.Phoenix Park</h2>
-
-   		 <img src="img/PhoenPark.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
-
-		 <h3>Park</h3>
-     <p>Phoenix Park is an urban park in Dublin, Ireland,<br>
-	 lying 2–4 km west of the city centre, north of the River Liffey.<br>
-	 Its 11 km perimeter wall encloses 707 hectares, one of the largest walled city parks in Europe.</p>  
+      <?php
+       echo "<h2>3-$title</h2>";
+       ?>
+        
+<img src="img/<?= $image; ?>"  class="img-rounded" alt="Cinque Terre" width="304" height="236">
+     
+		                     	 
+         <?php
+       echo "$info";
+       ?>
 	
 <a href="forum.php?id=2">
-<button type="button" class="btn btn-warning" id="phoenixpark">More Info</button></a>
+<button type="button" class="btn btn-warning">More Info</button></a>
  	  
             </div>
             
  	 
 <div class= "col-md-6" >
 	 
-     <h2>4.Christ Church Cathedral</h2>
-
-   		 <img src="img/christ-church.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
-
-		 <h3>Cathedral in the Republic of Ireland</h3>
-     <p>Christ Church Cathedral is the cathedral of the <br>
-     United Dioceses of Dublin and Glendalough and the cathedral <br>
-     of the Ecclesiastical province of the United Provinces of Dublin<br>
-	 and Cashel in the Church of Ireland.</p>   
+    
+      <?php
+       echo "<h2>4-$title</h2>";
+       ?>
+        
+        
+<img src="img/<?= $image; ?>"  class="img-rounded" alt="Cinque Terre" width="304" height="236">
+     
+		                     	 
+         <?php
+       echo "$info";
+       ?>
        
 <a href="forum.php?id=4">
-<button type="button" class="btn btn-warning" id="christchurch">More Info</button></a>
+<button type="button" class="btn btn-warning">More Info</button></a>
  	  </div>
  	  </div>
     </div><!--End second container-->
@@ -184,16 +199,24 @@ $info=$data[5];
          
 <div class= "col-md-6" >
     
-    <h2>5.Guinness Storehouse</h2>
-
-   		 <img src="img/guinness-storehouse.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
-
-		 <h3>Brewery</h3>
-     <p>Brewery experience telling the tale of Ireland's famous beer,<br>
-	 with tastings and a rooftop bar</p>   
+    
+   
+      <?php
+       echo "<h2>5-$title</h2>";
+       ?>
+        
+                                     
+                                     
+                                        
+<img src="img/<?= $image; ?>"  class="img-rounded" alt="Cinque Terre" width="304" height="236">
+                                     
+                                	                     	 
+         <?php
+       echo "$info";
+       ?>
        
 <a href="forum.php?id=5">
-<button type="button" class="btn btn-warning" id="guinessstore">More Info</button></a>
+<button type="button" class="btn btn-warning">More Info</button></a>
             </div>
                          	  
                          	 
@@ -201,18 +224,24 @@ $info=$data[5];
     
     
      
-    
-     <h2>6.National Museum of Ireland</h2>
-
-   		 <img src="img/NationalMuseumofIreland.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
-
-		 <h3>Museum in the Republic of Ireland</h3>
-     <p>The National Museum of Ireland is the national museum in Ireland.<br>
-	 It has three branches in Dublin and one in County Mayo,<br>
-	 with a strong emphasis on Irish art, culture and natural history.</p>
+      <?php
+       echo "<h2>6-$title</h2>";
+       ?>
+        
+                                     
+                                     
+                                     
+                                        
+<img src="img/<?= $image; ?>"  class="img-rounded" alt="Cinque Terre" width="304" height="236">
+                                     
+                                		                     	 
+         <?php
+       echo "$info";
+       ?>
+       
        
 <a href="forum.php?id=6">
-<button type="button" class="btn btn-warning" id="nationalmeseum">More Info</button></a>
+<button type="button" class="btn btn-warning">More Info</button></a>
                          	  
              </div>
  	 </div>

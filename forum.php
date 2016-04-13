@@ -23,7 +23,9 @@ $address=$data[2];
 $title=$data[0];
 $description=$data[1];
 $image=$data[4];
-
+$phone=$data[6];
+$opening=$data[7];
+$website=$data[8];
 }
 
 
@@ -147,10 +149,12 @@ $("#success_msg").prepend(html);
 		 <?php
         
         
-     echo   "<p>$description</p></br><br>";
-     echo  "<h3> Information</h3>";
+    echo   "<p>$description</p></br><br>";
+    echo  "<h3> Information</h3>";
 	echo	"<p>$address</p>";
-		
+	echo	"<p>$phone</p>";
+	echo	"<p>$opening</p>";
+	echo	"<p>$website</p>";
         
       ?>
 		
