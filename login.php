@@ -1,3 +1,6 @@
+    <!--tutorial used to complete this section-->
+    <!--http://www.formget.com/login-form-in-php/-->
+
 <?php 
 
     // First we execute our common code to connection to the database and start the session 
@@ -90,7 +93,7 @@
              
             // Redirect the user to the private members-only page. 
             header("Location: index.php"); 
-            die("Redirecting to: index.php"); 
+            die("Redirecting to: login.php"); 
         } 
         else 
         { 
@@ -105,37 +108,5 @@
             $submitted_username = htmlentities($_POST['username'], ENT_QUOTES, 'UTF-8'); 
         } 
     } 
-     
+     include("templates/index.html")
 ?> 
- <!--styling-->
-    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
-    <link rel="stylesheet" href="css/style.css" type="text/css" />
-    <script type="text/javascript" src="js/bootstrap.js"></script>
-    <script type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-<!--styling-->
-    <div class  = "container">
-        <div class="row">
-            <h1 class = "text-center">Social Hotel</h1>
-        <div class = "col-md-4" id = "logoStyle">
-            <img src="img/hotelFront.png" id = "tempLogo" class = "img-responsive"></img>
-        </div>
-        <div class = "col-md-4">
-            <h1>Login</h1> 
-                <form action="login.php" method="post"> 
-                    Username:<br /> 
-                    <input type="text" name="username" value="<?php echo $submitted_username; ?>" /> 
-                    <br /><br /> 
-                    Password:<br /> 
-                    <input type="password" name="password" value="" /> 
-                    <br /><br /> 
-                    <input type="submit" value="Login" /> 
-                </form> 
-                <a href="register.php">Register</a>
-        </div>
-        
-        <div class = "col-md-4">
-            <img src="img/cityScape.jpg" class = "img-responsive img-circle"></img>
-        </div>
-        </div>
-        <footer class = "footer text-center">&copy; Group C NCI 2016</footer>
-        </div>
