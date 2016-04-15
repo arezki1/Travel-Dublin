@@ -1,5 +1,4 @@
-
- <?php require("common.php"); 
+<?php require("common.php"); 
              
             // At the top of the page we check to see whether the user is logged in or not 
             if(empty($_SESSION['user'])) 
@@ -63,56 +62,3 @@
     </div>
     
     
-   <?php 
-    $page=$_GET["page"];
-
-if($_GET["page"]){
-
-
-
-$filename=$page . '.php';
-
-if(file_exists($filename)){
-
-include $filename;
-}
-
-else{
-
-include 'forum.php';
-
-}
-
-}
-    
-    ?>
-
-    
-    
-   </br>
-
-   <footer class="bottom" style="position:relative;
-bottom:0;
-width:100%;background-color:#0F0606;color:white;font-weight: bold;">
-
-<div class="container hidden-xs">
-
-
-  <p class="navbar-text pull-left">NCI Team <a href="Http:/ncirl.ie">
-      
-      
-  </br>  </br></a> Interdisciplinary Project</p></br>
-  
-<p class="navbar-text pull-center"> Group C  2016  All Right Reserved.</p>
-
-
-  <a href="http://www.ncirl.ie" class="navbar-btn btn-danger btn "> NCI Students</a>
-
-  </div>
-
-
-</footer>
-
-</br>    
-  </body>
-</html>
