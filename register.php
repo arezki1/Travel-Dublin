@@ -195,7 +195,7 @@
     <!--styling-->
    
     
-    <div class  = "container" id="backgroundImage">
+    <div class  = "container bgImg">
             <div class="row">
                 <h1 class = "text-center">Social Hotel</h1>
             <div class = "col-md-4">

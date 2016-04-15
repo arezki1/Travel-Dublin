@@ -70,6 +70,7 @@
             } 
         } 
          
+         
         // If the user logged in successfully, then we send them to the private members-only page 
         // Otherwise, we display a login failed message and show the login form again 
         if($login_ok) 
@@ -88,14 +89,19 @@
             // the user's details. 
             $_SESSION['user'] = $row; 
              
-            // Redirect the user to the private members-only page. 
+            //confirmation message
+            
+               // Redirect the user to the private members-only page. 
             header("Location: index.php?page=home"); 
             die("Redirecting to: index.php?page=home"); 
+            
         } 
         else 
         { 
             // Tell the user they failed 
-            print("Login Failed."); 
+            
+            
+            $message="Login Failed."; 
              
             // Show them their username again so all they have to do is enter a new 
             // password.  The use of htmlentities prevents XSS attacks.  You should 
@@ -113,12 +119,12 @@
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <!--styling-->
-    <div class  = "container" id="backgroundImage">
+    <div class  = "container bgImg">
         <div class="row">
             <h1 class = "text-center" id="mainh1">Social Hotel</h1>
         <div class = "col-md-4">
         </div>
-        <div class = "col-md-4" id="backgroundImage">
+        <div class = "col-md-4" class="backgroundImage">
             <h1>Login</h1> 
                 <form action="login.php" method="post"> 
                     Username:<br /> 
@@ -137,8 +143,10 @@
             
         </div>
         </div>
-        </div>
+        
+    </div>
         
     </body>
     
-    <footer class = "footer text-center">&copy; Group C NCI 2016</footer>
+         
+       <footer class = "footer text-center">&copy; Group C NCI 2016</footer>

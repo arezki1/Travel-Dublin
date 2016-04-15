@@ -45,9 +45,8 @@ $info=$data[5];
   
   </br>
 <div class="container">
-      
-      
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
               	    <!-- Indicators -->
 <ol class="carousel-indicators">
 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -92,6 +91,8 @@ $info=$data[5];
 <span class="sr-only">Next</span>
               	    </a>
          	</div>
+          
+
 
 <div class="starter-template">
         
@@ -228,7 +229,8 @@ $info=$data[5];
 <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
 <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    </div>
     </body>
   </html>
 

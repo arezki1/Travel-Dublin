@@ -26,16 +26,16 @@
     
     
     
-    
+    <script type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
       <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
     <script type="text/javascript" src="js/bootstrap.js"></script>
-    <script type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    
 	
 	
 	<div class="navbar-static-top navbar-inverse">
 		<div class = "container" id = "nav">
-		  <div class="container" id="nav">
+
                 <div class="navbar-brand headerSocH">
                     <!--add name of user in session to navbar brand-->
                    	<a href="#" style="color:white;font-weight:bold">Welcome <?php echo htmlentities($_SESSION['user']['username'], ENT_QUOTES, 'UTF-8'); ?>:
