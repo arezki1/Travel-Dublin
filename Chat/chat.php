@@ -64,11 +64,11 @@
     <div class= "row">
              
     <p style="text-align: center;font-weight:bold;color:#000044;font-size:20px">
-             Lorem Ipsum is simply dummy text of the printing and typesetting industry.</br>
-             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</br>
-             , when an unknown printer took a galley of type and scrambled it to make a type </br>
-             specimen book. It has survived not only five centuries, but also the leap into electronic</br>
-             </p>
+             Hello and welcome to the chat room, in here you can</br>
+             chat with other people and share your ideas and experiences.<br>
+             All you need is enter your name(or just a nickname) and start your <br>
+             Amazing Experience.
+           
              
         </div>
         

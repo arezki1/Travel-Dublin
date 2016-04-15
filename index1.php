@@ -13,8 +13,31 @@
             } 
             
             
+
+$page=$_GET["page"];
+
+if($_GET["page"]){
+
+
+
+$filename=$page . '.php';
+
+if(file_exists($filename)){
+
+include $filename;
+}
+
+else{
+
+include 'forum.php';
+
+}
+
+}
+
+?>
             
- ?>
+ 
 
 
 
@@ -22,28 +45,6 @@
 <html>
   <head>
  
-   
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script>
-      $(document).ready(function(){
-        // Set trigger and container variables
-        var trigger = $('#nav1 ul li a'),
-            container = $('#content');
-        
-        // Fire on click
-        trigger.on('click', function(){
-          // Set $this for re-use. Set target from data attribute
-          var $this = $(this),
-            target = $this.data('target');       
-          
-          // Load target page into container
-          container.load(target);
-          
-          // Stop normal link behavior
-          return false;
-        });
-      });
-    </script>
   </head>
   <body>
     
@@ -69,11 +70,11 @@
     		<div class = "collapse navbar-collapse navHeaderCollapse" >
     		    <nav id="nav1">
     			<ul class = "nav navbar-nav navbar-right">
-    				<li class = "items"><a data-target="logged.php" href="#">Home</a></li>
-    				<li class = "items"><a data-target="attraction.php" href="#">Attractions</a></li>
-    				<li class = "items"><a data-target="Chat/chat.php" href="#">Chat</a></li>
-    				<li class = "items"><a data-target="discover1.php" href="#">Discover</a></li>
-    				<li class = "items"><a data-target="logout.php" href="#">Logout</a></li>
+    				<li class = "items"><a href="?page=logged">Home</a></li>
+    				<li class = "items"><a href="?page=attraction">Attractions</a></li>
+    				<li class = "items"><a href="?page=chat">Chat</a></li>
+    				<li class = "items"><a href="?page=discover">Discover</a></li>
+    				<li class = "items"><a href="?page=logout">Logout</a></li>
     			
     			</ul>
     			</nav>
