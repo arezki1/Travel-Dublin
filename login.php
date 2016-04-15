@@ -113,29 +113,32 @@
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <!--styling-->
-    <div class  = "container">
+    <div class  = "container" id="backgroundImage">
         <div class="row">
-            <h1 class = "text-center">Social Hotel</h1>
-        <div class = "col-md-4" id = "logoStyle">
-            <img src="img/hotelFront.png" id = "tempLogo" class = "img-responsive"></img>
-        </div>
+            <h1 class = "text-center" id="mainh1">Social Hotel</h1>
         <div class = "col-md-4">
+        </div>
+        <div class = "col-md-4" id="backgroundImage">
             <h1>Login</h1> 
                 <form action="login.php" method="post"> 
                     Username:<br /> 
-                    <input type="text" name="username" value="<?php echo $submitted_username; ?>" /> 
+                    <input type="text" name="username"/> 
                     <br /><br /> 
                     Password:<br /> 
                     <input type="password" name="password" value="" /> 
                     <br /><br /> 
                     <input type="submit" value="Login" /> 
-                </form> 
-                <a href="register.php">Register</a>
+                </form> <br/>
+                <button class="regLogButton"><a href="register.php" id="reg">Register</a></button>
+                <br/><br/><br/><br/><br/><br/>
         </div>
         
         <div class = "col-md-4">
-            <img src="img/cityScape.jpg" class = "img-responsive img-circle"></img>
+            
         </div>
         </div>
-        <footer class = "footer text-center">&copy; Group C NCI 2016</footer>
         </div>
+        
+    </body>
+    
+    <footer class = "footer text-center">&copy; Group C NCI 2016</footer>

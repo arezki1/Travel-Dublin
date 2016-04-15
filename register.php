@@ -12,10 +12,7 @@
         // Ensure that the user has entered a non-empty username 
         if(empty($_POST['username'])) 
         { 
-            // Note that die() is generally a terrible way of handling user errors 
-            // like this.  It is much better to display the error with the form 
-            // and allow the user to correct their mistake.  However, that is an 
-            // exercise for you to implement yourself. 
+             
             die("Please enter a username."); 
         } 
          
@@ -198,37 +195,41 @@
     <!--styling-->
    
     
-    <div class  = "container">
-        <div class="row">
-            <h1 class = "text-center">Social Hotel</h1>
-        <div class = "col-md-4" id = "logoStyle">
-            <img src="img/hotelFront.png" id = "tempLogo" class = "img-responsive"></img>
-        </div>
-        <div class = "col-md-4">
-            <h1>Register</h1>
-            <form action="register.php" method="post">
-                Username:
-                <br />
-                <input type="text" name="username" value="" />
-                <br />
-                <br /> E-Mail:
-                <br />
-                <input type="text" name="email" value="" />
-                <br />
-                <br /> Password:
-                <br />
-                <input type="password" name="password" value="" />
-                <br />
-                <br />
-                <input type="submit" value="Register" />
-            </form>
-            <a href="login.php">Login</a>
-        </div>
-        
-        <div class = "col-md-4">
-            <img src="img/cityScape.jpg" class = "img-responsive img-circle"></img>
-        </div>
-        </div>
-        <footer class = "footer text-center">&copy; Group C NCI 2016</footer>
-        </div>
+    <div class  = "container" id="backgroundImage">
+            <div class="row">
+                <h1 class = "text-center">Social Hotel</h1>
+            <div class = "col-md-4">
+            </div>
+            <div class = "col-md-4">
+                <h1>Register</h1>
+                <form action="register.php" method="post">
+                    Username:
+                    <br />
+                    <input type="text" name="username" value="" />
+                    <br />
+                    <br /> E-Mail:
+                    <br />
+                    <input type="text" name="email" value="" />
+                    <br />
+                    <br /> Password:
+                    <br />
+                    <input type="password" name="password" value="" />
+                    <br />
+                    <br />
+                    <input class="regLogButton" type="submit" value="Register" />
+                </form>
+                <button class="regLogButton"><a href="login.php">Login</a></button>
+                <br/>
+                <br/>
+                <br/>
+            </div>
+            
+            <div class = "col-md-4">
+            </div>
+            </div>
+            
+            </div>  
+        </body>
+            <footer class = "footer text-center">&copy; Group C NCI 2016</footer>
 
+    
