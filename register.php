@@ -1,3 +1,5 @@
+    <!--tutorial used to complete this section-->
+    <!--http://www.formget.com/login-form-in-php/-->
 <?php 
 
     // First we execute our common code to connection to the database and start the session 

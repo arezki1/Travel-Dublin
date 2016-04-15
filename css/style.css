@@ -30,6 +30,14 @@
   
   
 }
+#backgroundImage{
+      background-image: url('../img/cityScape.jpg');
+      background-repeat: no-repeat;
+      background-position: center;
+      max-height: 800;
+      max-width: 600;
+      border-radius: 80px;
+    }
     
     .nav {
       padding-right: 95px;
