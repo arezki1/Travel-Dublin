@@ -1,13 +1,11 @@
- 
+<br>
  <!DOCTYPE html>
 	 <html>
 	 <!--styling-->
 	 
 	 
 	 <head>
-	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-	  <script type="text/javascript" src="js/bootstrap.js"></script>
-	  <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+	 
 	  <link rel="stylesheet" href="css/style.css" type="text/css" />
 	  <!--nav start-->
 	  <!--weather script start-->
@@ -45,7 +43,7 @@
             <br/>
             <span style="font-size:72px; font-weight:bold;">{$current['temp']}&deg;C</span>
             <br/>
-            <img src="https://l.yimg.com/a/i/us/we/52/{$current['code']}.gif" style="vertical-align: middle;"/>&nbsp;
+            <img src="comment/icons/fire-icon.png" style="vertical-align: middle;"/>&nbsp;
             {$current['text']}
             </p>
             </div>
