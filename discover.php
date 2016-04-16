@@ -1,20 +1,6 @@
 <br>
- <!DOCTYPE html>
-	 <html>
-	 <!--styling-->
-	 
-	 
-	 <head>
-	 
-	  <link rel="stylesheet" href="css/style.css" type="text/css" />
-	  <!--nav start-->
-	  <!--weather script start-->
-	  <script src="//www.powr.io/powr.js" external-type="html"></script>
-	  <!--weather script end-->
-	 </head>
-	
-	 <!--nav end-->
-	<body>
+	 <script src="//www.powr.io/powr.js" external-type="html"></script>
+	 <link rel="stylesheet" href="../ccs/style.css" type="text/css" />
 <div class="container">
 			<!--top row for our maps and plugin-->
 			<div class="col-sm-3">
@@ -319,11 +305,3 @@ echo $second_step[0];
 				</div>
 		
 			</div>
-				<!--second row for our map and weather-->
-
-				 
-				</div>
-			</div>
-	</body>
-	
-	 </html>

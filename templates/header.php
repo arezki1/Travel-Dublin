@@ -19,20 +19,16 @@
 
 <DOCTYPE html>
 <html>
-  <head>
  
-  </head>
-  <body>
-    
-    
-    
-    
-     
-    <link rel="stylesheet" href="css/style.css" type="text/css" />
+	
+	 
+
+
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
     <script type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 	
-	
+
+
 	<div class="navbar-static-top navbar-inverse">
 
 		  <div class="container" id="nav">
