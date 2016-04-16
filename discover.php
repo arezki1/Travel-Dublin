@@ -1,6 +1,16 @@
 <br>
-	 <script src="//www.powr.io/powr.js" external-type="html"></script>
-	 <link rel="stylesheet" href="../ccs/style.css" type="text/css" />
+
+	 <head>
+	 
+	  <link rel="stylesheet" href="css/style.css" type="text/css" />
+	  <!--nav start-->
+	  <!--weather script start-->
+	  <script src="//www.powr.io/powr.js" external-type="html"></script>
+	  <!--weather script end-->
+	 </head>
+	
+	 <!--nav end-->
+	
 <div class="container">
 			<!--top row for our maps and plugin-->
 			<div class="col-sm-3">
@@ -39,15 +49,9 @@
             									<div class = "map-responsive col-md-6" id="map"></div>
                     <input id="pac-input" class="controls" type="text" placeholder="Search For your Location here....">
 
-                            <script>
-                              // This example adds a search box to a map, using the Google Place Autocomplete
-                              // feature. People can enter geographical searches. The search box will return a
-                              // pick list containing a mix of places and predicted search terms.
-                        
-                              // This example requires the Places library. Include the libraries=places
-                              // parameter when you first load the API. For example:
-                              // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
-                        
+                         
+                              <!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places"> -->
+                        <script>
                               function initAutocomplete() {
                                 var map = new google.maps.Map(document.getElementById('map'), {
                                   center: {lng: -6.2549504, lat: 53.3339284},
@@ -305,3 +309,11 @@ echo $second_step[0];
 				</div>
 		
 			</div>
+				<!--second row for our map and weather-->
+
+				 
+				</div>
+			</div>
+	</body>
+	
+	 </html>

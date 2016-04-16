@@ -1,4 +1,4 @@
-
+ <link rel="stylesheet" href="css/style.css" type="text/css" />
 	<!--main page area for home-->
 	<div class = "row">
     	 <div class = "col-md-4">
@@ -18,7 +18,4 @@
     		<img src="img/hotel-room.jpg" class="img-responsive" id="placeHolder"></img>
     	</div>
     </div>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 
-	</body>
-	    
