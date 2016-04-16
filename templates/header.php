@@ -20,11 +20,23 @@
 <DOCTYPE html>
 <html>
  
+<<<<<<< HEAD
 	
 	 
 
 
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+=======
+  </head>
+  <body>
+    
+    
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css" type="text/css" />
+    <link rel="stylesheet" href="../css/bootstrap.css" type="text/css" />
+>>>>>>> 519bb15a5db9f515bbdb95af62dc29c4e0a9ffc8
     <script type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 	
 
