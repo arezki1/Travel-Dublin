@@ -1,7 +1,11 @@
 <?php 
 
     // First we execute our common code to connection to the database and start the session 
+<<<<<<< HEAD
     require("registration/common.php"); 
+=======
+    require("common.php"); 
+>>>>>>> b92aed22aaec0a7d04b6837cddae08d378858b0a
      
     // At the top of the page we check to see whether the user is logged in or not 
     if(empty($_SESSION['user'])) 
@@ -45,9 +49,14 @@ $info=$data[5];
   
   </br>
 <div class="container">
+<<<<<<< HEAD
       
       
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
+=======
+
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+>>>>>>> b92aed22aaec0a7d04b6837cddae08d378858b0a
               	    <!-- Indicators -->
 <ol class="carousel-indicators">
 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -92,6 +101,11 @@ $info=$data[5];
 <span class="sr-only">Next</span>
               	    </a>
          	</div>
+<<<<<<< HEAD
+=======
+          
+
+>>>>>>> b92aed22aaec0a7d04b6837cddae08d378858b0a
 
 <div class="starter-template">
         
@@ -228,7 +242,12 @@ $info=$data[5];
 <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
 <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<<<<<<< HEAD
 <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+=======
+
+    </div>
+>>>>>>> b92aed22aaec0a7d04b6837cddae08d378858b0a
     </body>
   </html>
 
