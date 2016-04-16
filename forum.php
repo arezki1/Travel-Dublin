@@ -30,14 +30,14 @@ $website=$data[8];
 
 
 
-require("common.php"); 
+require("registration/common.php"); 
  
 if(empty($_SESSION['user'])) 
 { 
 
-    header("Location: login.php"); 
+    header("Location: registration/login.php"); 
     
-    die("Redirecting to login.php"); 
+    die("Redirecting to registration/login.php"); 
 } 
  
 	

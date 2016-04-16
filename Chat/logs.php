@@ -1,5 +1,5 @@
 <?php 
-require("../common.php"); 
+require("../registration/common.php"); 
 
 $con = mysql_connect('sql2.freemysqlhosting.net', 'sql2107364','dZ2*wT7%');
 mysql_select_db('sql2107364', $con);

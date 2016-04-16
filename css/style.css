@@ -5,10 +5,7 @@
       max-width: 1140px;
       margin-left: auto;
       margin-right: auto;
-<<<<<<< HEAD
-=======
-      background-color: #eaeaea;
->>>>>>> b92aed22aaec0a7d04b6837cddae08d378858b0a
+
       
     }
     /*some small padding on the logo image*/
@@ -34,11 +31,7 @@
   
   
 }
-<<<<<<< HEAD
 #backgroundImage{
-=======
-.bgImg{
->>>>>>> b92aed22aaec0a7d04b6837cddae08d378858b0a
       background-image: url('../img/cityScape.jpg');
       background-repeat: no-repeat;
       background-position: center;
@@ -46,18 +39,9 @@
       max-width: 600;
       border-radius: 80px;
     }
-<<<<<<< HEAD
     
     .nav {
       padding-right: 95px;
-=======
-    #confirmation{
-      color: white;
-    }
-    .nav {
-      padding-right: 95px;
-      margin:auto;
->>>>>>> b92aed22aaec0a7d04b6837cddae08d378858b0a
     }
     
     #placeholderMap {
@@ -191,23 +175,11 @@
       
 /******End Map Styling******/
 
-<<<<<<< HEAD
  /* carousel styling */
     .carousel-inner > .item > img,
     .carousel-inner > .item > a > img {
         width: 50%;
         margin: auto;
-=======
-/*http://stackoverflow.com/questions/10591422/bootstrap-carousel-image-doesnt-align-properly*/
- /* carousel styling */
-    .carousel-inner > .item > img{
-       margin: 0 auto;
-    
-    }
-    .carousel-inner > .item > a > img {
-        width: 50%;
-        margin: 0 auto;
->>>>>>> b92aed22aaec0a7d04b6837cddae08d378858b0a
     }
 /* End carousel styling */
     

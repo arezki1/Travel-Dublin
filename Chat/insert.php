@@ -1,6 +1,6 @@
 <?php 
 
-require("../common.php"); 
+require("../registration/common.php"); 
 
 $uname = $_REQUEST['uname'];
 $msg = $_REQUEST['msg'];
