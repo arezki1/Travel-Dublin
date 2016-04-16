@@ -1,0 +1,48 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+ 
+  background-image:url('bg1.jpg');
+}
+
+.uname{ 
+color:red;
+font-weight:bold;
+font-size:15px;
+font-family:Verdana, Geneva, sanas-serif;
+
+}
+
+.msg{
+ color:#000044;
+ font-weight: bold;
+ 
+ font-family:Georgia, "Times New Roman", Times,serif;
+
+}
+.button{
+ text-align:center;
+ background-color:#00F;
+ border-width:2px;
+ border-style:solid;
+ border-color:#000;
+ color:#FFF;
+ padding-left:10px;
+ padding-right:10px;
+ text-decoration:none;
+}
+
+#form-chat{
+ 
+ 
+margin: auto;
+    width: 40%;
+    border: 12px dashed #1F7A8C; 
+    padding: 10px;
+    margin-top: 20px;
+    
+   
+ 
+ 
+}
