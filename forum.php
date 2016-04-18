@@ -140,8 +140,13 @@ $("#success_msg").prepend(html);
   
   
  <body>
+<<<<<<< HEAD
 
     <div class="container">
+=======
+ <?php include "templates/header.php"; ?>
+    <div class="container coolFont bradius box">
+>>>>>>> 8ec47c8de57b88b88d5fc6980636bddda8015b73
         <div class ="row">
              <?php
         echo

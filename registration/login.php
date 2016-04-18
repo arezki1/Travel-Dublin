@@ -109,7 +109,7 @@
     <script type="text/javascript" src="../js/bootstrap.js"></script>
     <script type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <!--styling-->
-    <div class  = "container bgImg">
+    <div class  = "container bgImg coolFont box">
         <div class="row">
             <h1 class = "text-center" id="mainh1">Social Hotel</h1>
         <div class = "col-md-4">
@@ -137,6 +137,6 @@
     </div>
         
     </body>
-    
+    <br/>
          
-       <footer class = "footer text-center">&copy; Group C NCI 2016</footer>
+       <footer class = "footer text-center ">&copy; Group C NCI 2016</footer>
