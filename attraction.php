@@ -18,10 +18,10 @@ header("Location: login.php");
 
 
 
-<link rel="stylesheet" href="css/style.css" type="text/css" />
+<link rel="stylesheet" href="../css/style.css" type="text/css" />
 
   </br>
-<div class="container">
+<div class="container coolFont bradius box">
       
       
 <div id="myCarousel" class="carousel slide" data-ride="carousel">

@@ -109,7 +109,7 @@ $("#success_msg").prepend(html);
   
  <body>
  <?php include "templates/header.php"; ?>
-    <div class="container">
+    <div class="container coolFont bradius box">
         <div class ="row">
              <?php
         echo

@@ -9,6 +9,7 @@
       background-image: url("../img/city-wallpaper-18.jpg");
       background-attachment: fixed;
     }
+    /*http://stackoverflow.com/questions/2570972/css-font-border*/
     .coolFont{
       font: 18px/24px , Georgia, Times, Serif;
       text-align: justify;
@@ -42,7 +43,6 @@
       background-color: rgba(0, 0, 255, 0.5);
       clear: none;
       height: 530px;
-    
       float:right;
     }
     
