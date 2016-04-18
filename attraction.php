@@ -96,7 +96,7 @@ header("Location: login.php");
 
 <a href="forum.php?id=3">
     
-<button type="button" class="btn btn-warning" id="templebar">More Info</button>
+<button type="button" class="btn btn-warning">More Info</button>
                     			</a>
             </div>
 <div class= "col-md-6">
@@ -110,7 +110,7 @@ header("Location: login.php");
                     
 <a href="forum.php?id=1">
                     			   
-<button type="button" class="btn btn-warning" id="dublincastle">More Info</button></a>
+<button type="button" class="btn btn-warning">More Info</button></a>
                      	  </div>
                                          	  </div>
                           </div><!-- End first container-->
@@ -133,7 +133,7 @@ header("Location: login.php");
 	 Its 11 km perimeter wall encloses 707 hectares, one of the largest walled city parks in Europe.</p>  
 	
 <a href="forum.php?id=2">
-<button type="button" class="btn btn-warning" id="phoenixpark">More Info</button></a>
+<button type="button" class="btn btn-warning">More Info</button></a>
  	  
             </div>
             
@@ -151,7 +151,7 @@ header("Location: login.php");
 	 and Cashel in the Church of Ireland.</p>   
        
 <a href="forum.php?id=4">
-<button type="button" class="btn btn-warning" id="christchurch">More Info</button></a>
+<button type="button" class="btn btn-warning">More Info</button></a>
  	  </div>
  	  </div>
     </div><!--End second container-->
@@ -171,7 +171,7 @@ header("Location: login.php");
 	 with tastings and a rooftop bar</p>   
        
 <a href="forum.php?id=5">
-<button type="button" class="btn btn-warning" id="guinessstore">More Info</button></a>
+<button type="button" class="btn btn-warning">More Info</button></a>
             </div>
                          	  
                          	 
@@ -190,7 +190,7 @@ header("Location: login.php");
 	 with a strong emphasis on Irish art, culture and natural history.</p>
        
 <a href="forum.php?id=6">
-<button type="button" class="btn btn-warning" id="nationalmeseum">More Info</button></a>
+<button type="button" class="btn btn-warning">More Info</button></a>
                          	  
              </div>
  	 </div>

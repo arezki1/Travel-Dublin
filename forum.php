@@ -105,10 +105,42 @@ $("#success_msg").prepend(html);
 </script>
 
   </head>
+  	<div class="navbar-static-top navbar-inverse">
+
+		  <div class="container" id="nav">
+		        <div class="navbar-brand headerSocH">
+                    <!--add name of user in session to navbar brand-->
+                   	<a href="index.php" style="color:white;font-weight:bold"> Back to Home Page</a>
+			        
+		       </div>
+              
+		<button class = "navbar-toggle" data-toggle = "collapse" data-target=".navHeaderCollapse" style ="color:white; border-color:white; margin-right:0px">
+			Menu
+		</button>
+    	
+    		<div class = "collapse navbar-collapse navHeaderCollapse" >
+    		    <nav id="nav1">
+    			<ul class = "nav navbar-nav navbar-right">
+    				
+    				<li class = "items"><a href="forum.php?id=1" style="color:white">Dublin Castle      </a></li>
+    				<li class = "items"><a href="forum.php?id=2" style="color:white">Phoenix Park       </a></li>
+    				<li class = "items"><a href="forum.php?id=3" style="color:white">Temple Bar         </a></li>
+    				<li class = "items"><a href="forum.php?id=4" style="color:white">Christ Church      </a></li>
+    				<li class = "items"><a href="forum.php?id=5" style="color:white">Guinness Storehouse</a></li>
+    				<li class = "items"><a href="forum.php?id=6" style="color:white">National Museum    </a></li>
+    				
+    			</ul>
+    			</nav>
+		   </div>
+		       
+	</div>
+    </div>
+    
+    
   
   
  <body>
- <?php include "templates/header.php"; ?>
+
     <div class="container">
         <div class ="row">
              <?php
@@ -137,7 +169,7 @@ $("#success_msg").prepend(html);
         
       ?>
 	        
-	    </div>
+	    </div><br><br>
 	
 		
 	
@@ -189,17 +221,7 @@ $("#success_msg").prepend(html);
   </div>
   
                                                                 		
-		</br></br>
-		
 
-
-             <div style="text-align:center">       
-            		 
-            		<a href="forum.php">
-            		<button type="button" class="btn btn-warning" >Back to Forum Page</button></a>
-		
-		         </div>
-		
    	 </div>
 	  
 

@@ -114,8 +114,7 @@
             								</div>
             									
         <!-- start the theird div -->
-        
-        
+      
             <div class= "col-md-3"  style=" background-color: rgba(0, 0, 255, 0.5); height: 530px;">
             <h2>Forecast</h2>
             

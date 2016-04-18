@@ -40,8 +40,8 @@
 		  <div class="container" id="nav">
                 <div class="navbar-brand headerSocH">
                     <!--add name of user in session to navbar brand-->
-                   	<a href="#" style="color:white;font-weight:bold">Welcome <?php echo htmlentities($_SESSION['user']['username'], ENT_QUOTES, 'UTF-8'); ?>:
-			        </a>
+                   	<p href="#" style="color:white;font-weight:bold">Welcome <?php echo htmlentities($_SESSION['user']['username'], ENT_QUOTES, 'UTF-8'); ?>:
+			        </p>
 		       </div>
 		<button class = "navbar-toggle" data-toggle = "collapse" data-target=".navHeaderCollapse" style ="color:white; border-color:white; margin-right:0px">
 			Menu
@@ -50,15 +50,21 @@
     		<div class = "collapse navbar-collapse navHeaderCollapse" >
     		    <nav id="nav1">
     			<ul class = "nav navbar-nav navbar-right">
-    				<li class = "items"><a href="?page=home">Home</a></li>
-    				<li class = "items"><a href="?page=attraction">Attractions</a></li>
-    				<li class = "items"><a href="?page=chat">Chat</a></li>
-    				<li class = "items"><a href="?page=discover">Discover</a></li>
-    				<li class = "items"><a href="?page=logout">Logout</a></li>
-    			
+    				<li class = "items"><a href="?page=home"       style="color:white">Home       </a></li>
+    				<li class = "items"><a href="?page=attraction" style="color:white">Attractions</a></li>
+    				<li class = "items"><a href="?page=chat"       style="color:white">Chat       </a></li>
+    				<li class = "items"><a href="?page=discover"   style="color:white">Discover   </a></li>
+    				<li class = "items"><a href="?page=logout"     style="color:white">Logout     </a></li>
+    				  <div class="navbar-brand headerSocH">
+                    <!--add name of user in session to navbar brand-->
+                   	<p href="#" style="color:white;font-weight:bold">Welcome <?php echo htmlentities($_SESSION['user']['username'], ENT_QUOTES, 'UTF-8'); ?>
+			        </p>
+		       </div> 
+    			    
     			</ul>
     			</nav>
 		   </div>
+		       
 	</div>
     </div>
     

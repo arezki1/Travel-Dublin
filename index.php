@@ -9,7 +9,8 @@ $routes = [
 	'logout'		=> 'logout.php',
 	'discover'		=> 'discover.php',
 	'attraction'	=> 'attraction.php',
-	'chat'			=> 'Chat/chat.php'
+	'chat'			=> 'Chat/chat.php',
+	'forum'			=> 'Chat/chat.php'
 ];
 
 $default = 'home.php';
