@@ -11,28 +11,7 @@ header("Location: login.php");
        
         die("Redirecting to login.php"); 
     } 
-   if (empty($_GET["id"])==false){
-    
-    $id=$_GET["id"];
-}
-
-
- session_start();
-
- include("comment/db.php");
-
-
-$sql="Select * from attractions order by  id desc";
-$command=mysql_query($sql);
-while($data=mysql_fetch_row($command)){
-$address=$data[2];
-$title=$data[0];
-$description=$data[1];
-$image=$data[4];
-$info=$data[5];
-
-}
-   
+ 
     
 ?> <!--styling-->
 
