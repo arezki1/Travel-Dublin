@@ -51,13 +51,13 @@ if(empty($_SESSION['user']))
  
 
     <title>HotelSocial F O R U M</title>
-
+    <script type="text/javascript" src="../comment/jquery.min.js"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+    <!--<link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">-->
+    <!--<script src="../../assets/js/ie-emulation-modes-warning.js"></script>-->
     <link rel="stylesheet" href="comment/wtfdiary.css">
      <link rel="stylesheet" href="../css/style.css" type="text/css" />
-    <script type="text/javascript" src="comment/jquery.min.js"></script>
+    
 
 		<style>
 		  body {padding-top: 50px;}
@@ -145,8 +145,155 @@ $("#success_msg").prepend(html);
     <div class="container">
 =======
  <?php include "templates/header.php"; ?>
+<?php
+
+if (empty($_GET["id"])==false){
+    
+    $id=$_GET["id"];
+}
+
+else{
+    header('Location:index.php');
+    
+    exit;
+}
+ session_start();
+ include("comment/db.php");
+
+
+$sql="Select * from attractions where id=$id";
+$command=mysql_query($sql);
+while($data=mysql_fetch_row($command)){
+$address=$data[2];
+$title=$data[0];
+$description=$data[1];
+$image=$data[4];
+$phone=$data[6];
+$opening=$data[7];
+$website=$data[8];
+}
+
+
+
+require("registration/common.php"); 
+ 
+if(empty($_SESSION['user'])) 
+{ 
+
+    header("Location: registration/login.php"); 
+    
+    die("Redirecting to registration/login.php"); 
+} 
+ 
+	
+?>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+ 
+
+    <title>HotelSocial F O R U M</title>
+    <script type="text/javascript" src="../comment/jquery.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--<link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">-->
+    <!--<script src="../../assets/js/ie-emulation-modes-warning.js"></script>-->
+    <link rel="stylesheet" href="comment/wtfdiary.css">
+     <link rel="stylesheet" href="../css/style.css" type="text/css" />
+    
+
+		<style>
+		  body {padding-top: 50px;}
+	    </style>
+	    
+	    
+	    
+
+
+<script type="text/javascript" >
+$(function() {
+$("#comment_submit").click(function() 
+{
+var name = $("#name").val();
+var email = $("#email").val();
+var rating = $("#rating").val();
+var comment = $("#comment").val();
+var attraction=$("#attraction").text();
+
+var dataString = 'name='+ name + '&email='+ email + '&comment='+ comment + '&rating=' +rating+'&attraction='+attraction;
+if(name=='' || email=='' || comment=='' || rating=='') 
+{
+alert('Please fill all textboxes');
+}
+else
+{
+
+$.ajax({
+type: "POST",
+url: "comment/save_form.php",
+data: dataString,
+cache: false,
+success: function(html){
+$("#name").val('');
+$("#email").val('');
+$("#rating").val('');
+$("#comment").val('');
+$("#attraction").text('');
+$("#success_msg").prepend(html);
+}
+});
+}return false;
+}); 
+});
+</script>
+
+  </head>
+  	<div class="navbar-static-top navbar-inverse">
+
+		  <div class="container" id="nav">
+		        <div class="navbar-brand headerSocH">
+                    <!--add name of user in session to navbar brand-->
+                   	<a href="index.php" style="color:white;font-weight:bold"> Back to Home Page</a>
+			        
+		       </div>
+              
+		<button class = "navbar-toggle" data-toggle = "collapse" data-target=".navHeaderCollapse" style ="color:white; border-color:white; margin-right:0px">
+			Menu
+		</button>
+    	
+    		<div class = "collapse navbar-collapse navHeaderCollapse" >
+    		    <nav id="nav1">
+    			<ul class = "nav navbar-nav navbar-right">
+    				
+    				<li class = "items"><a href="forum.php?id=1" style="color:white">Dublin Castle      </a></li>
+    				<li class = "items"><a href="forum.php?id=2" style="color:white">Phoenix Park       </a></li>
+    				<li class = "items"><a href="forum.php?id=3" style="color:white">Temple Bar         </a></li>
+    				<li class = "items"><a href="forum.php?id=4" style="color:white">Christ Church      </a></li>
+    				<li class = "items"><a href="forum.php?id=5" style="color:white">Guinness Storehouse</a></li>
+    				<li class = "items"><a href="forum.php?id=6" style="color:white">National Museum    </a></li>
+    				
+    			</ul>
+    			</nav>
+		   </div>
+		       
+	</div>
+    </div>
+    
+    
+  
+  
+ <body>
+<<<<<<< HEAD
+
+    <div class="container">
+=======
+ <?php include "templates/header.php"; ?>
+    <div class="container">
     <div class="container coolFont bradius box">
->>>>>>> 8ec47c8de57b88b88d5fc6980636bddda8015b73
         <div class ="row">
              <?php
         echo
@@ -155,8 +302,8 @@ $("#success_msg").prepend(html);
        
         
       ?>
-  	    <img class="img-responsive" src="img/<?= $image; ?>" width="980" height="600">
-            
+  	    <img class="img-responsive" src="img/<?= $image; ?>" >
+            <!--max-width="970" max-height="590"-->
         </div>
     
   	   <br><br>

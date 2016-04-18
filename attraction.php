@@ -13,18 +13,13 @@ header("Location: login.php");
     } 
  
     
-?> <!--styling-->
-
-
-
-
-<link rel="stylesheet" href="../css/style.css" type="text/css" />
+?> 
 
   </br>
-<div class="container coolFont bradius box">
+<div class="container">
       
       
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
+<div id="myCarousel" class="carousel slide coolFont bradius box" data-ride="carousel">
               	    <!-- Indicators -->
 <ol class="carousel-indicators">
 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -75,15 +70,15 @@ header("Location: login.php");
         
         
         
-      <h1>TOP 10 PLACES IN DUBLIN</h1>
+      <h1 class="coolFont" style="text-align:center">TOP 10 PLACES IN DUBLIN</h1>
       
       
-<div class="container"> <!--first container-->
+<div class="container coolFont bradius box"> <!--first container-->
                            
 <div class= "row">
          
 <div class= "col-md-6" >
-    <h2>1.Temple Bar</h2>
+    <h2 class="centerText">1.Temple Bar</h2>
 
   		 <img src="img/templebar.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
 
@@ -100,8 +95,8 @@ header("Location: login.php");
                     			</a>
             </div>
 <div class= "col-md-6">
-                    	 <h2>2.Dublin Castle</h2>
-         <img src="img/DublinCastle.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
+                    	 <h2 class="centerText">2.Dublin Castle</h2>
+         <img src="img/DublinCastle.jpg" class="img-rounded img-responsive" alt="Cinque Terre" width="304" height="236">
     
 		 <h3>Building complex in Dublin, Republic of Ireland</h3>
      <p>Dublin Castle off Dame Street, Dublin, Ireland,<br>
@@ -114,18 +109,18 @@ header("Location: login.php");
                      	  </div>
                                          	  </div>
                           </div><!-- End first container-->
-                     	 
+                     	 <br/>
                     	 
-<div class="container"> <!--second container-->
+<div class="container coolFont bradius box"> <!--second container-->
                                                
 <div class= "row">
                              
 <div class= "col-md-6" >
 	 
            
-     <h2>3.Phoenix Park</h2>
+     <h2 class="centerText">3.Phoenix Park</h2>
 
-   		 <img src="img/PhoenPark.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
+   		 <img src="img/PhoenPark.jpg" class="img-rounded img-responsive" alt="Cinque Terre" width="304" height="236">
 
 		 <h3>Park</h3>
      <p>Phoenix Park is an urban park in Dublin, Ireland,<br>
@@ -140,9 +135,9 @@ header("Location: login.php");
  	 
 <div class= "col-md-6" >
 	 
-     <h2>4.Christ Church Cathedral</h2>
+     <h2 class="centerText">4.Christ Church Cathedral</h2>
 
-   		 <img src="img/christ-church.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
+   		 <img src="img/christ-church.jpg" class="img-rounded img-responsive" alt="Cinque Terre" width="304" height="236">
 
 		 <h3>Cathedral in the Republic of Ireland</h3>
      <p>Christ Church Cathedral is the cathedral of the <br>
@@ -155,16 +150,16 @@ header("Location: login.php");
  	  </div>
  	  </div>
     </div><!--End second container-->
-
-<div class="container"> <!--Theird container-->
+    <br/>
+<div class="container coolFont bradius box"> <!--Theird container-->
     
 <div class= "row">
          
 <div class= "col-md-6" >
     
-    <h2>5.Guinness Storehouse</h2>
+    <h2 class="centerText">5.Guinness Storehouse</h2>
 
-   		 <img src="img/guinness-storehouse.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
+   		 <img src="img/guinness-storehouse.jpg" class="img-rounded img-responsive" alt="Cinque Terre" width="304" height="236">
 
 		 <h3>Brewery</h3>
      <p>Brewery experience telling the tale of Ireland's famous beer,<br>
@@ -180,9 +175,9 @@ header("Location: login.php");
     
      
     
-     <h2>6.National Museum of Ireland</h2>
-
-   		 <img src="img/NationalMuseumofIreland.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
+     <h2 class="centerText">6.National Museum of Ireland</h2>
+ 
+   		 <img src="img/NationalMuseumofIreland.jpg" class="img-rounded img-responsive" alt="Cinque Terre" width="304" height="236">
 
 		 <h3>Museum in the Republic of Ireland</h3>
      <p>The National Museum of Ireland is the national museum in Ireland.<br>

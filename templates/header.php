@@ -26,19 +26,14 @@
     <!--needed the secure cdn links for mini menu-->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="../css/style.css" type="text/css" />
     <link rel="stylesheet" href="../css/bootstrap.css" type="text/css" />
     <link rel="stylesheet" href="../css/style.css" type="text/css" />
-
-
-   
-	
-
+    
 
 	<div class="navbar-static-top navbar-inverse">
 
 		  <div class="container" id="nav">
-                <div class="navbar-brand headerSocH">
+                <div class="navbar-brand navbar-right headerSocH">
                     <!--add name of user in session to navbar brand-->
                    	<p href="#" style="color:white;font-weight:bold">Welcome <?php echo htmlentities($_SESSION['user']['username'], ENT_QUOTES, 'UTF-8'); ?>:
 			        </p>
@@ -49,6 +44,7 @@
     	
     		<div class = "collapse navbar-collapse navHeaderCollapse" >
     		    <nav id="nav1">
+    		        <a href="#" class="pull-left"><img src="../img/hotelFront.png" class="img-responsive" id="logo"></img></a>
     			<ul class = "nav navbar-nav navbar-right">
     				<li class = "items"><a href="?page=home"       style="color:white">Home       </a></li>
     				<li class = "items"><a href="?page=attraction" style="color:white">Attractions</a></li>
@@ -57,8 +53,8 @@
     				<li class = "items"><a href="?page=logout"     style="color:white">Logout     </a></li>
     				  <div class="navbar-brand headerSocH">
                     <!--add name of user in session to navbar brand-->
-                   	<p href="#" style="color:white;font-weight:bold">Welcome <?php echo htmlentities($_SESSION['user']['username'], ENT_QUOTES, 'UTF-8'); ?>
-			        </p>
+                   
+			        
 		       </div> 
     			    
     			</ul>

@@ -49,7 +49,7 @@
                               function initAutocomplete() {
                                 var map = new google.maps.Map(document.getElementById('map'), {
                                   center: {lng: -6.2549504, lat: 53.3339284},
-                                  zoom: 5,
+                                  zoom: 10,
                                   mapTypeId: google.maps.MapTypeId.ROADMAP
                                 });
                        
