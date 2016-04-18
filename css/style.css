@@ -5,11 +5,38 @@
       max-width: 1140px;
       margin-left: auto;
       margin-right: auto;
-
-      
+      /*https://newevolutiondesigns.com/images/freebies/city-wallpaper-18.jpg*/
+      background-image: url("../img/city-wallpaper-18.jpg");
+      background-attachment: fixed;
     }
-    /*some small padding on the logo image*/
+    .coolFont{
+      font: 18px/24px , Georgia, Times, Serif;
+      text-align: justify;
+      color: black;
+      text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+
+    }
+    #commentForm{
+      padding:10px;
+      margin: 0 auto;
+    }
     
+    /*http://www.cssmatic.com/box-shadow*/
+    /*really helpful tool for styling*/
+    .box{
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.58);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.58);
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.58);
+        /*http://www.pixeden.com/media/k2/galleries/165/003-subtle-light-pattern-background-texture-vol5.jpg*/
+        background-image:url("../img/lightBground.jpg");
+      }
+    .bradius{
+        border-radius: 5px 5px 5px 5px;
+        -moz-border-radius: 10px 10px 10px 10px;
+        -webkit-border-radius: 10px 10px 10px 10px;
+        border: 3px solid #000000;
+        padding: 5px;
+    }
       
     #weatherright{
       background-color: rgba(0, 0, 255, 0.5);
@@ -24,11 +51,6 @@
       max-width: 200px;
       max-height: 200px;
     }
-    /*
-    .linkOne {
-        font-weight: bold;
-    }
-    */
     
     #placeHolder {
       border: 1px black solid;

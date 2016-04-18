@@ -17,7 +17,7 @@ $rating=$data[3];
 $comment=$data[4];
 $attraction=$data[5];
 
-echo "<div class='comment_box'>";
+echo "<div class='comment_box coolFont' style='margin: auto; border: 1px solid black'>";
 
 echo "<div class='image_box'><img src='http://www.gravatar.com/avatar/$image?s=50' id='avatar_img'/></div>";
 echo "<div class='body'>";

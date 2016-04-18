@@ -56,7 +56,7 @@ if(empty($_SESSION['user']))
     <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
     <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
     <link rel="stylesheet" href="comment/wtfdiary.css">
-     <link rel="stylesheet" href="css/style.css" type="text/css" />
+     <link rel="stylesheet" href="../css/style.css" type="text/css" />
     <script type="text/javascript" src="comment/jquery.min.js"></script>
 
 		<style>
@@ -110,46 +110,53 @@ $("#success_msg").prepend(html);
  <body>
  <?php include "templates/header.php"; ?>
     <div class="container">
-        
-     <?php
+        <div class ="row">
+             <?php
         echo
         
-        "<h1 style=' padding: 40px 15px; text-align: center;'>$title</h1>";
+        "<h1 style=' padding: 40px 15px; text-align: center;' class='coolFont'>$title</h1>";
        
         
       ?>
-  	    <img class="img-responsive" src="img/<?= $image; ?>" width="980" height="600"><br><br>
-  	   
+  	    <img class="img-responsive" src="img/<?= $image; ?>" width="980" height="600">
+            
+        </div>
+    
+  	   <br><br>
       
-	
-		 <?php
+	    <div class="row bradius box coolFont">
+	        	 <?php
         
         
-    echo   "<p>$description</p></br><br>";
-    echo  "<h3> Information</h3>";
-	echo	"<p>$address</p>";
-	echo	"<p>$phone</p>";
-	echo	"<p>$opening</p>";
-	echo	"<p>$website</p>";
+    echo    "<p style='color: black;'>$description</p></br><br>";
+    echo    "<h3 style='color: black; text-align: center;'> Information</h3>";
+	echo	"<p style='color: black; text-align: center;'>$address</p>";
+	echo	"<p style='color: black; text-align: center;'>$phone</p>";
+	echo	"<p style='color: black; text-align: center;'>$opening</p>";
+	echo	"<p style='color: black; text-align: center;'>$website</p>";
         
       ?>
+	        
+	    </div>
+	
 		
 	
-  		<div id="container">
-  <h1 style='color:#6C267A ;font-weight:bold;	'>Please leave your comment below ! </h1>
-  <form action="#" method="POST">
+  		<div id="container" class="bradius box">
+  <h1 class="coolFont" style="text-align: center;">Please leave your comment below !</h1>
+  <div class ="form-group">
+       <form role="form" action="#" method="POST" id="commentForm">
   <table>
   <tr><td colspan="2">
-  <h2>Name :</h2>
-  <div><input type="text" name="name" placeholder="Enter your Name..." class="textbox" id="name"/></div>
+  <h2 class="coolFont">Name :</h2>
+  <div><input type="text" name="name" placeholder="Enter your Name..." class="textbox .form-control" id="name"/></div>
 
   </td></tr>
   <tr><td style="width:220px;">
-  <h2>Email :</h2>
-  <div><input type="text" name="email" placeholder="Enter your Email Address..." class="textbox" id="email"/></div>
+  <h2 class="coolFont">Email :</h2>
+  <div><input type="text" name="email" placeholder="Enter your Email Address..." class="textbox .form-control" id="email"/></div>
   </td>
   <td>
-  <h2>Rate This Place :</h2>
+  <h2 class="coolFont">Rate This Place :</h2>
   <div><select id="rating">
   <option value="6">Love it</option>
   <option value="5">Interesting</option>
@@ -162,19 +169,22 @@ $("#success_msg").prepend(html);
   </div>
   </td></tr>
   <tr><td colspan="2">
-  <h2>Comment :</h2>
+  <h2 class="coolFont">Comment :</h2>
   <div><textarea name="name" placeholder="Write your comment..." id="comment"></textarea></div>
   </td></tr>
   </table>
-  <div><input type="submit" class="btn" value="Comment" id="comment_submit"></div>
+  <div><input type="submit" class="btn .form-control" value="Comment" id="comment_submit"></div>
     
   </form>
+  </div>
+ 
   
   
   <div id="success_msg">
   <?php include('comment/load_comments.php');?>
+  </br>
   </div>
-  
+      
   
   </div>
   
@@ -205,6 +215,6 @@ $("#success_msg").prepend(html);
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <!--<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
   </body>
   
