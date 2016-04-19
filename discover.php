@@ -7,9 +7,8 @@
          
 						<?php
 
-                          $result = file_get_contents('http://xml.weather.yahoo.com/forecastrss?p=EIXX0014&u=c');
+                          include "weather.php";
                           $xml = simplexml_load_string($result);
-                          $xml->registerXPathNamespace('yweather', 'http://xml.weather.yahoo.com/ns/rss/1.0');
                           $location = $xml->channel->xpath('yweather:location');
                         if(!empty($location)){
                         foreach($xml->channel->item as $item){
