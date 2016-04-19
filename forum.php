@@ -218,7 +218,7 @@ $("#success_msg").prepend(html);
                   <tr><td colspan="2">
                       
                   <h2 class="coolFont">Comment :</h2>
-                  <div><textarea name="name" placeholder="Write your comment..." id="comment"></textarea></div>
+                  <div class="form-group"><textarea name="name" placeholder="Write your comment..."></textarea></div>
                   </td></tr>
                   </table>
                   <div><input type="submit" class="btn .form-control" value="Comment" id="comment_submit"></div>
