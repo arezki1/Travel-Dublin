@@ -17,10 +17,11 @@
 
 
 
-<DOCTYPE html>
+<!DOCTYPE html>
 <html>
  
 <head>
+    <!--to enable responsivebrowsing on mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--needs to be at the top of the head to work-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
