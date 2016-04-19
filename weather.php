@@ -38,11 +38,11 @@ http://us.rd.yahoo.com/dailynews/rss/weather/Dublin__EI/*http://weather.yahoo.co
 <img src="http://l.yimg.com/a/i/us/we/52/11.gif"/><br /> <b>Current Conditions:</b><br /> Light Rain, 8 C<BR /> <BR /><b>Forecast:</b><BR /> Mon - Rain. High: 9 Low: 6<br /> Tue - Partly Cloudy. High: 13 Low: 4<br /> Wed - Partly Cloudy. High: 13 Low: 6<br /> Thu - Partly Cloudy. High: 12 Low: 6<br /> Fri - Partly Cloudy. High: 12 Low: 3<br /> <br /> <a href="http://us.rd.yahoo.com/dailynews/rss/weather/Dublin__EI/*http://weather.yahoo.com/forecast/EIXX0014_c.html">Full Forecast at Yahoo! Weather</a><BR/><BR/> (provided by <a href="http://www.weather.com" >The Weather Channel</a>)<br/>
 ]]>
 </description>
-<yweather:forecast day="Mon" date="11 Apr 2016" low="6" high="9" text="Rain" code="12"/>
-<yweather:forecast day="Tue" date="12 Apr 2016" low="4" high="13" text="Partly Cloudy" code="30"/>
-<yweather:forecast day="Wed" date="13 Apr 2016" low="6" high="13" text="Partly Cloudy" code="30"/>
-<yweather:forecast day="Thu" date="14 Apr 2016" low="6" high="12" text="Partly Cloudy" code="30"/>
-<yweather:forecast day="Fri" date="15 Apr 2016" low="3" high="12" text="Partly Cloudy" code="30"/>
+<yweather:forecast day="Mon" date="11 Apr 2016" low="6" high="9" text="Rain" code="3"/>
+<yweather:forecast day="Tue" date="12 Apr 2016" low="4" high="13" text="Partly Cloudy" code="3"/>
+<yweather:forecast day="Wed" date="13 Apr 2016" low="6" high="13" text="Sunny" code="2"/>
+<yweather:forecast day="Thu" date="14 Apr 2016" low="6" high="12" text="Windy" code="4"/>
+<yweather:forecast day="Fri" date="15 Apr 2016" low="3" high="12" text="Overcast" code="5"/>
 <guid isPermaLink="false">EIXX0014_2016_04_15_7_00_IST</guid>
 </item>
 </channel>

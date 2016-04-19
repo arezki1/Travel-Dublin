@@ -177,6 +177,10 @@ END;
          }else{
             $output = '<h1>No results found, please try a different zip code.</h1>';
           }
+          
+          // Here
+          
+          
 
          ?>
 <?php echo $output; ?>
