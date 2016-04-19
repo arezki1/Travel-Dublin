@@ -6,6 +6,7 @@
     
     ?>
             <!--styling-->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/bootstrap.css" type="text/css" />
     <link rel="stylesheet" href="../css/style.css" type="text/css" />
     <script type="text/javascript" src="../js/bootstrap.js"></script>
@@ -87,7 +88,7 @@
              
         <div class= "col-md-4" >
               
-        <img src="Chat/chat1.jpg" class="img-rounded" alt="Cinque Terre"width="304" height="236">
+        <img src="Chat/chat1.jpg" class="img-rounded img-responsive box" alt="Cinque Terre" style="width:1000px; height:300px">
                                      
        </div>
                              	 
@@ -101,13 +102,15 @@
     <p><b>Choose a Chatname:</b></p>
                                             
                                             
-    <input type="text" name="uname" style="width:200px;" /><br/><br/>
+    <input type="text" name="uname" style="width:70%;" /><br/><br/>
                                             
                                             
     <p> <b>Your Message:</b></p> 
                                             
                                             
-    <textarea name= "msg" styles = "width:200px; height: 70px"></textarea><br/>
+    <textarea name= "msg" style = "width:90%; height: 70px">
+        
+    </textarea><br/>
                         
                         </form>
                                    
@@ -115,9 +118,10 @@
                         <br/>
                         
                         
-    <button onclick= "submitChat()"class= "button">Send</button><br/><br/>
+    <button onclick= "submitChat()" class="btn btn-info btn-block regular-link">Send</button><br/><br/>
                         
     <div id="imageload" style="display:none;"> 
+    
     <img src="Chat/loading.gif"/>
                         </div>
                         
