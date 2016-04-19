@@ -29,7 +29,6 @@
     }
     #commentForm{
       padding:10px;
-      margin: 0 auto;
     }
     
     /*http://www.cssmatic.com/box-shadow*/
@@ -67,10 +66,7 @@
       max-height: 200px;
     }
     
-    #placeHolder {
-      border: 1px black solid;
-      margin-top: 45%;
-    }
+
 .items {
 
       font-weight:bold;

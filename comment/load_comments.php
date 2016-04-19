@@ -55,7 +55,7 @@ echo "&nbsp; <img src='comment/icons/hate-icon.png'> Hate it";
 }
 echo "</small></span></div>";
 
-echo "<div class='txt'>$comment</div>";
+echo "<div class='txt form-group'>$comment</div>";
 echo "</div>";
 echo "</div>";
 }
