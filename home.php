@@ -3,9 +3,9 @@
 	<!--main page area for home-->
 	<div class="container">
 	  <div class = "row">
-    	 <div class = "col-md-4">
-    	  <!--box class enforces box shadow-->
-         <img src="img/niceHotel.jpg" class="img-responsive img-rounded center-block box" id="placeHolder"></img>
+    	 <div class = "col-md-4 center-block">
+    	  <!--box class enforces box shadow--> <br/>
+         <img src="img/niceHotel.jpg" class="img-responsive img-rounded box"></img>
         </div>
         <br/>
          <div class = "col-md-4 box bradius">
@@ -18,9 +18,8 @@
             <p>One thing Ireland is famous for, as well as the Guiness, is the rain. Social Hotel will suggest activities to you
              based on the <a href="?page=discover"><b>weather</b></a>, so you will always have something fun to do while you visit.</p>
         </div>
-        <br/>
-    	<div class  = "col-md-4">
-    		<img src="img/hotel-room.jpg" class="img-responsive img-rounded center-block box" id="placeHolder"></img>
+    	<div class  = "col-md-4 center-block">
+    		<img src="img/hotel-room.jpg" class="img-responsive img-rounded box"></img>
     	</div>
     </div>
 

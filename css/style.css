@@ -1,12 +1,13 @@
      /*viewport*/
      /*puts a max-width on mobile devices and aids in centering all elements*/
      /*http://stackoverflow.com/questions/18548453/how-to-change-navbar-container-width-bootstrap-3*/
-      @media (min-width: 1200px) {
+      @media (min-width: 1140px) {
       .container{
           max-width: 970px;
       }
+      
   }
-    
+
     /*Main body sizes and padding*/
     
     body {

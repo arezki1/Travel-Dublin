@@ -36,6 +36,10 @@
 	<div class="navbar-static-top navbar-inverse">
 
 		  <div class="container" id="nav">
+		      <div class = "navbar-brand navbar-left">
+    			<p href="#" style="color:white;font-weight:bold">Social Hotel</p>
+			     <!--<a href="#" class="pull-left"><img src="../img/hotelFront.png" class="img-responsive" id="logo" alt="logo"></img></a>-->
+			</div>
                 <div class="navbar-brand navbar-right headerSocH">
                     <!--add name of user in session to navbar brand-->
                    	<p href="#" style="color:white;font-weight:bold">Welcome <?php echo htmlentities($_SESSION['user']['username'], ENT_QUOTES, 'UTF-8'); ?>:
@@ -49,20 +53,17 @@
     		<div class = "collapse navbar-collapse navHeaderCollapse" >
     		    <nav id="nav1">
     		        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js">
-                $(document).ready(function () {
-                $('mini').click(function () {
-                document.getElementById('logo').style.visibility='hidden';
-                });
-                });
+                // $(document).ready(function () {
+                // $('mini').click(function () {
+                // document.getElementById('logo').style.visibility='hidden';
+                // });
+                // });
                 // $(document).ready(function(){
                 // $("mini").click(function(){
                 // $("logo").toggle();
                 // });
                 // });
 			</script>
-			<div class = "nav-logo">
-			     <a href="#" class="pull-left"><img src="../img/hotelFront.png" class="img-responsive" id="logo" alt="logo"></img></a>
-			</div>
     			<ul class = "nav navbar-nav navbar-right">
     				<li class = "items"><a href="?page=home"       style="color:white">Home       </a></li>
     				<li class = "items"><a href="?page=attraction" style="color:white">Attractions</a></li>
