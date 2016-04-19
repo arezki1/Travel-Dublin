@@ -1,7 +1,7 @@
 <br>
 
 
-	
+	<title>D I S C O V E R</title>
 <div class="container"> 
 <div class= "row">
          

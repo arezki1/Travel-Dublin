@@ -43,6 +43,7 @@ if(empty($_SESSION['user']))
 
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
@@ -110,7 +111,7 @@ $("#success_msg").prepend(html);
 		  <div class="container" id="nav">
 		        <div class="navbar-brand headerSocH">
                     <!--add name of user in session to navbar brand-->
-                   	<a href="index.php" style="color:white;font-weight:bold"> Back to Home Page</a>
+                   	<a href="index.php" style="color:white;font-weight:bold">Go Home</a>
 			        
 		       </div>
               
@@ -142,75 +143,86 @@ $("#success_msg").prepend(html);
  <body>
 
 
-    <div class="container ">
+    <div class="container img-responsive">
 
         <div class ="row">
              <?php
         echo
         
-        "<h1 style=' padding: 40px 15px; text-align: center;' class='coolFont'>$title</h1>";
-       
-        
-      ?>
-  	    <img class="img-responsive center-block" style="max-width:600px" src="img/<?= $image; ?>" >
+        "<h1 style=' padding: 40px 15px; text-align: center;' class='coolFont box bradius'>$title</h1>";
+
+              ?>
+  	    <img style="max-width: 70%" class="center-block"  src="img/<?= $image; ?>" >
             <!--max-width="970" max-height="590"-->
-        </div></div>
+        </div>
+        
+        </div>
     
-  	   <br><br>
+  	   <br/><br/>
       
 	    <div class="row bradius box coolFont">
 	        	 <?php
         
         
-    echo    "<p style='color: black;'>$description</p></br><br>";
-    echo    "<h3 style='color: black; text-align: center;'> Information</h3>";
-	echo	"<p style='color: black; text-align: center;'>$address</p>";
-	echo	"<p style='color: black; text-align: center;'>$phone</p>";
-	echo	"<p style='color: black; text-align: center;'>$opening</p>";
-	echo	"<p style='color: black; text-align: center;'>$website</p>";
+                    echo    "<p style='color: black;'>$description</p></br><br>";
+                    echo    "<h3 style='color: black; text-align: center;'> Information</h3>";
+                    echo	"<p style='color: black; text-align: center;'>$address</p>";
+                    echo	"<p style='color: black; text-align: center;'>$phone</p>";
+                    echo	"<p style='color: black; text-align: center;'>$opening</p>";
+                    echo	"<p style='color: black; text-align: center;'>$website</p>";
         
-      ?>
+                ?>
 	        
-	    </div><br><br>
-	
-		
+	    </div>
+	    <br><br>
 	
   		<div id="container" class="bradius box">
-  <h1 class="coolFont" style="text-align: center;">Please leave your comment below !</h1>
-  <div class ="form-group">
-       <form role="form" action="#" method="POST" id="commentForm">
-  <table>
-  <tr><td colspan="2">
-  <h2 class="coolFont">Name :</h2>
-  <div><input type="text" name="name" placeholder="Enter your Name..." class="textbox .form-control" id="name"/></div>
-
-  </td></tr>
-  <tr><td style="width:220px;">
-  <h2 class="coolFont">Email :</h2>
-  <div><input type="text" name="email" placeholder="Enter your Email Address..." class="textbox .form-control" id="email"/></div>
-  </td>
-  <td>
-  <h2 class="coolFont">Rate This Place :</h2>
-  <div><select id="rating">
-  <option value="6">Love it</option>
-  <option value="5">Interesting</option>
-  <option value="4">Hot</option>
-  <option value="3">Useful</option>
-  <option value="2">Average</option>
-  <option value="1">Boring</option>
-  <option value="0">Hate it</option>
-  </select>
-  </div>
-  </td></tr>
-  <tr><td colspan="2">
-  <h2 class="coolFont">Comment :</h2>
-  <div><textarea name="name" placeholder="Write your comment..." id="comment"></textarea></div>
-  </td></tr>
-  </table>
-  <div><input type="submit" class="btn .form-control" value="Comment" id="comment_submit"></div>
-    
-  </form>
-  </div>
+          <h1 class="coolFont" style="text-align: center;">Please leave your comment below !</h1>
+              <div class ="form-group">
+                   <form role="form" action="#" method="POST" id="commentForm">
+                      <table>
+                        <tr>
+                            <td colspan="2">
+                              <h2 class="coolFont">Name :</h2>
+                              <div><input type="text" name="name" placeholder="Enter your Name..." class="textbox .form-control" id="name"/></div>
+                            </td>
+                        </tr>
+                  <tr> 
+                      <td style="width:220px;">
+                      
+                      <h2 class="coolFont">Email :</h2>
+                  
+                      <div><input type="text" name="email" placeholder="Enter your Email Address..." class=" textbox .form-control" id="email"/></div>
+                  
+                      </td>
+                      <tr>
+                    <td>
+                        <h2 class="coolFont">Rate This Place :</h2>
+                        <div class="form-group">
+                          <select id="rating">
+                              <option value="6">Love it</option>
+                              <option value="5">Interesting</option>
+                              <option value="4">Hot</option>
+                              <option value="3">Useful</option>
+                              <option value="2">Average</option>
+                              <option value="1">Boring</option>
+                              <option value="0">Hate it</option>
+                          </select>
+                         </div>
+                  </td> 
+                          
+                      </tr>
+                 </tr>
+                  <tr><td colspan="2">
+                      
+                  <h2 class="coolFont">Comment :</h2>
+                  <div><textarea name="name" placeholder="Write your comment..." id="comment"></textarea></div>
+                  </td></tr>
+                  </table>
+                  <div><input type="submit" class="btn .form-control" value="Comment" id="comment_submit"></div>
+                
+                    </form>
+                </div>
  
   
   
