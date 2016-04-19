@@ -108,11 +108,11 @@ $("#success_msg").prepend(html);
   	<div class="navbar-static-top navbar-inverse">
 
 		  <div class="container" id="nav">
-		        <div class="navbar-brand headerSocH">
+		        <button type="button" class="btn btn-warning"
                     <!--add name of user in session to navbar brand-->
-                   	<a href="index.php" style="color:white;font-weight:bold"> Back to Home Page</a>
+                   	<a href="index.php" style="color:white;font-weight:bold">  Home </a>
 			        
-		       </div>
+		       </button>
               
 		<button class = "navbar-toggle" data-toggle = "collapse" data-target=".navHeaderCollapse" style ="color:white; border-color:white; margin-right:0px">
 			Menu
