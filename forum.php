@@ -111,11 +111,9 @@ $("#success_msg").prepend(html);
 		  <div class="container" id="nav">
 		        <button type="button" class="btn btn-warning"
                     <!--add name of user in session to navbar brand-->
-<<<<<<< HEAD
+
                    	<a href="index.php" style="color:white;font-weight:bold">  Home </a>
-=======
-                   	<a href="index.php" style="color:white;font-weight:bold">Go Home</a>
->>>>>>> ee643bf395017ed886ce84a8a91435b8e4884938
+
 			        
 		       </button>
               
