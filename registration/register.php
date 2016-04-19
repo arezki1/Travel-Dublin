@@ -160,6 +160,7 @@
 ?> 
 
     <!--styling-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <link rel="stylesheet" href="../css/bootstrap.css" type="text/css" />
     <link rel="stylesheet" href="../css/style.css" type="text/css" />
@@ -203,6 +204,6 @@
             
             </div>  
         </body>
-            <footer class = "footer text-center coolFont">&copy; Group C NCI 2016</footer>
+            <footer class = "footer text-center">&copy; Group C NCI 2016</footer>
 
     

@@ -80,7 +80,7 @@ header("Location: login.php");
 <div class= "col-md-6" >
     <h2 class="centerText">1.Temple Bar</h2>
 
-  		 <img src="img/templebar.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
+  		 <img src="img/templebar.jpg" class="img-responsive img-rounded center-block" alt="Cinque Terre" width="304" height="236">
 
 		<h3>Street in Dublin, Republic of Ireland</h3>
     <p>Temple Bar is an area on the south bank of the <br>
@@ -96,7 +96,7 @@ header("Location: login.php");
             </div>
 <div class= "col-md-6">
                     	 <h2 class="centerText">2.Dublin Castle</h2>
-         <img src="img/DublinCastle.jpg" class="img-rounded img-responsive" alt="Cinque Terre" width="304" height="236">
+         <img src="img/DublinCastle.jpg" class="img-responsive img-rounded center-block" alt="Cinque Terre" width="304" height="236">
     
 		 <h3>Building complex in Dublin, Republic of Ireland</h3>
      <p>Dublin Castle off Dame Street, Dublin, Ireland,<br>
@@ -120,7 +120,7 @@ header("Location: login.php");
            
      <h2 class="centerText">3.Phoenix Park</h2>
 
-   		 <img src="img/PhoenPark.jpg" class="img-rounded img-responsive" alt="Cinque Terre" width="304" height="236">
+   		 <img src="img/PhoenPark.jpg" class="img-responsive img-rounded center-block" alt="Cinque Terre" width="304" height="236">
 
 		 <h3>Park</h3>
      <p>Phoenix Park is an urban park in Dublin, Ireland,<br>
@@ -137,7 +137,7 @@ header("Location: login.php");
 	 
      <h2 class="centerText">4.Christ Church Cathedral</h2>
 
-   		 <img src="img/christ-church.jpg" class="img-rounded img-responsive" alt="Cinque Terre" width="304" height="236">
+   		 <img src="img/christ-church.jpg" class="img-responsive img-rounded center-block" alt="Cinque Terre" width="304" height="236">
 
 		 <h3>Cathedral in the Republic of Ireland</h3>
      <p>Christ Church Cathedral is the cathedral of the <br>
@@ -159,7 +159,7 @@ header("Location: login.php");
     
     <h2 class="centerText">5.Guinness Storehouse</h2>
 
-   		 <img src="img/guinness-storehouse.jpg" class="img-rounded img-responsive" alt="Cinque Terre" width="304" height="236">
+   		 <img src="img/guinness-storehouse.jpg" class="img-responsive img-rounded center-block" alt="Cinque Terre" width="304" height="236">
 
 		 <h3>Brewery</h3>
      <p>Brewery experience telling the tale of Ireland's famous beer,<br>
@@ -177,7 +177,7 @@ header("Location: login.php");
     
      <h2 class="centerText">6.National Museum of Ireland</h2>
  
-   		 <img src="img/NationalMuseumofIreland.jpg" class="img-rounded img-responsive" alt="Cinque Terre" width="304" height="236">
+   		 <img src="img/NationalMuseumofIreland.jpg" class="img-responsive img-rounded center-block" alt="Cinque Terre" width="304" height="236">
 
 		 <h3>Museum in the Republic of Ireland</h3>
      <p>The National Museum of Ireland is the national museum in Ireland.<br>

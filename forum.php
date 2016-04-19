@@ -142,7 +142,7 @@ $("#success_msg").prepend(html);
  <body>
 
 
-    <div class="container coolFont bradius box">
+    <div class="container ">
 
         <div class ="row">
              <?php
@@ -152,7 +152,7 @@ $("#success_msg").prepend(html);
        
         
       ?>
-  	    <img class="img-responsive" src="img/<?= $image; ?>" >
+  	    <img class="img-responsive center-block" style="max-width:600px" src="img/<?= $image; ?>" >
             <!--max-width="970" max-height="590"-->
         </div></div>
     

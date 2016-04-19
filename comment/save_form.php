@@ -18,7 +18,7 @@ $attraction=$_POST['attraction'];
 $sql="INSERT INTO comments(name,email,rating,comment,attraction) VALUES ('$name','$email','$rating','$comment','$attraction')";
 $command=mysql_query($sql);
 
-echo "<div class='comment_box'>";
+echo "<div class='comment_box center-block'>";
 echo '<div class="image_box"><img src="http://www.gravatar.com/avatar/' . md5($email) . '?s=50" id="avatar_img"/></div>';
 echo "<div class='body'>";
 echo "<div><span><b>$name</b></span> ";
