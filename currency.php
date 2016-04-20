@@ -2,15 +2,8 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.js"></script>
-	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
-    <!--nav start-->
-    <!--weather script start-->
-    <script src="//www.powr.io/powr.js" external-type="html"></script>
-    <!--weather script end-->
-
-
-	<!--nav end-->
+   
 	<br/>
 	<!--manin page area for home-->
     <div class="container">
@@ -18,14 +11,18 @@
 	
     <img class="img-responsive img-rounded center-block" src="img/money.jpg">
 
-   </div>
    
    
    
 
 
+<<<<<<< HEAD
 
 		<span class=" btn btn-success ">Select Currency</span><br>
+=======
+	<div class="bradius center-block">
+		<span class="label label-warning">Select your currency</span><br>
+>>>>>>> 5f674782c81fe0b1dcabca86121eb239e2c4278d
 	<form class="center" action="" method="post">
 
 		<label for="from">From</label>
@@ -55,11 +52,14 @@
 		
 		<button type="submit" name="convert" value="Convert" class="btn btn-success"><b>Submit</b></button>
 	</form>
-	<br /><br /><br />
-
-<div class='btn btn-success center' style="margin-left: 30%;font-weight:bold">
+	<br/>
+	
+	</div>
+	<div class='btn btn-success center' style="margin-left: 30%;font-weight:bold">
 	
 	<h4> Result: </h4>
+
+
 
 <?php 
 
