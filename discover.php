@@ -66,7 +66,7 @@
             <!--<button type="submit" class="btn-danger" id = "weather">Weather</button>-->
 
             <button type="submit" class="btn-danger" id="toggle_Traffic">Traffic</button>
-            <button type="submit" class="btn-danger pull-right" id="clear">Clear</button>
+            <button type="submit" class="btn-danger pull-right" id="clear">Clear Map</button>
   
                 
                 
