@@ -1,5 +1,10 @@
 
-
+  Optimal Instructions to run app :
+  1.Create account on Cloud 9(www.c9.io)
+  2.Log into Cloud 9, create a new PHP workspace
+  3.Clone code from git-hub found at https://github.com/arezki1/Travel-Dublin.git
+  4.Once Workspace has loaded, click on run project
+  5.Once application has started, register, and log in.
 
 
 
