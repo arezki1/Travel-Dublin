@@ -16,13 +16,9 @@
    
 
 
-<<<<<<< HEAD
-
-		<span class=" btn btn-success ">Select Currency</span><br>
-=======
 	<div class="bradius center-block">
 		<span class="label label-warning">Select your currency</span><br>
->>>>>>> 5f674782c81fe0b1dcabca86121eb239e2c4278d
+
 	<form class="center" action="" method="post">
 
 		<label for="from">From</label>
