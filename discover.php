@@ -1,6 +1,9 @@
       
       <!--https://www.youtube.com/watch?v=keO6egndYrE-->
-      <!--map tutorial by Dave Wallaceon YouTube-->
+      <!--map tutorial by Dave Wallace on YouTube-->
+      <!-- http://www.w3schools.com/jsref/met_loc_reload.asp -->
+      <!-- https://developers.google.com/maps/documentation/javascript/tutorial -->
+      <!-- https://developers.google.com/maps/documentation/javascript/tutorial#libraries -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
       <!--google map api link-->
       <script async defer
@@ -58,8 +61,10 @@
             <button type="submit" class="btn-danger" id="refresh">Museums</button>
             <button type="submit" class="btn-danger" id="pub">Pubs</button>
             <button type="submit" class="btn-danger" id="parks">Parks</button>
-            <button type="submit" class="btn-danger" id = "weather">Weather</button>
-            <!--traffic data will not load, possible future development-->
+
+            <!--Weather data will not load, possible future development-->
+            <!--<button type="submit" class="btn-danger" id = "weather">Weather</button>-->
+
             <button type="submit" class="btn-danger" id="toggle_Traffic">Traffic</button>
             <button type="submit" class="btn-danger pull-right" id="clear">Clear</button>
   
