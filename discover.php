@@ -1,6 +1,14 @@
-
+      
+      <!--https://www.youtube.com/watch?v=keO6egndYrE-->
+      <!--map tutorial by Dave Wallaceon YouTube-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+      <!--google map api link-->
+      <script async defer
+        src="https://maps.googleapis.com/maps/api/js?libraries=places,weather&sensor=false">
+      </script>
       <link rel="stylesheet" href="css/style.css" type="text/css" />
- <br><br>   
+      <script type="text/javascript" src="../js/map.js"></script>
+      <br><br>   
      
 <div class="container" style="font-weight:bold">
            
@@ -39,12 +47,26 @@
              <!-- start of third div from here -->   
             
              
-             <div class="col-md-5" style="background-color:#ccccff;height: 540px; filter: alpha(opacity=60);
+             <div class="col-md-5" style="background-color:#ccccff;height: 540px; ;
   /* IE */
-  -moz-opacity: 0.6;
+  -moz-opacity: 0.9;
   /* Mozilla */
-  opacity: 0.6;">
-                         kijhihjubjub
+  opacity: 0.9;">
+              <div id = "map-canvas"></div>
+        
+            
+            <button type="submit" class="btn-danger" id="refresh">Museums</button>
+            <button type="submit" class="btn-danger" id="pub">Pubs</button>
+            <button type="submit" class="btn-danger" id="parks">Parks</button>
+            <button type="submit" class="btn-danger" id = "weather">Weather</button>
+            <!--traffic data will not load, possible future development-->
+            <button type="submit" class="btn-danger" id="toggle_Traffic">Traffic</button>
+            <button type="submit" class="btn-danger pull-right" id="clear">Clear</button>
+  
+                
+                
+                
+                
              </div>
              
              
