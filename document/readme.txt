@@ -1,5 +1,6 @@
 
   Optimal Instructions to run app :
+  
   1.Create account on Cloud 9(www.c9.io)
   2.Log into Cloud 9, create a new PHP workspace
   3.Clone code from git-hub found at https://github.com/arezki1/Travel-Dublin.git
@@ -18,7 +19,7 @@ Database password: dZ2*wT7%
 
 once the application is up and running, register as a new user and you will have access to the site.
 
-******************Please see below schema for our Database if required*******************************
+******************************************Please see below schema for our Database if required*******************************
 
 
 -- phpMyAdmin SQL Dump
@@ -218,4 +219,4 @@ INSERT INTO `user` (`id`, `username`, `password`, `email`, `salt`, `msg`) VALUES
 
 
 
-************************Database schema ends here*******************************
+************************************************Database schema ends here*******************************************************
