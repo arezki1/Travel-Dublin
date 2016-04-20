@@ -14,7 +14,7 @@
 	<br/>
 	<!--manin page area for home-->
     <div class="container">
-    	<h1 class="bg-primary" style="text-align:center">One Click for all</h1>
+    	<h1 class="alert alert-info" style="text-align:center;font-weight:bold"> One Click for all</h1>
 	
     <img class="img-responsive img-rounded center-block" src="img/money.jpg">
 
@@ -25,7 +25,7 @@
 
 
 
-		<span class="label label-warning">Select your currency</span><br>
+		<span class=" btn btn-success ">Select Currency</span><br>
 	<form class="center" action="" method="post">
 
 		<label for="from">From</label>

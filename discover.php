@@ -55,6 +55,8 @@
   -moz-opacity: 0.9;
   /* Mozilla */
   opacity: 0.9;">
+  
+  
               <div id = "map-canvas"></div>
         
             
