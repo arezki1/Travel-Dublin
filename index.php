@@ -10,7 +10,8 @@ $routes = [
 	'discover'		=> 'discover.php',
 	'attraction'	=> 'attraction.php',
 	'chat'			=> 'Chat/chat.php',
-	'forum'			=> 'Chat/chat.php'
+	'forum'			=> 'Chat/chat.php',
+	'currency'		=> 'currency.php'
 ];
 
 $default = 'home.php';

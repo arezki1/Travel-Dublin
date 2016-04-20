@@ -69,6 +69,7 @@
     				<li class = "items"><a href="?page=attraction" style="color:white">Attractions</a></li>
     				<li class = "items"><a href="?page=chat"       style="color:white">Chat       </a></li>
     				<li class = "items"><a href="?page=discover"   style="color:white">Discover   </a></li>
+    				<li class = "items"><a href="?page=currency"   style="color:white">Currency   </a></li>
     				<li class = "items"><a href="?page=logout"     style="color:white">Logout     </a></li>
     				
     			    

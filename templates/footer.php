@@ -1,9 +1,7 @@
 
    </br>
 
-   <footer class="bottom" style="position:relative;
-bottom:0;
-width:100%;background-color:#0F0606;color:white;font-weight: bold;">
+   <footer class="bottom" style="margin-top: 10%;width:100%;background-color:#0F0606;color:white;font-weight: bold; ">
 
 <div class="container hidden-xs">
 
