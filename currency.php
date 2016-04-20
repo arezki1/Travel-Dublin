@@ -7,7 +7,7 @@
 	<br/>
 	<!--manin page area for home-->
     <div class="container">
-    	<h1 class="alert alert-info" style="text-align:center;font-weight:bold"> One Click for all</h1>
+    	<h1 class="alert alert-info text_shadow" style="text-align:center;font-weight:bold"> One Click for all</h1>
     	
     	
 	
