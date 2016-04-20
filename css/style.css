@@ -30,6 +30,7 @@
     }
     #commentForm{
       padding:10px;
+      margin-left:20%;
     }
     
     /*http://www.cssmatic.com/box-shadow*/
@@ -42,6 +43,11 @@
         /*http://www.pixeden.com/media/k2/galleries/165/003-subtle-light-pattern-background-texture-vol5.jpg*/
         background-image:url("../img/lightBground.jpg");
       }
+     .textbox .form-control{
+
+max-width:40%;
+ font-weight:bold 
+}
     .bradius{
         border-radius: 5px 5px 5px 5px;
         -moz-border-radius: 10px 10px 10px 10px;
