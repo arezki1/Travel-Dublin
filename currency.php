@@ -8,13 +8,11 @@
 	<!--manin page area for home-->
     <div class="container">
     	<h1 class="alert alert-info" style="text-align:center;font-weight:bold"> One Click for all</h1>
-    	
-    	
 	
     <img class="img-responsive img-rounded center-block" src="img/money.jpg">
 
    
-       	<br><br>
+   
    
 
 
@@ -53,7 +51,6 @@
 	<br/>
 	
 	</div>
-	    	<br>
 	<div class='btn btn-success center' style="margin-left: 30%;font-weight:bold">
 	
 	<h4> Result: </h4>

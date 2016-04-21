@@ -1,4 +1,4 @@
-<!--http://www.sitepoint.com/publishing-mysql-data-web/ -->
+
  <?php include("templates/header.php");?>
  
   <?php

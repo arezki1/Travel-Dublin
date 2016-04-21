@@ -18,7 +18,7 @@ header("Location: login.php");
   </br>
 <div class="container">
       
-      <!--carousel of images-->
+      
 <div id="myCarousel" class="carousel slide coolFont bradius box center-block" data-ride="carousel">
               	    <!-- Indicators -->
 <ol class="carousel-indicators">
@@ -54,7 +54,7 @@ header("Location: login.php");
               	      </div>
               	    </div>
             
-              	    <!-- Left and right controls for carousel-->
+              	    <!-- Left and right controls -->
 <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
 <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
 <span class="sr-only">Previous</span>
@@ -64,11 +64,11 @@ header("Location: login.php");
 <span class="sr-only">Next</span>
               	    </a>
          	</div>
-<!--end carousel-->
+
 
 <div class="starter-template">
         
-        <!--start attraction divs-->
+        
         
       <h1 class="coolFont" style="text-align:center">TOP 10 PLACES IN DUBLIN</h1>
       
@@ -151,7 +151,7 @@ header("Location: login.php");
  	  </div>
     </div><!--End second container-->
     <br/>
-<div class="container coolFont bradius box"> <!--Third container-->
+<div class="container coolFont bradius box"> <!--Theird container-->
     
 <div class= "row">
          

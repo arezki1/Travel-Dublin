@@ -6,14 +6,12 @@
       <!-- https://developers.google.com/maps/documentation/javascript/tutorial#libraries -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
       <!--google map api link-->
-      <script async defer
-        src="https://maps.googleapis.com/maps/api/js?libraries=places,weather&sensor=false">
-      </script>
+     
       <link rel="stylesheet" href="css/style.css" type="text/css" />
       <script type="text/javascript" src="../js/map.js"></script>
       <br><br>   
      
-<div class="container" style="font-weight:bold">
+<div class="container bradius" style="font-weight:bold">
            
            
             <div class="col-md-3" style=" background-color: 	rgb(220,220,220); height: 100%;">
@@ -289,5 +287,7 @@ END;
  
 </div>
                     </div>
- 
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?libraries=places,weather&sensor=false">
+</script>
               
