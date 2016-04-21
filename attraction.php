@@ -18,8 +18,13 @@ header("Location: login.php");
   </br>
 <div class="container">
       
+<<<<<<< HEAD
       
 <div id="myCarousel" class="carousel slide coolFont bradius box center-block" data-ride="carousel">
+=======
+      <!--carousel of images-->
+<div id="myCarousel" class="center-block carousel slide coolFont bradius box" data-ride="carousel">
+>>>>>>> 98d4015b6cadf8eb16368fd8ed2864726d2db6ad
               	    <!-- Indicators -->
 <ol class="carousel-indicators">
 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -68,9 +73,13 @@ header("Location: login.php");
 
 <div class="starter-template">
         
+<<<<<<< HEAD
         
+=======
+        <!--start attraction divs - each div holds details for one attraction in Dublin-->
+>>>>>>> 98d4015b6cadf8eb16368fd8ed2864726d2db6ad
         
-      <h1 class="coolFont" style="text-align:center">TOP 10 PLACES IN DUBLIN</h1>
+      <h1 class="coolFont text_shadow" style="text-align:center">TOP 10 PLACES IN DUBLIN</h1>
       
       
 <div class="container coolFont bradius box"> <!--first container-->

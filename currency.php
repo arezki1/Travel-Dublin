@@ -7,7 +7,13 @@
 	<br/>
 	<!--manin page area for home-->
     <div class="container">
+<<<<<<< HEAD
     	<h1 class="alert alert-info" style="text-align:center;font-weight:bold"> One Click for all</h1>
+=======
+    	<h1 class="alert alert-info text_shadow" style="text-align:center;font-weight:bold"> One Click for all</h1>
+    	
+    	
+>>>>>>> 98d4015b6cadf8eb16368fd8ed2864726d2db6ad
 	
     <img class="img-responsive img-rounded center-block" src="img/money.jpg">
 

@@ -13,7 +13,9 @@ else{
  session_start();
  include("comment/db.php");
 
-
+// script to pull data from the attractions table
+// data is populated in the below div with id dbPop
+//depending on the id on the table, the information differs per attraction
 $sql="Select * from attractions where id=$id";
 $command=mysql_query($sql);
 while($data=mysql_fetch_row($command)){
@@ -162,7 +164,7 @@ $("#success_msg").prepend(html);
     
   	   <br/><br/>
       
-	    <div class="row bradius box coolFont">
+	    <div id ="dbPop" class="row bradius box coolFont">
 	        	 <?php
         
         
