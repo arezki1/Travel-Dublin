@@ -14,7 +14,7 @@
 <div class="container bradius" style="font-weight:bold">
            
            
-            <div class="col-md-3 bradius shadow" style=" background-color: 	rgb(220,220,220); height: 100%;">
+            <div class="col-md-3" style=" background-color: 	rgb(220,220,220); height: 100%;">
              
                         <?php
                          //replace the file_get_contents line with the include the new file
@@ -48,7 +48,7 @@
              <!-- start of third div from here -->   
             
              
-             <div class="col-md-5 bradius shadow" style="background-color:#ccccff;height: 100%; ;
+             <div class="col-md-5" style="background-color:#ccccff;height: 540px; ;
   /* IE */
   -moz-opacity: 0.9;
   /* Mozilla */
@@ -58,15 +58,15 @@
               <div id = "map-canvas"></div>
         
             
-            <button type="submit" class="btn-danger btn-responsive" id="refresh">Museums</button>
-            <button type="submit" class="btn-danger btn-responsive" id="pub">Pubs</button>
-            <button type="submit" class="btn-danger btn-responsive" id="parks">Parks</button>
+            <button type="submit" class="btn-danger" id="refresh">Museums</button>
+            <button type="submit" class="btn-danger" id="pub">Pubs</button>
+            <button type="submit" class="btn-danger" id="parks">Parks</button>
 
             <!--Weather data will not load, possible future development-->
             <!--<button type="submit" class="btn-danger" id = "weather">Weather</button>-->
 
-            <button type="submit" class="btn-danger btn-responsive" id="toggle_Traffic">Traffic</button>
-            <button type="submit" class="btn-danger pull-right btn-responsive" id="clear">Clear Map</button>
+            <button type="submit" class="btn-danger" id="toggle_Traffic">Traffic</button>
+            <button type="submit" class="btn-danger pull-right" id="clear">Clear Map</button>
   
                 
                 
@@ -80,8 +80,7 @@
             <!-- start of third div from here -->   
             
             
-            <div class="col-md-4 bradius shadow" style=" background-color: 	rgb(220,220,220); height: 100%; float:right clear:both;"/>
-            <h2>Forecast</h2>
+            <div class="col-md-4" style=" background-color: 	rgb(220,220,220); height: 100%; float:right;"/><h2>Forecast</h2>
              
             <table style="text-align: center;display: inline-block">
             <tbody>
